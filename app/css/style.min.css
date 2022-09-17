@@ -2437,6 +2437,39 @@ h2 {
   background: transparent;
   border-width: 1px;
 }
+.card .card__slider {
+  width: 100%;
+  height: 335px;
+  position: relative;
+  overflow: hidden;
+}
+.card .card__slider .swiper-wrapper {
+  height: 335px;
+}
+.card .card__slider .swiper-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+}
+.card .card__slider .swiper-pagination-bullet {
+  background: rgba(251, 251, 251, 0.29);
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+}
+.card .card__slider .swiper-pagination-bullet-active {
+  background: #fbfbfb;
+}
+.card .card__slider {
+  display: none;
+}
+@media (max-width: 450px) {
+  .card .card__slider {
+    display: block;
+  }
+}
 
 .product-use {
   padding-top: 146px;
@@ -6241,13 +6274,11 @@ h2 {
   .card.media .card__photo {
     max-width: 410px;
     width: 100%;
+    display: none;
   }
   .card.media .card__photo-top {
     max-width: 410px;
     width: 100%;
-  }
-  .card.media .card__photo-bottom {
-    display: none;
   }
   .card.media .card__bottom {
     max-width: 410px;
@@ -7645,6 +7676,18 @@ h2 {
 
 }
 
+ @media (max-width: 450px){
+
+@supports (-webkit-appearance:none){
+.header__banner.banner1{background-image:url(../img/header-slider/slide1-mobile.webp), -o-linear-gradient(235.55deg, #2a3a62 1.39%, #18223b 79.65%)}
+.header__banner.banner1{background-image:url(../img/header-slider/slide1-mobile.webp), linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%)}
+.header__banner.banner2{background-image:url(../img/header-slider/slide2-mobile.webp)}
+.header__banner.banner3{background-image:url(../img/header-slider/slide3-mobile.webp)}
+.header__banner.banner4{background-image:url(../img/header-slider/slide4-mobile.webp)}
+}
+
+}
+
  @media (max-width: 800px){
 
 @supports (-webkit-appearance:none){
@@ -7753,18 +7796,6 @@ h2 {
 
 @supports (-webkit-appearance:none){
 
-}
-
-}
-
- @media (max-width: 450px){
-
-@supports (-webkit-appearance:none){
-.header__banner.banner1{background-image:url(../img/header-slider/slide1-mobile.webp), -o-linear-gradient(235.55deg, #2a3a62 1.39%, #18223b 79.65%)}
-.header__banner.banner1{background-image:url(../img/header-slider/slide1-mobile.webp), linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%)}
-.header__banner.banner2{background-image:url(../img/header-slider/slide2-mobile.webp)}
-.header__banner.banner3{background-image:url(../img/header-slider/slide3-mobile.webp)}
-.header__banner.banner4{background-image:url(../img/header-slider/slide4-mobile.webp)}
 }
 
 }

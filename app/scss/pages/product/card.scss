@@ -191,4 +191,34 @@
       border-width: 1px;
     }
   }
+  .card__slider{
+    width: 100%;
+    height: 335px;
+    position: relative;
+    overflow: hidden;
+    .swiper-wrapper{
+      height: 335px;
+      img{
+        object-fit: cover;
+        width: 100%;
+        min-height: 100%;
+        height: 100%;
+      }
+    }
+    .swiper-pagination-bullet{
+      background: rgba(251, 251, 251, 0.29);
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+    }
+    .swiper-pagination-bullet-active{
+      background: #fbfbfb;
+    }
+  }
+  .card__slider{
+    display: none;
+    @media (max-width: 450px){
+      display: block;
+    }
+  }
 }

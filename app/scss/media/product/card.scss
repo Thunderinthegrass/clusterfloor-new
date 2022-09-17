@@ -161,13 +161,11 @@
       &__photo{
         max-width: 410px;
         width: 100%;
+        display: none;
       }
       &__photo-top{
         max-width: 410px;
         width: 100%;
-      }
-      &__photo-bottom{
-        display: none;
       }
       &__bottom{
         max-width: 410px;

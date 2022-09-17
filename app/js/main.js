@@ -15,6 +15,17 @@ const productUseSlider = new Swiper(".product-use__slider", {
   // centeredSlides: true,
 });
 
+const cardPhotoSlider = new Swiper(".card__slider", {
+  loop: "infinite",
+  // centeredSlides: true,
+  spaceBetween: 20,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+});
+
 swiper.on('slideChange', function(sld) {
   document.body.setAttribute('data-sld', sld.realIndex);
 })

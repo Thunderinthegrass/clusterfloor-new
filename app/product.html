@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=h1, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <title>Страница товара</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<title>Страница товара</title>
 </head>
 <body>
   <header class="header">
@@ -216,8 +217,6 @@
         <div class="card__photo">
           <div class="card__photo-top">
             <img src="img/product/card/photo-top.jpg" alt="">
-            <img src="img/product/card/photo-small.jpg" alt="">
-            <img src="img/product/card/photo-small.jpg" alt="">
           </div>
           <div class="card__photo-bottom">
             <div class="photo-bottom">
@@ -228,6 +227,20 @@
             </div>
           </div>
         </div>
+        <div class="card__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/product/card/photo-top.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/product/card/photo-top.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/product/card/photo-top.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
         <div class="card__descr card-descr">
           <h1 class="card-descr__title">ClusterFloor Wood VL88014L</h1>
           <span class="card-descr__price">600 ₽/м<sup>2</sup> </span>
@@ -236,7 +249,7 @@
               <h4 class="add-info__title type">Тип</h4>
               <span class="add-info__text">Клевая LVT плитка</span>
               <h4 class="add-info__title collection">Коллекция</h4>
-              <span class="add-info__text">ClusterFloor Stoun коллекция под камень</span>
+              <span class="add-info__text">ClusterFloor Stoun коллекция под камень</span>
               <h4 class="add-info__title benefits">Преимущества</h4>
               <span class="add-info__text">
                 43 класс
@@ -266,6 +279,9 @@
       </div>
     </div>
   </div>
+  <div class="card__modal-slider">
+    
+  </div>
   <div class="product__features media">
     <div class="container _anim-items">
       <h2 class="product__features-title">характеристики</h2>
@@ -283,7 +299,7 @@
                 Влагостойкость
              </div>
              <p class="bubble1__text">
-                Не впитывает и не пропускает влагу
+                Не впитывает и не пропускает влагу
              </p> 
             </div>
             <div class="bubble2">
@@ -291,7 +307,7 @@
                 Встроенная подложка
              </div>
              <p class="bubble2__text">
-              Толстый защитный слой из PVH
+              Толстый защитный слой из PVH
              </p> 
             </div>
           </div>
@@ -623,7 +639,7 @@
         </div>
         <p class="compound__layer-descr descr-4">
           <span class="descr-title">Основной слой</span>
-          <span>Кварцвинил или</span>
+          <span>Кварцвинил или</span>
           <span>Каменно-полимерный коррозит</span>
         </p>
       </div>
