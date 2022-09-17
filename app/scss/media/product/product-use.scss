@@ -101,6 +101,21 @@
         padding-right: 20px;
       }
     }
+    @media (max-width: 500px){
+      padding-bottom: 10px;
+      .view-more-btn{
+        display: none;
+      }
+      .product-use__inner{
+        display: none;
+      }
+      .product-use__inner_hidden{
+        display: none;
+      }
+      .product-use__slider{
+        display: block;
+      }
+    }
     @media (max-width: 360px) {
       padding-top: 65px;
       .product-use__inner {

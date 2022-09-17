@@ -360,6 +360,9 @@
         }
       }
     }
+    @media (max-width: 500px){
+        padding-bottom: 0;
+    }
     @media (max-width: 360px){
       &-link{
         margin-bottom: 16px;

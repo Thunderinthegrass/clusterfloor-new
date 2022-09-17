@@ -9,6 +9,12 @@ const swiper = new Swiper(".header__swiper", {
   loop: "infinite",
 });
 
+const productUseSlider = new Swiper(".product-use__slider", {
+  loop: "infinite",
+  spaceBetween: 12,
+  // centeredSlides: true,
+});
+
 swiper.on('slideChange', function(sld) {
   document.body.setAttribute('data-sld', sld.realIndex);
 })
