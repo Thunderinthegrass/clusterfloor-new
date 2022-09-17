@@ -1,0 +1,138 @@
+.peculiar {
+  position: relative;
+  height: 1230px;
+  overflow: hidden;
+  padding-top: 213px;
+  &__title {
+    font-size: 183px;
+    line-height: 183px;
+    letter-spacing: 0.05em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    width: auto;
+    display: flex;
+    animation: ticker 20s linear infinite;
+    transform: translateX(0);
+    span{
+      padding: 0 80px;
+    }
+  }
+  @keyframes ticker {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-300%);
+    }
+  }
+  &__inner {
+    max-width: 1292px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -15px;
+    position: relative;
+  }
+  .board{
+    z-index: 5;
+    position: relative;
+  }
+  .bubble {
+    width: 234px;
+    height: 234px;
+    background-image: url(../img/svg/peculiar/bubble.svg);
+    position: absolute;
+    text-align: center;
+    padding-top: 90px;
+    z-index: 6;
+    &__title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 27px;
+      margin-bottom: 15px;
+      position: relative;
+      display: inline-block;
+      &::before{
+        @extend %ba;
+        width: 47px;
+        height: 47px;
+      }
+    }
+    &__text {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 29px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .bubble1 {
+    width: 258px;
+    height: 258px;
+    top: -20%;
+    right: 21%;
+    .bubble__title{
+      &::before{
+        top: -47px;
+        left: -8px;
+        background-image: url(../img/svg/peculiar/bubble1.svg);
+      }
+    }
+  }
+  .bubble2 {
+    top: 30%;
+    right: 9%;
+    z-index: 4;
+    .bubble__title{
+      &::before{
+        top: -47px;
+        left: -3px;
+        background-image: url(../img/svg/peculiar/bubble2.svg);
+      }
+    }
+  }
+  .bubble3 {
+    top: 66%;
+    left: 46%;
+    .bubble__title{
+      &::before{
+        top: -47px;
+        left: -3px;
+        background-image: url(../img/svg/peculiar/bubble3.svg);
+      }
+    }
+  }
+  .bubble4 {
+    bottom: -11%;
+    left: 19%;
+    .bubble__title{
+      &::before{
+        top: -47px;
+        left: -3px;
+        background-image: url(../img/svg/peculiar/bubble4.svg);
+      }
+    }
+  }
+  .bubble5 {
+    bottom: 25%;
+    left: 7%;
+    .bubble__title{
+      &::before{
+        top: -47px;
+        left: -3px;
+        background-image: url(../img/svg/peculiar/bubble5.svg);
+      }
+    }
+  }
+  .bubble6 {
+    top: -8%;
+    right: 47%;
+    z-index: 4;
+    .bubble__title{
+      &::before{
+        top: -47px;
+        left: -3px;
+        background-image: url(../img/svg/peculiar/bubble6.svg);
+      }
+    }
+  }
+}

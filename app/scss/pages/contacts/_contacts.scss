@@ -1,0 +1,118 @@
+.contacts {
+  .contacts__title_txt,
+  .visit__title_txt {
+    font-family: "RebelTypeDog";
+    font-size: 76px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-bottom: 36px;
+  }
+  .gallery__row {
+    display: flex;
+    flex-wrap: no wrap;
+    padding: 0 4px;
+    gap: 20px;
+  }
+  .gallery__row-column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .gallery img {
+    display: block;
+    max-width: 100%;
+  }
+  .gallery {
+    padding-top: 128px;
+    display: inline-block;
+  }
+  .visit__showroom-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4%;
+  }
+
+  .visit__showroom-row p {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 29px;
+  }
+  #visit__showroom-txt1 {
+    width: 80%;
+  }
+  #visit__showroom-txt4 {
+    width: 80%;
+  }
+  #visit__showroom-txt2 {
+    width: 85%;
+  }
+  #visit__showroom-txt3 {
+    width: 80%;
+  }
+  .visit__showroom-row img {
+    display: inline-block;
+  }
+  .contacts__title_txt {
+    font-family: "RebelTypeDog";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 76.0031px;
+    line-height: 131.5%;
+
+    letter-spacing: 0.05em;
+
+    color: #fbfbfb;
+    padding-top: 6.5%;
+  }
+  .visit__title_txt {
+    font-family: "RebelTypeDog";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+    color: #fbfbfb;
+    padding-top: 13%;
+    margin-bottom: 58px;
+  }
+
+  .address_row-column {
+    width: 100%;
+  }
+
+  .address_row {
+    display: flex;
+    padding-bottom: 4%;
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #fbfbfb;
+    .column{
+      padding-top: 10px;
+      text-align: right;
+    }
+  }
+  .address_row a {
+    color: #f7f5f2;
+    display: inline-block;
+  }
+  .address__text {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 47px;
+  }
+  .address__phone {
+    margin-top: 9%;
+  }
+  .form{
+    padding-top: 150px;
+  }
+}

@@ -1,0 +1,145 @@
+.header-popup {
+  position: relative;
+  width: 784px;
+  height: 804px;
+  background: #202a43;
+  padding: 80px;
+  &__title {
+    font-family: "RebelTypeDog";
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 56px;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+  }
+  &__subtitle {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 46px;
+  }
+  &__input {
+    width: 100%;
+    border: 1px solid #fbfbfb;
+    padding: 25px 0px 25px 15px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #fbfbfb;
+    &::placeholder {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 29px;
+      color: #fbfbfb;
+    }
+    &:last-child {
+      margin-bottom: 49px;
+    }
+  }
+  &__btn {
+    background: #393e4d;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: #fbfbfb;
+    width: 100%;
+    height: 81px;
+    margin-bottom: 37px;
+    text-align: center;
+    border: 1px solid;
+    border-image: linear-gradient(
+      to right,
+      #22bafb,
+      #64eeb4,
+      #fff5dd,
+      #c8f3f9,
+      #184cd1
+    );
+    border-image-slice: 1;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      border-width: 3px;
+      background: #474f68;
+    }
+    &:active {
+      color: #b4b9c9;
+      background: transparent;
+      border-width: 1px;
+      span::after {
+        background-image: url(../img/svg/recommend/arrow-active.svg);
+      }
+    }
+    span {
+      padding-right: 70px;
+      position: relative;
+      &::after {
+        @extend %ba;
+        right: 0;
+        top: 0;
+        width: 50px;
+        height: 40px;
+        background-image: url(../img/svg/recommend/arrow.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
+  .agreement {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    padding-right: 20px;
+    a {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #fbfbfb;
+      text-decoration: underline;
+    }
+  }
+  .modal__close-btn{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 29px;
+    right: 25px;
+    background-image: url(../../img/svg/header/top/search-off.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    cursor: pointer;
+  }
+}
+.modal-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+.modal {
+	display: none;
+}
+
+.modal-overlay--visible {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+  background: #1E2534;
+}
+
+.modal--visible {
+	display: block;
+}

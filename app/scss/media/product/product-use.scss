@@ -1,0 +1,161 @@
+.product-use {
+  &.media {
+    @media (max-width: 1350px) {
+      .container {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    }
+    @media (max-width: 1000px) {
+      .product-use__name {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        left: 10px;
+        bottom: 10px;
+      }
+      .product-use__inner_hidden .product-use__row .product-use__item {
+        height: 250px;
+      }
+    }
+    @media (max-width: 910px) {
+      padding-top: 95px;
+      .product-use__title {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 131.5%;
+        letter-spacing: 0.05em;
+        margin-bottom: 24px;
+      }
+    }
+    @media (max-width: 800px) {
+      .product-use__inner_hidden .product-use__row .product-use__item {
+        height: 200px;
+      }
+    }
+    @media (max-width: 744px) {
+      padding-bottom: 60px;
+      .view-more-btn {
+        width: 119px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+      }
+      .product-use__inner {
+        gap: 12px;
+      }
+      .product-use__row {
+        gap: 12px;
+      }
+      .product-use_badroom {
+        max-width: 288px;
+        height: 269px;
+      }
+      .product-use_kitchen {
+        max-width: 364px;
+        height: 269px;
+      }
+      .product-use_bathroom {
+        max-width: 443px;
+        height: 269px;
+      }
+      .product-use_hallway {
+        max-width: 208px;
+        height: 269px;
+      }
+      .product-use_childrens {
+        max-width: 288px;
+        height: 269px;
+      }
+      .product-use_living-room {
+        max-width: 366px;
+        height: 269px;
+      }
+      .product-use__inner_hidden {
+        gap: 12px;
+        padding-top: 12px;
+        .product-use__row .product-use__item {
+          height: 176px;
+        }
+      }
+      .product-use__items {
+        gap: 12px;
+        .product-use__item.production {
+          max-width: 443px;
+          width: 100%;
+          height: 366px;
+        }
+        &_right {
+          gap: 12px;
+          width: 210px;
+          .product-use__item {
+            height: 177px;
+            width: 210px;
+          }
+        }
+      }
+    }
+    @media (max-width: 700px) {
+      .container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+    @media (max-width: 360px) {
+      padding-top: 65px;
+      .product-use__inner {
+        height: 1388px;
+      }
+      .product-use__title {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 131.5%;
+        margin-bottom: 21px;
+      }
+      .product-use__name {
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        line-height: 19px !important;
+      }
+      .product-use__row {
+        flex-direction: column;
+        &:last-child {
+          align-items: end;
+          transform: translateY(calc(-50% - 5px));
+        }
+      }
+      .product-use_badroom {
+        max-width: 100%;
+        height: 269px;
+      }
+      .product-use_kitchen {
+        max-width: 100%;
+        height: 269px;
+      }
+      .product-use_bathroom {
+        max-width: 100%;
+        height: 269px;
+      }
+      .product-use_hallway {
+        max-width: calc(50% - 5px);
+        height: 269px;
+        z-index: 1;
+      }
+      .product-use_childrens {
+        max-width: calc(50% - 5px);
+        height: 269px;
+      }
+      .product-use_living-room {
+        max-width: 100%;
+        height: 269px;
+      }
+      .product-use__name {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        left: 10px;
+        bottom: 10px;
+      }
+    }
+  }
+}

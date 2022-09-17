@@ -1,0 +1,126 @@
+.product-use {
+  padding-top: 146px;
+  padding-bottom: 73px;
+  position: relative;
+  &__title {
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+    margin-bottom: 38px;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__row {
+    display: flex;
+    gap: 20px;
+  }
+  &__item {
+    position: relative;
+    img {
+      width: 100%;
+      max-height: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__name {
+    position: absolute;
+    left: 17px;
+    bottom: 17px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    color: #ffffff;
+  }
+  &_badroom {
+    max-width: 513px;
+    width: 100%;
+  }
+  &_kitсhen {
+    max-width: 649px;
+    width: 100%;
+  }
+  &_bathroom {
+    max-width: 790px;
+    width: 100%;
+  }
+  &_hallway {
+    max-width: 372px;
+    width: 100%;
+  }
+  &_childrens {
+    max-width: 510px;
+    width: 100%;
+  }
+  &_living-room {
+    max-width: 652px;
+    width: 100%;
+  }
+  .view-more-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 161px;
+    padding-bottom: 4px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(
+      to right,
+      #22bafb,
+      #64eeb4,
+      #fff5dd,
+      #c8f3f9,
+      #184cd1
+    );
+    border-image-slice: 1;
+    cursor: pointer;
+    z-index: 1;
+  }
+  &__inner_hidden {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+    &.d-none{
+      display: none;
+    }
+    .product-use {
+      &__item {
+        max-width: 280px;
+        width: 100%;
+        height: 315px;
+        &.production {
+          max-width: 789px;
+          width: 100%;
+          height: 650px;
+        }
+      }
+      &__items{
+        display: flex;
+        gap: 20px;
+        &_right{
+          max-width: 374px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .product-use__item{
+            max-width: 374px;
+          }
+        }
+      }
+    }
+    .hidden-to360{
+      display: none;
+    }
+  }
+}

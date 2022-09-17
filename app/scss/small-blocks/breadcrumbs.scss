@@ -1,0 +1,19 @@
+.breadcrumbs {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #f7f5f2;
+  padding-left: 19px;
+  &__list {
+    padding-top: 64px;
+  }
+  &__item{
+    display: inline-block;
+  }
+  &__link {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #f7f5f2;
+  }
+}

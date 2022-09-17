@@ -1,0 +1,84 @@
+.compound {
+  &__title {
+    padding-top: 124px;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+    margin-bottom: 88px;
+  }
+  &__img {
+    margin-left: -10px;
+    transform: translateX(-15px);
+    position: relative;
+  }
+  &__layer-dot {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.42);
+    border-radius: 100%;
+  }
+  .dot-inner {
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    background: #fbfbfb;
+    transform: translate(7px, 7px);
+  }
+  .dot-1 {
+    position: absolute;
+    left: 56%;
+    top: 20%;
+  }
+  .dot-2 {
+    position: absolute;
+    left: 71%;
+    top: 30%;
+  }
+  .dot-3 {
+    position: absolute;
+    left: 72.5%;
+    top: 48%;
+  }
+  .dot-4 {
+    position: absolute;
+    left: 72.5%;
+    top: 66%;
+  }
+  &__layer-descr {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  .descr-1 {
+    position: absolute;
+    left: 59.5%;
+    top: 15%;
+  }
+  .descr-2 {
+    position: absolute;
+    left: 81.5%;
+    top: 25%;
+  }
+  .descr-3 {
+    position: absolute;
+    left: 81.5%;
+    top: 44%;
+  }
+  .descr-4 {
+    position: absolute;
+    left: 81.5%;
+    top: 65%;
+    .descr-title{
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    span {
+      display: block;
+      white-space: nowrap;
+      font-weight: 400;
+    }
+  }
+}

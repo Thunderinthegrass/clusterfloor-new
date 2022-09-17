@@ -1,0 +1,252 @@
+.header {
+  &__banner {
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    .container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding-top: 227px;
+      padding-bottom: 348px;
+      height: 820px;
+    }
+    .parameters {
+      display: flex;
+      justify-content: space-between;
+      .parameter {
+        padding-left: 50px;
+        position: relative;
+        &::before {
+          @extend %ba;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        &__title {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 9px;
+          line-height: 12px;
+        }
+        &__text {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16.3694px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .banner1 {
+    background-image: url(../img/header-slider/slide1.png),
+      linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
+    background-position: 24% 38%;
+  }
+  .banner2 {
+    background-image: url(../img/header-slider/slide2.png);
+    background-position: right -450px bottom -500px;
+    .header__title {
+      margin-bottom: 43px;
+    }
+    .parameters {
+      max-width: 737px;
+      width: 100%;
+      .parameter_1 {
+        &::before {
+          width: 37px;
+          height: 37px;
+          background-image: url(../img/svg/header/banner/param1.svg);
+        }
+      }
+      .parameter_2 {
+        &::before {
+          width: 37px;
+          height: 37px;
+          background-image: url(../img/svg/header/banner/param2.svg);
+        }
+      }
+      .parameter_3 {
+        &::before {
+          width: 37px;
+          height: 37px;
+          background-image: url(../img/svg/header/banner/param3.svg);
+        }
+      }
+      .parameter_4 {
+        &::before {
+          width: 37px;
+          height: 37px;
+          background-image: url(../img/svg/header/banner/param4.svg);
+        }
+      }
+    }
+  }
+  .banner3 {
+    background-image: url(../img/header-slider/slide3.png),
+      linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
+    background-position: 102% 96%;
+    .header__title {
+      margin-bottom: 43px;
+    }
+    .parameters {
+      max-width: 1179px;
+      width: 100%;
+      .parameter_1 {
+        &::before {
+          width: 37px;
+          height: 37px;
+          background-image: url(../img/svg/header/banner/param1.svg);
+        }
+      }
+      .parameter_2 {
+        &::before {
+          width: 37px;
+          height: 37px;
+          background-image: url(../img/svg/header/banner/param3-2.svg);
+        }
+      }
+      .parameter_3 {
+        &::before {
+          width: 37px;
+          height: 37px;
+          background-image: url(../img/svg/header/banner/param3.svg);
+        }
+      }
+      .parameter_4 {
+        &::before {
+          width: 37px;
+          height: 37px;
+          background-image: url(../img/svg/header/banner/param4.svg);
+        }
+      }
+      .parameter_5 {
+        &::before {
+          width: 37px;
+          height: 37px;
+          background-image: url(../img/svg/header/banner/param3-5.svg);
+        }
+      }
+    }
+  }
+  .banner4 {
+    background-image: url(../img/header-slider/slide4.png),
+      linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
+    background-position: 103% 96%;
+    .header__title {
+      margin-bottom: 43px;
+    }
+    .parameters {
+      max-width: 787px;
+      width: 100%;
+      .parameter_1 {
+        &::before {
+          width: 37px;
+          height: 37px;
+          background-image: url(../img/svg/header/banner/param1.svg);
+        }
+      }
+      .parameter_2 {
+        &::before {
+          width: 37px;
+          height: 37px;
+          background-image: url(../img/svg/header/banner/param3-2.svg);
+        }
+      }
+      .parameter_3 {
+        &::before {
+          width: 37px;
+          height: 37px;
+          background-image: url(../img/svg/header/banner/param3.svg);
+        }
+      }
+      .parameter_4 {
+        &::before {
+          width: 37px;
+          height: 37px;
+          background-image: url(../img/svg/header/banner/param4.svg);
+        }
+      }
+      .parameter_5 {
+        &::before {
+          width: 37px;
+          height: 37px;
+          background-image: url(../img/svg/header/banner/param3-5.svg);
+        }
+      }
+    }
+  }
+  &__title {
+    font-family: "RebelTypeDog";
+    font-size: 76px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-bottom: 46px;
+  }
+  &__btn-wrapper {
+    position: absolute;
+    bottom: 182px;
+    left: -40px;
+  }
+  &__submit-btn {
+    position: relative;
+    width: 335px;
+    height: 133px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    &::after {
+      position: absolute;
+      content: "Оставить заявку";
+      left: 50%;
+      top: 50%;
+      transform: translateX(-52%) translateY(-37%);
+      font-size: 24px;
+      line-height: 33px;
+      color: #fbfbfb;
+      white-space: nowrap;
+      transition: 0.3s;
+    }
+    &:hover {
+      transform: rotate(9deg);
+      &::after {
+        transform: translateX(-52%) translateY(-37%) rotate(-9deg);
+      }
+    }
+  }
+}
+.header__swiper {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: inline-flex;
+}
+.swiper-button-prev {
+  position: absolute;
+  left: 65px;
+  top: 392px;
+}
+.swiper-button-next {
+  position: absolute;
+  right: 65px;
+  top: 393px;
+  transform: rotate(180deg);
+}
+.swiper-slide:nth-child(2),
+.swiper-slide:nth-child(3),
+.swiper-slide:nth-child(4){
+  background: linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
+}

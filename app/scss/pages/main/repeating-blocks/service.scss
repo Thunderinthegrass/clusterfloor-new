@@ -1,0 +1,114 @@
+.service {
+  padding-top: 160px;
+  &__title {
+    font-family: "RebelTypeDog";
+    font-size: 76px;
+    line-height: 129%;
+    letter-spacing: 0.048em;
+  }
+  &__subtitle {
+    font-family: "RebelTypeDog";
+    font-size: 47px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+    span {
+      font-family: "Nunito Sans";
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 27px;
+      display: inline-block;
+    }
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  &__item {
+    padding-top: 122px;
+  }
+  &__text {
+    position: relative;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    max-width: 336px;
+    width: 100%;
+    &::before {
+      @extend %ba;
+      top: -58px;
+      left: 0;
+      width: 52px;
+      height: 52px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  &__text1 {
+    &::before {
+      background-image: url(../img/svg/service/service1.svg);
+    }
+  }
+  &__text2 {
+    &::before {
+      width: 69px;
+      height: 62px;
+      background-image: url(../img/svg/service/service2.svg);
+    }
+  }
+  &__text3 {
+    &::before {
+      background-image: url(../img/svg/service/service3.svg);
+    }
+  }
+  &__text4 {
+    &::before {
+      background-image: url(../img/svg/service/service4.svg);
+    }
+  }
+  &__text5 {
+    &::before {
+      background-image: url(../img/svg/service/service5.svg);
+    }
+  }
+  &__text6 {
+    &::before {
+      background-image: url(../img/svg/service/service6.svg);
+    }
+  }
+  &__text7 {
+    &::before {
+      background-image: url(../img/svg/service/service7.svg);
+    }
+  }
+  &__text8 {
+    &::before {
+      background-image: url(../img/svg/service/service8.svg);
+    }
+  }
+  &__text9{
+    padding-top: 12px;
+    text-align: left;
+  }
+  &__link {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    color: #f5f7fa;
+    padding-right: 64px;
+    position: relative;
+    &::after{
+      @extend %ba;
+      right: 0;
+      top: 0;
+      width: 50px;
+      height: 40px;
+      background-image: url(../img/svg/recommend/arrow.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.wood {
+  .container{
+    position: relative;
+  }
+  &__img{
+    position: absolute;
+    right: -31px;
+    top: 13px;
+  }
+  &__title {
+    font-family: "RebelTypeDog";
+    font-weight: 400;
+    font-size: 53px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+    padding-top: 85px;
+    position: relative;
+  }
+  &__subtitle {
+    font-family: "RebelTypeDog";
+    span {
+      display: block;
+      z-index: 1;
+      position: relative;
+      &:first-child {
+        font-weight: 400;
+        font-size: 186px;
+        line-height: 112%;
+        letter-spacing: 0.05em;
+      }
+      &:nth-child(2) {
+        font-weight: 400;
+        font-size: 76.0031px;
+        line-height: 100%;
+        letter-spacing: 0.05em;
+        padding-left: 10px;
+      }
+      &:nth-child(3) {
+        font-weight: 400;
+        font-size: 76.0031px;
+        line-height: 131.5%;
+        letter-spacing: 0.05em;
+        padding-top: 16px;
+        text-align: right;
+        margin-right: -12px;
+      }
+    }
+  }
+  .product-parameters {
+    padding-top: 182px;
+    margin-bottom: 0;
+  }
+}

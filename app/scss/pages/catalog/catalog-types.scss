@@ -1,0 +1,35 @@
+.catalog__types {
+  padding-top: 130px;
+  &-title {
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+    margin-bottom: 65px;
+  }
+  &-inner {
+    display: flex;
+  }
+  &-item {
+    position: relative;
+    max-width: 394px;
+    width: 100%;
+    background: #202a43;
+    transition: 0.3s;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: #f5f7fa;
+    &:hover {
+      background: #293b67;
+    }
+    &._current{
+      background: #293b67;
+    }
+  }
+  &-name{
+    position: absolute;
+    left: 29px;
+    bottom: 29px;
+  }
+}

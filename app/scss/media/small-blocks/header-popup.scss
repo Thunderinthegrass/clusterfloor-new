@@ -1,0 +1,196 @@
+.modal-overlay {
+  .header-popup {
+    @media (max-width: 800px) {
+      padding: 70px;
+      width: 677px;
+      height: 674px;
+      &__title {
+        font-size: 26px;
+        line-height: 131.5%;
+        margin-bottom: 13px;
+      }
+      &__subtitle {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 40px;
+      }
+      &__input {
+        padding: 21px 0px 21px 12px;
+        margin-bottom: 20px;
+        &::placeholder {
+          font-size: 16px;
+          line-height: 161.9%;
+        }
+        &:last-child {
+          margin-bottom: 42px;
+        }
+      }
+      &__btn {
+        height: 68px;
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 33px;
+        span {
+          padding-right: 60px;
+          &::after {
+            width: 42px;
+            height: 33px;
+            background-size: auto;
+          }
+        }
+      }
+      .agreement {
+        font-size: 14px;
+        line-height: 19px;
+        a {
+          font-size: 14px;
+          line-height: 19px;
+        }
+      }
+      .modal__close-btn {
+        width: 25px;
+        height: 25px;
+        top: 24px;
+        right: 21px;
+      }
+    }
+    @media (max-width: 485px) {
+      padding: 20px 10px;
+      width: 338px;
+      height: 435px;
+      &__title {
+        font-size: 20px;
+        line-height: 131.5%;
+        letter-spacing: 0.05em;
+        margin-bottom: 13px;
+      }
+      &__subtitle {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 26px;
+      }
+      &__input {
+        padding: 15px 0px 15px 12px;
+        margin-bottom: 9px;
+        &::placeholder {
+          font-size: 16px;
+          line-height: 161.9%;
+        }
+        &:last-child {
+          margin-bottom: 24px;
+        }
+      }
+      &__btn {
+        height: 53px;
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 12px;
+        span {
+          padding-right: 60px;
+          &::after {
+            width: 42px;
+            height: 33px;
+            background-size: auto;
+          }
+        }
+      }
+      .agreement {
+        font-size: 12px;
+        line-height: 16px;
+        a {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      .modal__close-btn {
+        display: none;
+      }
+    }
+  }
+  .form-sent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    height: 550px;
+    background: #202a43;
+    padding: 30px 37px 50px;
+    &__title {
+      font-family: "RebelTypeDog";
+      font-weight: 400;
+      font-size: 47px;
+      line-height: 131.5%;
+      letter-spacing: 0.05em;
+    }
+    img {
+      position: absolute;
+      width: 825px;
+      height: 224px;
+      top: 196px;
+      left: 0;
+    }
+    &__link {
+      position: relative;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 41px;
+      color: #f5f7fa;
+      padding-right: 64px;
+      &::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        width: 50px;
+        height: 39px;
+        background-image: url(../img/svg/recommend/arrow.svg);
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+      }
+    }
+    @media (max-width: 744px) {
+      width: 677px;
+      padding-top: 53px;
+      &__title {
+        font-size: 43px;
+        line-height: 58px;
+        letter-spacing: 0.05em;
+      }
+      img {
+        width: 799px;
+      }
+    }
+    @media (max-width: 688px) {
+      width: 338px;
+      height: 357px;
+      padding-top: 30px;
+      padding-bottom: 36px;
+      &__title {
+        font-size: 20px;
+        line-height: 131.5%;
+      }
+      &__link {
+        font-size: 20px;
+        line-height: 131.5%;
+        padding-right: 55px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        &::after {
+          width: 41px;
+          height: 33px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      img{
+        top: 120px;
+        width: 518px;
+        height: 145px;
+      }
+    }
+  }
+}

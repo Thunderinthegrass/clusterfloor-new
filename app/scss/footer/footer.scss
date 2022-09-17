@@ -1,0 +1,100 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #1f2023;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  h6 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 10px;
+  }
+  li{
+    margin-bottom: 4px;
+  }
+  &__item:first-child {
+    display: flex;
+    flex-direction: column;
+    .contacts{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__logo {
+    margin-bottom: 16px;
+    svg {
+      width: 219px;
+      height: 55px;
+    }
+  }
+  &__phone {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #fbfbfb;
+    margin-bottom: 8px;
+  }
+  &__mail {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #fbfbfb;
+  }
+  .catalog {
+    &__link {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #fbfbfb;
+    }
+  }
+  .buyer {
+    &__link {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #fbfbfb;
+    }
+  }
+  .about {
+    &__link {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #fbfbfb;
+    }
+    .dashed{
+      font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        border-bottom: dashed;
+    }
+  }
+  &__icons {
+    &-row {
+      margin-bottom: 5px;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+      a:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+  .copyright {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    color: #777777;
+    text-align: center;
+    padding-top: 31px;
+    span {
+      display: inline-block;
+      margin-right: 40px;
+    }
+  }
+}

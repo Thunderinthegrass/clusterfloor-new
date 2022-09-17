@@ -1,0 +1,138 @@
+.gallery {
+  @media (max-width: 1200px) {
+    padding-top: 175px;
+    .container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .btn-wrapper {
+      right: 40px;
+      &::after {
+        top: 45%;
+      }
+    }
+    &__link_btn {
+      width: 300px;
+      height: 130px;
+    }
+    &__link::after {
+      right: 20px;
+    }
+  }
+  @media (max-width: 900px) {
+    &__inner_first {
+      height: 380px;
+    }
+    &__inner_second {
+      .gallery__inner-item:first-child {
+        height: 400px;
+      }
+      .gallery__inner-item:nth-child(2) {
+        height: 458px;
+      }
+    }
+    &__inner_third {
+      height: 625px;
+    }
+  }
+  @media (max-width: 744px) {
+    &__link {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      padding-right: 35px;
+      &::after {
+        right: 0;
+        width: 27px;
+        height: 22px;
+      }
+    }
+    .link-wrapper {
+      bottom: 15px;
+      left: 24px;
+    }
+    &__link_btn {
+      width: 285px;
+      height: 109px;
+    }
+    .btn-wrapper {
+      right: 40px;
+      &::after {
+        top: 50%;
+      }
+    }
+    &__inner_first {
+      max-width: 664px;
+    }
+    &__inner_second {
+      .gallery__inner-item:first-child {
+        height: 345px;
+      }
+      .gallery__inner-item:nth-child(2) {
+        height: 418px;
+      }
+    }
+    &__inner_third {
+      height: 594px;
+    }
+  }
+  @media (max-width: 664px) {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .btn-wrapper {
+      right: 20px;
+    }
+  }
+  @media (max-width: 610px) {
+    padding-top: 113px;
+    .container {
+      padding-bottom: 135px;
+    }
+    &__inner_first {
+      height: 230px;
+    }
+    &__inner_second {
+      .gallery__inner-item:first-child {
+        height: 239px;
+      }
+      .gallery__inner-item:nth-child(2) {
+        height: 289px;
+      }
+    }
+    &__inner_third {
+      height: 448px;
+      max-width: 570px;
+      width: 100%;
+    }
+    &__wrapper {
+      flex-wrap: wrap;
+      max-width: 570px;
+      width: 100%;
+    }
+    .btn-wrapper {
+      bottom: 0;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+  @media (max-width: 360px) {
+    &__wrapper {
+      gap: 10px;
+    }
+    &__inner_first {
+      margin-bottom: 10px;
+    }
+    &__inner_second {
+      .gallery__inner-item:first-child {
+        margin-bottom: 10px;
+      }
+      &__link {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+}

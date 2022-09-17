@@ -1,0 +1,68 @@
+.samples {
+  @media (max-width: 1200px) {
+    padding-top: 140px;
+    .container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    &__title {
+      font-weight: 400;
+      font-size: 43px;
+      line-height: 58px;
+      letter-spacing: 0.05em;
+      margin-bottom: 31px;
+    }
+  }
+  @media (max-width: 744px) {
+    &-dot__link {
+      width: 40px;
+      height: 40px;
+      &::before {
+        width: 20px;
+        height: 20px;
+        left: 10px;
+        top: 10px;
+      }
+    }
+    &-dot__link:nth-child(3) .dot__link-book::after,
+    &-dot__link:nth-child(2) .dot__link-stone::after,
+    &-dot__link:nth-child(4) .dot__link-wood1::after,
+    &-dot__link:nth-child(5) .dot__link-wood2::after {
+      width: 180px;
+      height: 180px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  @media (max-width: 650px) {
+    .container{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 131.5%;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+    }
+    &__link {
+      a {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        padding-right: 51px;
+        &::after{
+          width: 37px;
+          height: 29px;
+        }
+      }
+    }
+  }
+  @media (max-width: 491px){
+    padding-top: 74px;
+    .samples-dot__link{
+      display: none;
+    }
+  }
+}

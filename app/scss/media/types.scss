@@ -1,0 +1,121 @@
+.types {
+  @media (max-width: 1204px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    &__top {
+      .types__item:nth-child(2) {
+        padding-left: 0px;
+      }
+    }
+    &__title {
+      font-size: 26px;
+      line-height: 131.5%;
+      letter-spacing: 0.05em;
+      max-width: 300px;
+      margin-left: 16px;
+    }
+  }
+  @media (max-width: 1090px) {
+    .container {
+      justify-content: center;
+    }
+    &__link {
+      width: 280px;
+      height: 108px;
+      margin-left: 20px;
+      &::after {
+        font-size: 18px;
+        line-height: 25px;
+        top: 45%;
+      }
+    }
+  }
+  @media (max-width: 744px) {
+    padding-left: 25px;
+    padding-right: 20px;
+    .container {
+      padding-top: 145px;
+      justify-content: center;
+      padding-left: 20px;
+      padding-right: 30px;
+    }
+    &__name {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      left: 16px;
+      bottom: 14px;
+    }
+    &__top {
+      position: relative;
+      .types__item:nth-child(2) {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    padding-left: 20px;
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &__title {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 131.5%;
+      letter-spacing: 0.05em;
+      margin-top: 0;
+    }
+    &__link {
+      position: absolute;
+      bottom: 20px;
+    }
+  }
+  @media (max-width: 622px) {
+    .container {
+      padding-top: 278px;
+    }
+    &__top {
+      position: relative;
+      max-width: 100%;
+      width: 100%;
+      .types__item:nth-child(1) {
+        height: 302px;
+        max-width: 100%;
+        width: 100%;
+      }
+      .types__item:nth-child(2) {
+        position: absolute;
+        top: -197px;
+        padding-bottom: 0;
+        transform: translateX(50%);
+        right: 50%;
+        width: 280px;
+        height: 196px;
+      }
+    }
+    &__link {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 500px) {
+    &__top {
+      .types__item:nth-child(1) {
+        height: 189px;
+        img {
+          max-width: 100%;
+          width: 100%;
+          max-height: 189px;
+          height: 100%;
+        }
+      }
+    }
+    &__name {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      left: 16px;
+      bottom: 18px;
+    }
+  }
+}

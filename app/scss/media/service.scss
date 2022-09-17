@@ -1,0 +1,114 @@
+.service {
+  @media (max-width: 1200px) {
+    padding-top: 100px;
+    .container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    &__title {
+      font-weight: 400;
+      font-size: 43px;
+      line-height: 58px;
+      letter-spacing: 0.05em;
+    }
+    &__subtitle {
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 131.5%;
+      letter-spacing: 0.05em;
+      span {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+  @media (max-width: 1090px) {
+    &__text {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 19px;
+      max-width: 300px;
+      &::before {
+        width: 39px;
+        height: 39px;
+        // top: calc(-100% + -4px);
+        top: auto;
+        bottom: calc(100% + 5px);
+      }
+    }
+    &__text2 {
+      &::before {
+        width: 52px;
+        height: 34px;
+      }
+    }
+    &__link {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      padding-right: 40px;
+      &::after {
+        width: 34px;
+        height: 27px;
+      }
+    }
+  }
+  @media (max-width: 998px) {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &__item {
+      padding-top: 100px;
+    }
+    &__text {
+      max-width: 279px;
+      padding-right: 10px;
+    }
+  }
+  @media (max-width: 880px) {
+    &__text {
+      max-width: 250px;
+    }
+  }
+  @media (max-width: 790px) {
+    &__text {
+      max-width: 225px;
+    }
+  }
+  @media (max-width: 714px) {
+    padding-top: 74px;
+    &__inner {
+      justify-content: space-around;
+    }
+    &__item:last-child {
+      margin: 0 20px;
+      padding-top: 36px;
+    }
+  }
+  @media (max-width: 500px) {
+    &__title {
+      font-size: 20px;
+      line-height: 131.5%;
+      letter-spacing: 0.05em;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 131.5%;
+      letter-spacing: 0.05em;
+    }
+  }
+  @media (max-width: 490px){
+    padding-top: 30px;
+    &__inner{
+      padding-top: 0;
+    }
+    &__item{
+      padding-top: 78px;
+    }
+    &__text{
+      max-width: 318px;
+    }
+  }
+}
