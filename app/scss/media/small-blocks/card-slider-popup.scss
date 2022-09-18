@@ -1,0 +1,120 @@
+.slider-overlay.media {
+  @media (max-width: 1200px) {
+    .slider-nav {
+      height: 660px;
+    }
+    .slider-nav__item {
+      width: 200px;
+      height: 200px;
+    }
+    .modal-slider__block {
+      width: 730px;
+      height: 730px;
+    }
+    .swiper-slide {
+      height: 730px;
+    }
+    .slider-popup {
+      height: auto;
+    }
+    .popup-slider-nav__btn {
+      bottom: 28px;
+      left: 82px;
+    }
+  }
+  @media (max-width: 1000px) {
+    .slider-nav {
+      height: 560px;
+    }
+    .slider-nav__item {
+      width: 170px;
+      height: 170px;
+    }
+    .modal-slider__block {
+      width: 630px;
+      height: 630px;
+    }
+    .swiper-slide {
+      height: 630px;
+    }
+    .slider-popup {
+      height: auto;
+    }
+    .popup-slider-nav__btn {
+      bottom: 28px;
+      left: 72px;
+    }
+  }
+  @media (max-width: 850px) {
+    padding-top: 40px;
+    padding-bottom: 51px;
+    .slider-nav {
+      height: 452px;
+      &__inner {
+        gap: 10px;
+      }
+    }
+    .slider-nav__item {
+      width: 144px;
+      height: 144px;
+    }
+    .modal-slider__block {
+      width: 480px;
+      height: 480px;
+    }
+    .swiper-slide {
+      height: 480px;
+    }
+    .slider-popup {
+      height: auto;
+    }
+    .popup-slider-nav__btn {
+      bottom: 0;
+      left: 68px;
+      width: 23px;
+      height: 14px;
+      svg {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 680px) {
+    padding-top: 40px;
+    padding-bottom: 51px;
+    .slider-popup {
+      gap: 10px;
+    }
+    .slider-nav {
+      height: 325px;
+      &__inner {
+        gap: 10px;
+      }
+    }
+    .slider-nav__item {
+      width: 100px;
+      height: 100px;
+    }
+    .modal-slider__block {
+      width: 350px;
+      height: 350px;
+    }
+    .swiper-slide {
+      height: 350px;
+    }
+    .slider-popup {
+      height: auto;
+    }
+    .popup-slider-nav__btn {
+      bottom: 0;
+      left: 42px;
+      width: 23px;
+      height: 14px;
+      svg {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 500px){
+    display: none;
+  }
+}

@@ -273,14 +273,36 @@
         <div class="card__video">
           
         </div>
-        <button class="card__more-btn">
+        <button class="card__more-btn" data-path="form-popup">
           Посмотреть ещё фотографии
         </button>
       </div>
     </div>
   </div>
-  <div class="card__modal-slider">
-    
+  <div class="slider-overlay media">
+    <div class="slider-popup modal-slider" data-target="slider-popup">
+      <div class="modal-slider__nav slider-nav">
+        <div class="slider-nav__inner">
+          <div class="slider-nav__item"><img src="img/product/card/modal-slider/1.jpg" alt=""></div>
+          <div class="slider-nav__item"><img src="img/product/card/modal-slider/2.jpg" alt=""></div>
+          <div class="slider-nav__item"><img src="img/product/card/modal-slider/3.jpg" alt=""></div>
+          <div class="slider-nav__item"><img src="img/product/card/modal-slider/3.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="modal-slider__block modal-block">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/product/card/modal-slider/1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/product/card/modal-slider/2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/product/card/modal-slider/3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/product/card/modal-slider/3.jpg" alt=""></div>
+        </div>
+      </div>
+      <button class="popup-slider-nav__btn">
+        <svg class="search-hide">
+          <use xlink:href="img/sprite/sprite.svg#product--popup-slider--arrow"></use>
+        </svg>
+      </button>
+    </div>
   </div>
   <div class="product__features media">
     <div class="container _anim-items">
@@ -723,7 +745,7 @@
   <footer class="footer">
     <div class="container _anim-items">
       <div class="footer__item">
-        <a href="#" class="footer__logo">
+        <a href="index.html" class="footer__logo">
           <svg>
             <use xlink:href="img/sprite/sprite.svg#footer--footer-logo"></use>
           </svg>

@@ -1,0 +1,103 @@
+@import "production-banner";
+.production {
+  &__title {
+    padding-top: 64px;
+    margin-bottom: 50px;
+    font-family: "RebelTypeDog";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 76.0031px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+  }
+  &__slider{
+    overflow: hidden;
+  }
+}
+.production-banner {
+  height: 511px;
+  width: 100%;
+  background-image: url(../img/production/banner.jpg);
+  padding-left: 100px;
+  position: relative;
+  margin-bottom: 20px;
+  &__title {
+    font-family: "RebelTypeDog";
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+    padding-top: 335px;
+  }
+  &__logo {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    svg {
+      width: 130px;
+      height: 32px;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    &-prev {
+      left: 16px;
+    }
+    &-next {
+      right: 16px;
+      img {
+        transform: rotate(180deg);
+      }
+    }
+    img {
+      width: 56px;
+      height: 56px;
+    }
+  }
+}
+.production__photos {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+  .production__photo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .production__photo-left {
+    max-width: 517px;
+    width: 100%;
+    height: 469px;
+  }
+  .production__photo-right {
+    max-width: 643px;
+    width: 100%;
+    height: 469px;
+  }
+}
+.production__video {
+  display: flex;
+  &-text {
+    max-width: 512px;
+    width: 100%;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    padding-top: 35px;
+    p:first-child{
+      margin-bottom: 25px;
+    }
+  }
+  &-video {
+    max-width: 637px;
+    width: 100%;
+    height: 473px;
+    background-image: url(../img/production/video.jpg);
+  }
+}
+.peculiar.peculiar_production{
+  padding-top: 123px;
+}

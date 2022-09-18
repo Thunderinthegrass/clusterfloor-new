@@ -1,0 +1,93 @@
+.slider-popup {
+  position: relative;
+  // width: 1080px;
+  height: 872px;
+}
+.slider-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 92px;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.slider-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+  background: #1e2534;
+}
+
+.slider--visible {
+  display: block;
+}
+.modal-slider {
+	position: relative;
+  // display: none;
+  display: flex;
+  gap: 20px;
+  .slider-nav {
+		height: 820px;
+		overflow-x: hidden;
+		overflow-y: auto;
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__item {
+      width: 262px;
+      height: 260px;
+      border-radius: 5px;
+      overflow: hidden;
+      cursor: pointer;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__block {
+    width: 878px;
+    height: 872px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .swiper-slide {
+    width: 878px;
+    height: 872px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+	.popup-slider-nav__btn{
+		width: 42px;
+		height: 24px;
+		position: absolute;
+		bottom: 0;
+		left: 110px;
+		cursor: pointer;
+		svg{
+			width: 42px;
+			height: 21px;
+		}
+	}
+}
+.to-down{
+	transform: translateY(-280px);
+}

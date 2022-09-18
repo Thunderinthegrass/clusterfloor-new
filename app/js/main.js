@@ -9,6 +9,10 @@ const swiper = new Swiper(".header__swiper", {
   loop: "infinite",
 });
 
+swiper.on('slideChange', function(sld) {
+  document.body.setAttribute('data-sld', sld.realIndex);
+})
+
 const productUseSlider = new Swiper(".product-use__slider", {
   loop: "infinite",
   spaceBetween: 12,
@@ -26,9 +30,43 @@ const cardPhotoSlider = new Swiper(".card__slider", {
   },
 });
 
-swiper.on('slideChange', function(sld) {
-  document.body.setAttribute('data-sld', sld.realIndex);
+let popupSlider = new Swiper(".modal-slider__block", {
+  loop: "infinite",
+  // centeredSlides: true,
+  spaceBetween: 20,
+});
+
+const sliderNavItems = document.querySelectorAll('.slider-nav__item');
+
+sliderNavItems.forEach((el, index) => {
+  el.setAttribute('data-index', index);
+
+  el.addEventListener('click', (e) => {
+    const index = parseInt(e.currentTarget.dataset.index);
+
+    popupSlider.slideTo(index);
+  })
 })
+
+// function popupSliderNav() {
+//   let sliderNavBtn = document.querySelector('.popup-slider-nav__btn');
+//   let sliderNavInner = document.querySelector('.slider-nav__inner');
+  
+//   // sliderNavBtn.addEventListener('click', () => {
+//   //   sliderNavInner.style.transform = 'translateY(-280px)';
+//   // })
+
+// }
+// popupSliderNav();
+
+let productionSlider = new Swiper(".production__slider", {
+  navigation: {
+    nextEl: ".production-banner__arrow-next",
+    prevEl: ".production-banner__arrow-prev",
+  },
+  loop: "infinite",
+  spaceBetween: 20,
+});
 
 function mobileMenu() {
   let menuBtn = document.querySelector(".nav-mobile__btn");
@@ -115,6 +153,40 @@ function popupForm() {
 }
 popupForm();
 
+function cardSliderPopup() {
+  const btns = document.querySelectorAll(".card__more-btn");
+  const modalOverlay = document.querySelector(".slider-overlay");
+  const modals = document.querySelectorAll(".modal-slider");
+  const modalCloseBtn = document.querySelector(".modal__close-btn");
+
+
+  btns.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      let path = e.currentTarget.getAttribute("data-path");
+
+      modals.forEach((el) => {
+        el.classList.remove("slider--visible");
+      });
+
+      document.querySelector(`[data-target="${path}"]`).classList.add("slider--visible");
+      modalOverlay.classList.add("slider-overlay--visible");
+    });
+  });
+
+  modalOverlay.addEventListener("click", (e) => {
+
+    if (e.target == modalOverlay || e.target == modalCloseBtn) {
+      modalOverlay.classList.remove("slider-overlay--visible");
+      modals.forEach((el) => {
+        el.classList.remove("slider--visible");
+      });
+    }
+  });
+  console.log(modalOverlay);
+}
+cardSliderPopup();
+
+
 function scrollAnimation() {
   const animItems = document.querySelectorAll("._anim-items");
 
@@ -185,16 +257,20 @@ function productUsePhotosViewMore() {
   const viewMoreBtn = document.querySelector('.view-more-btn');
   const productUseInnerHidden = document.querySelector('.product-use__inner_hidden');
   
-  viewMoreBtn.addEventListener('click', () => {
-    productUseInnerHidden.classList.toggle('d-none');
-
-    if(productUseInnerHidden.classList.contains('d-none')) {
-      viewMoreBtn.innerHTML = 'Показать ещё';
-    }
-    else{
-      viewMoreBtn.innerHTML = 'Скрыть';
-    }
-    console.log('ggg');
-  })
+  if (viewMoreBtn){
+    viewMoreBtn.addEventListener('click', () => {
+      productUseInnerHidden.classList.toggle('d-none');
+  
+      if(productUseInnerHidden.classList.contains('d-none')) {
+        viewMoreBtn.innerHTML = 'Показать ещё';
+      }
+      else{
+        viewMoreBtn.innerHTML = 'Скрыть';
+      }
+      console.log('ggg');
+    })
+  }
 }
 productUsePhotosViewMore();
+
+
