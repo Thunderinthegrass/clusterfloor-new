@@ -8086,8 +8086,8 @@ h2 {
   overflow: hidden;
 }
 .brand__title {
-  padding-top: 64px;
-  margin-bottom: 46px;
+  padding-top: 74px;
+  margin-bottom: 36px;
   font-family: "RebelTypeDog";
   font-style: normal;
   font-weight: 400;
@@ -8159,6 +8159,90 @@ h2 {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+.brand .care {
+  padding-top: 130px;
+}
+.brand .care__title {
+  font-weight: 400;
+  font-size: 76.0031px;
+  line-height: 60px;
+  letter-spacing: 0.05em;
+  margin-bottom: 56px;
+}
+.brand .care__title span {
+  font-size: 43px;
+  line-height: 55px;
+  letter-spacing: 0.14em;
+}
+.brand .care__video {
+  width: 100%;
+  height: 606px;
+  background-image: url(../img/brand/video.jpg);
+}
+.brand .prod-duration {
+  position: relative;
+  padding-top: 110px;
+}
+.brand .prod-duration__title {
+  font-weight: 400;
+  font-size: 96.6788px;
+  line-height: 131.5%;
+  letter-spacing: 0.02em;
+  padding-left: 360px;
+}
+.brand .prod-duration__title span {
+  display: block;
+}
+.brand .prod-duration__title span:nth-child(2) {
+  font-size: 200.349px;
+  line-height: 90%;
+  display: inline-block;
+}
+.brand .prod-duration__title span:nth-child(3) {
+  font-size: 125px;
+  line-height: 120%;
+  display: inline-block;
+}
+.brand .prod-duration__subtitle {
+  width: 523px;
+  height: 297px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  position: absolute;
+  left: 55%;
+  top: 262px;
+}
+.brand .prod-duration .boards {
+  position: absolute;
+}
+.brand .prod-duration .boards-left {
+  left: -6px;
+  top: 446px;
+}
+.brand .prod-duration .boards-right {
+  right: -9px;
+  top: 593px;
+}
+.brand .prod-duration .prod-years__lists {
+  padding-top: 373px;
+}
+.brand .prod-duration .prod-years__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.brand .prod-duration .prod-years__item span:first-child {
+  width: 231px;
+  font-family: "RebelTypeDog";
+  font-weight: 400;
+  font-size: 76.0031px;
+  line-height: 131.5%;
+  letter-spacing: 0.05em;
 }
 @supports (-webkit-appearance:none){
 .header .nav-btn{background-image:url(../img/svg/header/nav/Icon.svg)}
@@ -8235,6 +8319,7 @@ h2 {
 .catalog__banner_1 .parameter_5::before{background-image:url(../img/svg/header/banner/param3-5.svg) !important}
 .banner_2 .parameter_2::before{background-image:url(../img/svg/header/banner/param3-2.svg) !important}
 .production__video-video{background-image:url(../img/production/video.webp)}
+.brand .care__video{background-image:url(../img/brand/video.webp)}
 }
 
  @media (max-width: 744px){

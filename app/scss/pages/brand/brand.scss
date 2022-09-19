@@ -1,8 +1,8 @@
 .brand {
   overflow: hidden;
   &__title {
-    padding-top: 64px;
-    margin-bottom: 46px;
+    padding-top: 74px;
+    margin-bottom: 36px;
     font-family: "RebelTypeDog";
     font-style: normal;
     font-weight: 400;
@@ -62,21 +62,104 @@
       }
     }
   }
-  .swiper-slide{
-    &.slide-2{
+  .swiper-slide {
+    &.slide-2 {
       .brand-banner__title {
         bottom: 32px;
       }
     }
-    &.slide-3{
+    &.slide-3 {
       .brand-banner__title {
         bottom: 108px;
       }
     }
   }
-  .banner-logo-bg{
+  .banner-logo-bg {
     position: absolute;
     right: 0;
     bottom: 0;
+  }
+  .care {
+    padding-top: 130px;
+    &__title {
+      font-weight: 400;
+      font-size: 76.0031px;
+      line-height: 60px;
+      letter-spacing: 0.05em;
+      margin-bottom: 56px;
+      span {
+        font-size: 43px;
+        line-height: 55px;
+        letter-spacing: 0.14em;
+      }
+    }
+    &__video {
+      width: 100%;
+      height: 606px;
+      background-image: url(../img/brand/video.jpg);
+      // background: #000;
+    }
+  }
+  .prod-duration {
+    position: relative;
+    padding-top: 110px;
+    &__title {
+      font-weight: 400;
+      font-size: 96.6788px;
+      line-height: 131.5%;
+      letter-spacing: 0.02em;
+      padding-left: 360px;
+      span {
+        display: block;
+        &:nth-child(2) {
+          font-size: 200.349px;
+          line-height: 90%;
+          display: inline-block;
+        }
+        &:nth-child(3) {
+          font-size: 125px;
+          line-height: 120%;
+          display: inline-block;
+        }
+      }
+    }
+    &__subtitle {
+      width: 523px;
+      height: 297px;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 27px;
+      position: absolute;
+      left: 55%;
+      top: 262px;
+    }
+    .boards {
+      position: absolute;
+      &-left {
+        left: -6px;
+        top: 446px;
+      }
+      &-right {
+        right: -9px;
+        top: 593px;
+      }
+    }
+    .prod-years__lists {
+      padding-top: 373px;
+    }
+    .prod-years__item {
+      display: flex;
+      justify-content: space-between;
+      span {
+        &:first-child {
+          width: 231px;
+          font-family: "RebelTypeDog";
+          font-weight: 400;
+          font-size: 76.0031px;
+          line-height: 131.5%;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
   }
 }
