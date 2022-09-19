@@ -1,0 +1,82 @@
+.brand {
+  overflow: hidden;
+  &__title {
+    padding-top: 64px;
+    margin-bottom: 46px;
+    font-family: "RebelTypeDog";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 76.0031px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+  }
+  &__slider {
+    overflow: hidden;
+    height: 511px;
+  }
+  .swiper-slide {
+    height: 511px;
+  }
+  .brand-banner {
+    height: 511px;
+    width: 100%;
+    position: relative;
+    .banner-bg {
+    }
+    &__title {
+      position: absolute;
+      font-family: "RebelTypeDog";
+      font-weight: 400;
+      font-size: 38px;
+      line-height: 131.5%;
+      letter-spacing: 0.05em;
+      bottom: 22px;
+      left: 48px;
+    }
+    &__logo {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      svg {
+        width: 130px;
+        height: 32px;
+      }
+    }
+    &__arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      &-prev {
+        left: 16px;
+      }
+      &-next {
+        right: 16px;
+        img {
+          transform: rotate(180deg);
+        }
+      }
+      img {
+        width: 56px;
+        height: 56px;
+      }
+    }
+  }
+  .swiper-slide{
+    &.slide-2{
+      .brand-banner__title {
+        bottom: 32px;
+      }
+    }
+    &.slide-3{
+      .brand-banner__title {
+        bottom: 108px;
+      }
+    }
+  }
+  .banner-logo-bg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

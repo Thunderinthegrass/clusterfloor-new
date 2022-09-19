@@ -8081,6 +8081,85 @@ h2 {
   white-space: nowrap;
   font-weight: 400;
 }
+
+.brand {
+  overflow: hidden;
+}
+.brand__title {
+  padding-top: 64px;
+  margin-bottom: 46px;
+  font-family: "RebelTypeDog";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 76.0031px;
+  line-height: 131.5%;
+  letter-spacing: 0.05em;
+}
+.brand__slider {
+  overflow: hidden;
+  height: 511px;
+}
+.brand .swiper-slide {
+  height: 511px;
+}
+.brand .brand-banner {
+  height: 511px;
+  width: 100%;
+  position: relative;
+}
+.brand .brand-banner__title {
+  position: absolute;
+  font-family: "RebelTypeDog";
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 131.5%;
+  letter-spacing: 0.05em;
+  bottom: 22px;
+  left: 48px;
+}
+.brand .brand-banner__logo {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+}
+.brand .brand-banner__logo svg {
+  width: 130px;
+  height: 32px;
+}
+.brand .brand-banner__arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+.brand .brand-banner__arrow-prev {
+  left: 16px;
+}
+.brand .brand-banner__arrow-next {
+  right: 16px;
+}
+.brand .brand-banner__arrow-next img {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.brand .brand-banner__arrow img {
+  width: 56px;
+  height: 56px;
+}
+.brand .swiper-slide.slide-2 .brand-banner__title {
+  bottom: 32px;
+}
+.brand .swiper-slide.slide-3 .brand-banner__title {
+  bottom: 108px;
+}
+.brand .banner-logo-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 @supports (-webkit-appearance:none){
 .header .nav-btn{background-image:url(../img/svg/header/nav/Icon.svg)}
 .header .banner1{background-image:url(../img/header-slider/slide1.webp), -o-linear-gradient(235.55deg, #2a3a62 1.39%, #18223b 79.65%)}

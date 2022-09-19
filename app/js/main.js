@@ -59,10 +59,19 @@ sliderNavItems.forEach((el, index) => {
 // }
 // popupSliderNav();
 
-let productionSlider = new Swiper(".production__slider", {
+let brandSlider = new Swiper(".production__slider", {
   navigation: {
     nextEl: ".production-banner__arrow-next",
     prevEl: ".production-banner__arrow-prev",
+  },
+  loop: "infinite",
+  spaceBetween: 20,
+});
+
+let productionSlider = new Swiper(".brand__slider", {
+  navigation: {
+    nextEl: ".brand-banner__arrow-next",
+    prevEl: ".brand-banner__arrow-prev",
   },
   loop: "infinite",
   spaceBetween: 20,
