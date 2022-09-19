@@ -14,6 +14,18 @@ const productUseSlider = new Swiper(".product-use__slider", {
   spaceBetween: 12,
   // centeredSlides: true,
 });
+const swiperContact = new Swiper(".contacts__swiper", {
+  navigation: {
+    nextEl: ".swiper-button-forth",
+    prevEl: ".swiper-button-back",
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,},
+  effect: "fade",
+  loop: "infinite",
+});
 
 const cardPhotoSlider = new Swiper(".card__slider", {
   loop: "infinite",

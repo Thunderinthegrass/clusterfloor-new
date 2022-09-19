@@ -1,13 +1,13 @@
-const swiper = new Swiper(".contacts__swiper", {
+  const swiperContact = new Swiper(".contacts__swiper", {
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-forth",
+      prevEl: ".swiper-button-back",
     },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,},
     effect: "fade",
     loop: "infinite",
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true,}
   });
   
