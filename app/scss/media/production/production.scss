@@ -1,3 +1,115 @@
-.production{
-  
+.production.media {
+  @media (max-width: 1250px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    .prodaction__banner {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  @media (max-width: 1050px) {
+    .production__photos {
+      margin-bottom: 88px;
+    }
+    .production__video {
+      flex-direction: column;
+      &-video {
+        max-width: 100%;
+      }
+      &-text {
+        max-width: 100%;
+        padding-top: 0;
+        margin-bottom: 48px;
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    .production {
+      &__slider {
+        height: 287px;
+      }
+      .swiper-wrapper,
+      .swiper-slide {
+        height: 287px;
+      }
+      &__title {
+        font-size: 43px;
+        line-height: 58px;
+        letter-spacing: 0.05em;
+        padding-top: 30px;
+        margin-bottom: 35px;
+      }
+      &-banner {
+        height: 287px;
+        &__title {
+          top: 200px;
+          left: 56px;
+          font-size: 21.383px;
+          line-height: 131.5%;
+          letter-spacing: 0.05em;
+        }
+        &__logo {
+          display: none;
+        }
+        &__arrow {
+          height: 32px;
+          width: 32px;
+          img {
+            height: 31px;
+            width: 31px;
+          }
+        }
+      }
+      &__photo-right {
+        max-width: 253px;
+      }
+      &__video {
+        &-text {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    .production {
+      &__title {
+        padding-top: 44px;
+        font-size: 26px;
+        line-height: 131.5%;
+        margin-bottom: 29px;
+      }
+      &__slider {
+        height: 320px;
+      }
+      .swiper-wrapper,
+      .swiper-slide {
+        height: 320px;
+      }
+      &-banner{
+        height: 320px;
+      }
+      &__photos{
+        margin-top: 12px;
+        gap: 12px;
+        margin-bottom: 45px;
+      }
+      &__photo{
+        max-width: 374px;
+        height: 261px;
+      }
+      &__video{
+        &-text{
+          margin-bottom: 37px;
+        }
+        &-video{
+          max-width: 700px;
+          height: 272px;
+        }
+      }
+    }
+  }
 }

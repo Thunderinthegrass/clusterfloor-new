@@ -1,5 +1,5 @@
-@import "production-banner";
 .production {
+  overflow: hidden;
   &__title {
     padding-top: 64px;
     margin-bottom: 50px;
@@ -12,22 +12,31 @@
   }
   &__slider{
     overflow: hidden;
+    height: 511px;
+  }
+  .swiper-slide{
+    height: 511px;
   }
 }
 .production-banner {
   height: 511px;
   width: 100%;
-  background-image: url(../img/production/banner.jpg);
-  padding-left: 100px;
+  // background-image: url(../img/production/banner.jpg);
   position: relative;
-  margin-bottom: 20px;
+  .banner-bg{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
   &__title {
+    position: absolute;
     font-family: "RebelTypeDog";
     font-weight: 400;
     font-size: 38px;
     line-height: 131.5%;
     letter-spacing: 0.05em;
-    padding-top: 335px;
+    top: 335px;
+    left: 100px;
   }
   &__logo {
     position: absolute;
@@ -62,6 +71,7 @@
   display: flex;
   gap: 20px;
   margin-bottom: 50px;
+  margin-top: 20px;
   .production__photo img {
     object-fit: cover;
     width: 100%;
@@ -80,6 +90,7 @@
 }
 .production__video {
   display: flex;
+  justify-content: space-between;
   &-text {
     max-width: 512px;
     width: 100%;
@@ -96,8 +107,14 @@
     width: 100%;
     height: 473px;
     background-image: url(../img/production/video.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 .peculiar.peculiar_production{
-  padding-top: 123px;
+  padding-top: 70px;
+  @media (max-width: 700px){
+    margin-top: 46px;
+  }
 }
