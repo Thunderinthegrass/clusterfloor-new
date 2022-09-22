@@ -26,7 +26,6 @@ const swiperContact = new Swiper(".contacts__swiper", {
   effect: "fade",
   loop: "infinite",
 });
-
 const cardPhotoSlider = new Swiper(".card__slider", {
   loop: "infinite",
   // centeredSlides: true,
@@ -37,7 +36,6 @@ const cardPhotoSlider = new Swiper(".card__slider", {
     clickable: true,
   },
 });
-
 swiper.on('slideChange', function(sld) {
   document.body.setAttribute('data-sld', sld.realIndex);
 })
