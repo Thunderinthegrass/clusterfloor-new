@@ -8873,6 +8873,94 @@ h2 {
 .main-brand .form {
   padding-top: 130px;
 }
+
+.dilers__title {
+  padding-top: 64px;
+  margin-bottom: 46px;
+  font-weight: 400;
+  font-size: 76.0031px;
+  line-height: 131.5%;
+  letter-spacing: 0.05em;
+}
+.dilers__slider {
+  overflow: hidden;
+}
+.dilers__slider img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.dilers .swiper-slide {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 511px;
+}
+.dilers__arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 56px;
+  height: 56px;
+}
+.dilers__arrow-prev {
+  left: 16px;
+}
+.dilers__arrow-next {
+  right: 16px;
+}
+.dilers__arrow-next img {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.dilers .partners__title {
+  padding-top: 85px;
+  margin-bottom: 55px;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 131.5%;
+  letter-spacing: 0.05em;
+}
+.dilers .partners__list {
+  max-width: 627px;
+  width: 100%;
+  margin-bottom: 55px;
+}
+.dilers .partners__list-item {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 26px;
+  padding-left: 55px;
+  position: relative;
+}
+.dilers .partners__list-item::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 44px;
+  height: 1px;
+  background-image: url(../../img/svg/product/line-icon.svg);
+}
+.dilers .partners__substring {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  max-width: 633px;
+  width: 100%;
+}
+.dilers .partners img {
+  width: 122px;
+  height: 174px;
+}
 @supports (-webkit-appearance:none){
 .header .nav-btn{background-image:url(../img/svg/header/nav/Icon.svg)}
 .header .banner1{background-image:url(../img/header-slider/slide1.webp), -o-linear-gradient(235.55deg, #2a3a62 1.39%, #18223b 79.65%)}
@@ -8950,6 +9038,7 @@ h2 {
 .production__video-video{background-image:url(../img/production/video.webp)}
 .brand .care__video{background-image:url(../img/brand/video.webp)}
 .brand .brand__cooperation .cooperation-item::before{background-image:url(../img/svg/product/line-icon.svg)}
+.dilers .partners__list-item::before{background-image:url(../../img/svg/product/line-icon.svg)}
 }
 
  @media (max-width: 744px){

@@ -1,0 +1,84 @@
+.dilers {
+  &__title {
+    padding-top: 64px;
+    margin-bottom: 46px;
+    font-weight: 400;
+    font-size: 76.0031px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+  }
+  &__slider {
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .swiper-slide {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 511px;
+  }
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 56px;
+    &-prev {
+      left: 16px;
+    }
+    &-next {
+      right: 16px;
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .partners {
+    &__title {
+      padding-top: 85px;
+      margin-bottom: 55px;
+      font-weight: 400;
+      font-size: 47px;
+      line-height: 131.5%;
+      letter-spacing: 0.05em;
+    }
+    &__list {
+      max-width: 627px;
+      width: 100%;
+      margin-bottom: 55px;
+      &-item {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 26px;
+        padding-left: 55px;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 44px;
+          height: 1px;
+          background-image: url(../../img/svg/product/line-icon.svg);
+        }
+      }
+    }
+    &__substring {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 27px;
+      max-width: 633px;
+      width: 100%;
+    }
+    img{
+      width: 122px;
+      height: 174px;
+    }
+  }
+}

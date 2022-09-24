@@ -77,6 +77,14 @@ let productionSlider = new Swiper(".brand__slider", {
   spaceBetween: 20,
 });
 
+let dilersSlider = new Swiper(".dilers__slider", {
+  navigation: {
+    nextEl: ".dilers__arrow-next",
+    prevEl: ".dilers__arrow-prev",
+  },
+  loop: "infinite",
+});
+
 function mobileMenu() {
   let menuBtn = document.querySelector(".nav-mobile__btn");
   let mobileMenuInner = document.querySelector(".nav-mobile");
