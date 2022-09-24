@@ -329,4 +329,41 @@
       }
     }
   }
+  .equipment__slider{
+    display: none;
+    .swiper-wrapper{
+      position: relative;
+      text-align: center;
+    }
+    .swiper-slide{
+      width: 644px;
+      height: 467px;
+      overflow: hidden;
+      text-align: center;
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .swiper-pagination{
+      height: 12px;
+      position: absolute;
+      bottom: 23px;
+      text-align: center;
+      left: 0;
+      right: 0;
+    }
+    .swiper-pagination-bullet{
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #fbfbfb4a;
+      border-radius: 100%;
+      margin-right: 8px;
+      &-active{
+        background: #fbfbfb;
+      }
+    }
+  }
 }

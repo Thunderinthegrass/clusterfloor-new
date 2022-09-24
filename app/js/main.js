@@ -85,6 +85,18 @@ let dilersSlider = new Swiper(".dilers__slider", {
   loop: "infinite",
 });
 
+const equipmentSlider = new Swiper(".equipment__slider", {
+  loop: "infinite",
+  effect: "fade",
+  // centeredSlides: true,
+  spaceBetween: 40,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+});
+
 function mobileMenu() {
   let menuBtn = document.querySelector(".nav-mobile__btn");
   let mobileMenuInner = document.querySelector(".nav-mobile");
