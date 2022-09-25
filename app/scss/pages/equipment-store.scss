@@ -57,12 +57,9 @@
         background-position: center;
       }
     }
-  }
-  .swatch {
-    padding-top: 115px;
-  }
-  .equipment-catalog{
-    padding-top: 157px;
+    &_mobile{
+      display: none;
+    }
   }
   .swatch,
   .equipment-catalog {
@@ -83,6 +80,73 @@
       display: flex;
       gap: 20px;
     }
+    &__column{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &:nth-child(1){
+        max-width: 638px;
+        width: 100%;
+        .equipment-catalog-item{
+          &:nth-child(1){
+            height: 699px;
+          }
+          &:nth-child(2){
+            height: 93px;
+          }
+        }
+      }
+      &:nth-child(2){
+        max-width: 521px;
+        width: 100%;
+        .equipment-catalog-item{
+          &:nth-child(1){
+            height: 401px;
+          }
+          &:nth-child(2){
+            height: 391px;
+          }
+        }
+      }
+    }
+    &__slider{
+      display: none;
+      position: relative;
+      .swiper-wrapper{
+        overflow: hidden;
+      }
+      .swiper-slide{
+        width: 664px;
+        height: 467px;
+        overflow: hidden;
+        img{
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .swiper-pagination{
+        position: absolute;
+        bottom: 19px;
+        height: 9px;
+        width: 100%;
+        text-align: center;
+        &-bullet{
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          background: rgba(251, 251, 251, 0.29);
+          margin-right: 8px;
+          border-radius: 50%;
+          &-active{
+            background: #fbfbfb;
+          }
+        }
+      }
+    }
+  }
+  .swatch {
+    padding-top: 115px;
     &__column{
       display: flex;
       flex-direction: column;
@@ -113,6 +177,9 @@
       }
     }
   }
+  .equipment-catalog{
+    padding-top: 157px;
+  }
   .stand{
     padding-top: 157px;
     position: relative;
@@ -123,6 +190,13 @@
     &__inner{
       display: flex;
       gap: 20px;
+    }
+    &__item{
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
     }
     &__column{
       display: flex;
@@ -146,6 +220,41 @@
           &:nth-child(2){
             height: 566px;
           }
+        }
+      }
+    }
+    &__slider{
+      display: none;
+      position: relative;
+    }
+    .swiper-wrapper{
+      overflow: hidden;
+    }
+    .swiper-slide{
+      width: 664px;
+      height: 467px;
+      overflow: hidden;
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .swiper-pagination{
+      position: absolute;
+      bottom: 19px;
+      height: 9px;
+      width: 100%;
+      text-align: center;
+      &-bullet{
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: rgba(251, 251, 251, 0.29);
+        margin-right: 8px;
+        border-radius: 50%;
+        &-active{
+          background: #fbfbfb;
         }
       }
     }

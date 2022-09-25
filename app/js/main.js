@@ -105,6 +105,42 @@ const equipmentSlider = new Swiper(".equipment__slider", {
   },
 });
 
+const swatchSlider = new Swiper(".swatch__slider", {
+  loop: "infinite",
+  // effect: "fade",
+  centeredSlides: true,
+  spaceBetween: 40,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+});
+
+const equipmentCatalogSlider = new Swiper(".equipment-catalog__slider", {
+  loop: "infinite",
+  // effect: "fade",
+  centeredSlides: true,
+  spaceBetween: 40,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+});
+
+const standSlider = new Swiper(".stand__slider", {
+  loop: "infinite",
+  // effect: "fade",
+  centeredSlides: true,
+  spaceBetween: 40,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+});
+
 function mobileMenu() {
   let menuBtn = document.querySelector(".nav-mobile__btn");
   let mobileMenuInner = document.querySelector(".nav-mobile");
