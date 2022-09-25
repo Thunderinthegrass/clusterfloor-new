@@ -1,99 +1,146 @@
 .contacts.media{
   @media (max-width:1200px){
     .container{
-        padding-left: 40px;
-         padding-right: 40px;
-       }
-       .certificate__row{
-       display:flex;
-       gap:4%;
-   
-     } 
-   .certificate__content-img img{
-      object-fit:cover;
+     padding-left: 40px;
+      padding-right: 40px;
     }
- }
- @media (max-width:850px) {
-   .certificate__title_txt{
-     font-weight: 400;
-font-size: 43px;
-line-height: 58px;
-     padding-top:4%;
-     padding-bottom:6%;
-   }
-   .breadcrumbs{
-     padding:0;
-   }
-   .certificate__row label{
-     font-weight: 600;
-font-size: 12px;
-line-height: 16px;
-     padding-top:px;
-   }
-   .certificate__content-title{
-     font-weight: 400;
-font-size: 26px;
-line-height: 131.5%;
-   }
-   .certificate__content-txt{
-     font-weight: 300;
-font-size: 14px;
-line-height: 19px;
-      grid-area: 2 / 1 / 3/ 3;
-   }
-   .certificate__content-img{
-    grid-area: 1 / 1 / 2 / 3;
-   max-height:526px;
   }
-    .certificate__content-img img{
-      object-fit:cover;
+  @media (min-width:851px){
+    .contacts__swiper{
+      display: none;
     }
- }
- @media (max-width:510px){
-   .certificate__title_txt{
-     font-weight: 400;
+  }
+  @media (min-width:600px) and (max-width:850px){
+    .visit__showroom-row{
+      padding-left: 5%;
+    }  
+  }
+   @media (max-width:850px) {
+   
+      .contacts__title_txt {
+      font-size: 43px;
+    line-height: 58px;
+      letter-spacing: 0.05em;
+      font-weight: 400;
+    }
+    .breadcrumbs{
+      padding-left:0%;
+    }
+    .visit__title_txt{
+      font-weight: 400;
 font-size: 26px;
 line-height: 131.5%;
-   }
-   .certificate__row{
-     flex-direction:column;
-     gap:50px;
-   }
-    .certificate__row img{
-      max-width:320px;
-      max-height:340px;
-      padding-bottom:2%;
-      
     }
-   .certificate__row label{
-     font-weight: 600;
+    .gallery{
+      display: none;
+    }
+    .visit__showroom-row p{
+      font-weight: 300;
+font-size: 10px;
+line-height: 161.9%;
+    }
+      .address__text{
+        font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 156.4%;
+}
+.address__info,.address__phone{
+    font-weight: 600;
 font-size: 14px;
 line-height: 19px;
-   }
-   .certificate__content-title{
-     font-weight: 400;
-font-size: 20px;
-line-height: 131.5%;
-   }
-   .certificate__content-txt{
-     font-size: 14px;
-   }
-   .certificate__content-img img{
-     max-width: 320px;
-max-height: 419px;
-   }
-   .certificate_container-grid{
-     padding-top:90px;
-   }
-   .certificate__content-row2{
-     gap:12px;
-     padding:0;
-   
-   }
-   .certificate__content-row2 img{
-     max-width: 154px;
-height: 261px;
-     object-fit:cover;
-   }
- }
+}
+.contacts__swiper{
+  max-width: 664px;
+  max-height: 467px;
+  display: flex;
+}
+.contacts__swiper img{
+  display: block;
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-button-back {
+  left: auto;
+  top: auto;
+  right: 91.2%;
+  bottom: 217px;
+  width: 31px;
+  height: 31px;
+}
+.swiper-button-forth {
+  top: auto;
+  right: 9px;
+  bottom: 217px;
+  width: 31px;
+  height: 31px;
+}
+.visit__showroom-row{
+  padding-bottom: 91px;
+  gap: 2%;
+  padding-left: 2%;
+      }
+.form{
+  padding-top: 90px;
+}      
+    }
+    @media (max-width: 510px) {
+      .contacts__title_txt {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 131.5%;
+        padding-top:40px;
+        white-space:break-spaces;
+      }
+      .breadcrumbs{
+        padding-left:0%;
+      }
+      .map__img{
+       display: none;
+      }
+      .visit__title_txt {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 131.5%;
+      }
+      .contacts__swiper{
+        width:320px;
+        height:302px;
+      }
+      .address__text {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 156.4%;
+      }
+      .address__info,.address__phone {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+      }
+      .visit__showroom-row p {
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 161.9%;
+      }
+      .visit__showroom-row{
+      display:grid;
+        grid-template-columns: 159px 159px;
+      }
+      .address_row{
+        flex-wrap:wrap;
+      }
+      .swiper-button-back,.swiper-button-forth {
+        display: none;
+      }
+      .form {
+        padding-top: 70px;
+      }
+      .visit__showroom-row {
+        padding-bottom: 80px;
+      }
+      .map__img2{
+        display: block;
+      }
+    }
 }
