@@ -1,0 +1,79 @@
+.certificates{
+  .certificate__row{
+    display:flex;
+    gap:43px;
+
+  }
+  
+  .certificate__content-row2{
+    display:flex;
+  }
+  .certificate__title_txt{
+    font-family: 'RebelTypeDog';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 76.0031px;
+  line-height: 131.5%;
+  letter-spacing: 0.05em;
+    padding-bottom:88px;
+    padding-top:64px;
+  }
+  .certificate__content-title{
+    font-family: 'RebelTypeDog';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 131.5%;
+  letter-spacing: 0.05em;
+    padding-bottom:38px;
+  }
+  .certificate__row label{
+    font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  }
+  .certificate__content-txt{
+    font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  }
+  .certificate_container-grid{
+    display:grid;
+    padding-top:115px;
+    grid-gap:26px;
+  }
+  .certificate__content-txt{
+    grid-area: 2 / 1 / 3/ 2;
+  }
+  .certificate__content-img{
+    grid-area: 2 / 2 / 3 / 4;
+  }
+  .certificate__content-row2{
+    display:flex;
+    gap:20px;
+    padding-top:20px;
+  }
+img {
+width: 100%;
+height:100%;
+}
+.certificate_container-grid p{
+padding-bottom:23px;
+}
+.certificate__content-row3 img{
+    width: 100%;
+        max-height: 100%;
+        height: 100%;
+    max-height:474px;
+        object-fit: cover;
+  }
+.certificate__content-row3{
+    padding-top:20px;
+  }
+  
+
+}
