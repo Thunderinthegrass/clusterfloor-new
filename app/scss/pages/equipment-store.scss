@@ -1,0 +1,153 @@
+.equipment-store {
+  .info {
+    border: 1px solid #fbfbfb;
+    padding: 20px 91px 20px 62px;
+    position: relative;
+    img {
+      position: absolute;
+      left: 24px;
+      top: 24px;
+    }
+  }
+  .download-btn {
+    background: #393e4d;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: #fbfbfb;
+    width: 100%;
+    height: 93px;
+    text-align: center;
+    border: 1px solid;
+    border-image: linear-gradient(
+      to right,
+      #22bafb,
+      #64eeb4,
+      #fff5dd,
+      #c8f3f9,
+      #184cd1
+    );
+    border-image-slice: 1;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      border-width: 3px;
+      background: #474f68;
+    }
+    &:active {
+      color: #b4b9c9;
+      background: transparent;
+      border-width: 1px;
+      span::after {
+        background-image: url(../img/equipment-store/swatsh/download.svg);
+      }
+    }
+    span {
+      padding-right: 70px;
+      position: relative;
+      &::after {
+        @extend %ba;
+        right: 0;
+        top: 0;
+        width: 50px;
+        height: 40px;
+        background-image: url(../img/equipment-store/swatsh/download.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
+  .swatch {
+    padding-top: 115px;
+  }
+  .equipment-catalog{
+    padding-top: 157px;
+  }
+  .swatch,
+  .equipment-catalog {
+    &-item{
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .title {
+      font-weight: 400;
+      font-size: 47px;
+      line-height: 131.5%;
+      margin-bottom: 54px;
+    }
+    &__inner{
+      display: flex;
+      gap: 20px;
+    }
+    &__column{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &:nth-child(1){
+        max-width: 638px;
+        width: 100%;
+        .swatch-item{
+          &:nth-child(1){
+            height: 699px;
+          }
+          &:nth-child(2){
+            height: 93px;
+          }
+        }
+      }
+      &:nth-child(2){
+        max-width: 521px;
+        width: 100%;
+        .swatch-item{
+          &:nth-child(1){
+            height: 401px;
+          }
+          &:nth-child(2){
+            height: 391px;
+          }
+        }
+      }
+    }
+  }
+  .stand{
+    padding-top: 157px;
+    position: relative;
+    &__title{
+      position: absolute;
+      top: 222px;
+    }
+    &__inner{
+      display: flex;
+      gap: 20px;
+    }
+    &__column{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &:nth-child(1){
+        justify-content: end;
+        max-width: 638px;
+        width: 100%;
+        .stand__item{
+          height: 818px;
+        }
+      }
+      &:nth-child(2){
+        max-width: 521px;
+        width: 100%;
+        .stand__item{
+          &:nth-child(1){
+            height: 484px;
+          }
+          &:nth-child(2){
+            height: 566px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 .designers,
-.buyer{
+.buyer {
+  overflow: hidden;
   padding-top: 102px;
   &__banner {
     width: 100%;
@@ -47,10 +48,8 @@
     }
   }
 }
-.designers {
-  @media (max-width: 800px) {
-    padding-top: 44px;
-  }
+.designers,
+.equipment-store{
   .business__info {
     width: 495px;
     .info:nth-child(2) {
@@ -60,6 +59,131 @@
       max-width: 390px;
       width: 100%;
     }
+  }
+  .business {
+    padding-top: 131px;
+    &__title {
+      font-weight: 400;
+      font-size: 47px;
+      line-height: 131.5%;
+      letter-spacing: 0.05em;
+      margin-bottom: 38px;
+    }
+    &__inner {
+      display: flex;
+      margin-bottom: 32px;
+    }
+    &__text {
+      max-width: 633px;
+      width: 100%;
+      margin-right: 55px;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 27px;
+    }
+    .btn-wrapper {
+      margin-top: 30px;
+      position: relative;
+      margin-bottom: 30px;
+      &:hover .business__btn {
+        transform: rotate(10deg);
+      }
+      &::after {
+        position: absolute;
+        content: "Оставить заявку";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        color: #fbfbfb;
+      }
+    }
+    &__btn {
+      position: relative;
+      z-index: 2;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 429px;
+      height: 182px;
+    }
+  }
+  .business {
+    @media (max-width: 1100px) {
+      .btn-wrapper {
+        height: 96px;
+        &::after {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          white-space: nowrap;
+          top: 63%;
+        }
+      }
+      &__btn {
+        width: 250px;
+        height: 96px;
+      }
+      .info {
+        padding: 16px 17px 15px 48px;
+        &__text {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+        }
+        img {
+          width: 25px;
+          height: 25px;
+          left: 17px;
+          top: 17px;
+        }
+      }
+    }
+    @media (max-width: 942px) {
+      padding-top: 96px;
+      &__title {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 131.5%;
+        margin-bottom: 17px;
+      }
+      &__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+        margin-right: 17px;
+      }
+    }
+    @media (max-width: 618px) {
+      padding-bottom: 150px;
+      position: relative;
+      .btn-wrapper {
+        position: absolute;
+        margin: 0;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    @media (max-width: 500px) {
+      padding-top: 53px;
+      &__title {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 131.5%;
+        margin-bottom: 15px;
+      }
+      &__inner {
+        margin-bottom: 23px;
+      }
+    }
+  }
+}
+.designers {
+  @media (max-width: 800px) {
+    padding-top: 44px;
   }
   .service {
     .container {
@@ -79,19 +203,19 @@
       position: absolute;
       right: -144px;
       top: -86px;
-      @media (max-width: 1480px){
+      @media (max-width: 1480px) {
         right: -30px;
         top: -130px;
       }
-      @media (max-width: 744px){
+      @media (max-width: 744px) {
         top: auto;
         bottom: -30px;
       }
-      @media (max-width: 580px){
+      @media (max-width: 580px) {
         width: 241px;
         height: 151px;
       }
-      @media (max-width: 564px){
+      @media (max-width: 564px) {
         bottom: auto;
         top: -50px;
         right: -70px;
@@ -103,21 +227,78 @@
     background-size: contain;
   }
 }
-.buyer{
-  @media (max-width: 1250px){
+.buyer {
+  @media (max-width: 1250px) {
     padding-left: 40px;
     padding-right: 40px;
     form,
-    .container{
+    .container {
       padding-left: 0;
       padding-right: 0;
     }
   }
-  @media (max-width: 800px){
+  @media (max-width: 800px) {
     padding-top: 44px;
+    .form{
+      padding-top: 114px;
+    }
   }
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     padding-left: 20px;
     padding-right: 20px;
+    .form{
+      padding-top: 104px;
+    }
+  }
+  .equipment {
+    &__title {
+      padding-right: 220px;
+    }
+    @media (max-width: 900px) {
+      padding-top: 64px;
+      &__title {
+        font-size: 26px;
+      }
+      &__link-wrapper {
+        top: 72px;
+      }
+      &__link {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        padding-right: 35px;
+        &::after {
+          width: 30px;
+          height: 23px;
+        }
+      }
+    }
+    @media (max-width: 780px){
+      &__title{
+        padding-right: 150px;
+      }
+    }
+    @media (max-width: 744px){
+      &__photos{
+        display: none;
+      }
+      &__slider{
+        display: block;
+      }
+      .swiper-slide{
+        overflow: hidden;
+      }
+    }
+    @media (max-width: 500px){
+      &__title{
+        padding-right: 0;
+        margin-bottom: 16px;
+        font-size: 20px;
+      }
+      &__link-wrapper{
+        position: static;
+        margin-bottom: 16px;
+      }
+    }
   }
 }

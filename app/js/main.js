@@ -85,6 +85,14 @@ let dilersSlider = new Swiper(".dilers__slider", {
   loop: "infinite",
 });
 
+let equipmentStoreSlider = new Swiper(".equipment-store__slider", {
+  navigation: {
+    nextEl: ".dilers__arrow-next",
+    prevEl: ".dilers__arrow-prev",
+  },
+  loop: "infinite",
+});
+
 const equipmentSlider = new Swiper(".equipment__slider", {
   loop: "infinite",
   effect: "fade",
