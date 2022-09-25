@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clusterfloor</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-mobile__btn-wrapper">
+            <button class="nav-mobile__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <button class="search__btn_mobile search-hide">
+            <svg class="search-hide">
+                <use xlink:href="img/sprite/sprite.svg#header--top--search"></use>
+            </svg>
+        </button>
+        <nav class="nav-mobile">
+            <div class="nav-mobile__inner">
+                <ul class="nav-mobile__list">
+                    <li class="nav-mobile__item">
+                        <a class="nav-mobile__link" href="catalog-main.html">Каталог</a>
+                    </li>
+                    <li class="nav-mobile__item">
+                        <a class="nav-mobile__link" href="#">Где купить</a>
+                    </li>
+                    <li class="nav-mobile__item">
+                        <a class="nav-mobile__link" href="#">Акции</a>
+                    </li>
+                    <li class="nav-mobile__item">
+                        <a class="nav-mobile__link" href="#">Покупателю</a>
+                    </li>
+                    <li class="nav-mobile__item">
+                        <a class="nav-mobile__link" href="#">Сотрудничество</a>
+                    </li>
+                    <li class="nav-mobile__item">
+                        <a class="nav-mobile__link" href="#">Информация</a>
+                    </li>
+                    <li class="nav-mobile__item">
+                        <a class="nav-mobile__link" href="#">О бренде</a>
+                    </li>
+                    <li class="nav-mobile__item">
+                        <a class="nav-mobile__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <a href="tel:+78008008080" class="phone__mobile">+7 (800) 800–80–80</a>
+                <div class="social__mobile">
+                    <a href="#" class="header__whatsapp">
+                        <svg>
+                            <use xlink:href="img/sprite/sprite.svg#header--top--whatsapp"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header__tg">
+                        <svg>
+                            <use xlink:href="img/sprite/sprite.svg#header--top--tg"></use>
+                        </svg>
+                    </a>
+                </div>
+                <button class="request-btn__mobile modal-btn" data-path="form-popup">Оставить заявку</button>
+            </div>
+        </nav>
+        <div class="header__top search-hide">
+            <div class="container search-hide">
+                <a href="#" class="header__logo search-hide">
+                    <svg>
+                        <use xlink:href="img/sprite/sprite.svg#header--top--logo"></use>
+                    </svg>
+                </a>
+                <div class="header__search search search-hide">
+                    <input type="text" class="search__input search-hide" />
+                    <button type="submit" class="search__btn search-hide">
+                        <svg class="search-hide">
+                            <use xlink:href="img/sprite/sprite.svg#header--top--search"></use>
+                        </svg>
+                    </button>
+                    <button class="search__btn_off search-hide">
+                        <svg class="search-hide">
+                            <use class="search-hide" xlink:href="img/sprite/sprite.svg#header--top--search-off"></use>
+                        </svg>
+                    </button>
+                    <div class="search__results">
+                        <div class="search__results-inner">
+                            <a href="#" class="search__result">
+                                <div class="search__result-img">
+                                    <img src="img/recommend/recommend1.jpg" alt="результат поиска">
+                                </div>
+                                <div class="search__result-name">
+                                    <p>Cluster Floor Stone ZH-81042-4</p>
+                                </div>
+                            </a>
+                            <a href="#" class="search__result">
+                                <div class="search__result-img">
+                                    <img src="img/recommend/recommend1.jpg" alt="результат поиска">
+                                </div>
+                                <div class="search__result-name">
+                                    <p>Cluster Floor Stone ZH-81042-4</p>
+                                </div>
+                            </a>
+                            <a href="#" class="search__result">
+                                <div class="search__result-img">
+                                    <img src="img/recommend/recommend1.jpg" alt="результат поиска">
+                                </div>
+                                <div class="search__result-name">
+                                    <p>Cluster Floor Stone ZH-81042-4</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="search__results-all">
+                            <a href="#" class="all-results-link">Посмотреть все результаты</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="tel:+78008008080" class="header__phone">+7 (800) 800–80–80</a>
+                <div class="header__social">
+                    <a href="#" class="header__whatsapp">
+                        <svg>
+                            <use xlink:href="img/sprite/sprite.svg#header--top--whatsapp"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header__tg">
+                        <svg>
+                            <use xlink:href="img/sprite/sprite.svg#header--top--tg"></use>
+                        </svg>
+                    </a>
+                </div>
+                <a href="#" class="header__request-btn modal-btn" data-path="form-popup"> Оставить заявку </a>
+            </div>
+        </div>
+        <div class="modal-overlay">
+            <div class="header-popup modal" data-target="form-popup">
+                <h4 class="header-popup__title">Оставьте заявку</h4>
+                <p class="header-popup__subtitle">Мы перезвоним вам в течение 15 минут</p>
+                <form action="" class="header-popup__form">
+                    <input type="text" class="header-popup__input" placeholder="Ваше имя">
+                    <input type="tel" class="header-popup__input" placeholder="Номер телефона">
+                    <input type="email" class="header-popup__input" placeholder="Email">
+                    <button type="submit" class="header-popup__btn"><span>Отправить заявку</span></button>
+                    <p class="agreement">
+                        Нажимая на кнопку, вы даете <a href="#">согласие на обработку своих персональных данных</a> и
+                        получение
+                        сообщений</p>
+                </form>
+                <button class="modal__close-btn"></button>
+            </div>
+            <!-- <div class="form-sent" data-target="form-popup">
+          <p class="form-sent__title">Спасибо, заявка отправлена!</p>
+          <img src="img/svg/form-sent.svg" alt="картинка">
+          <a href="#" class="form-sent__link">Вернуться на главную</a>
+        </div> -->
+        </div>
+        <nav class="header__nav nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="catalog-main.html">Каталог</a>
+                        <button class="nav-btn"></button>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Где купить</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Акции</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Покупателю</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Сотрудничество</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Информация</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#"> О бренде</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main certificate media">
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href="index.html">главная /</a></li>
+                    <li class="breadcrumbs__item"> <span class="breadcrumbs__current">сертификаты</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="certificate__title">
+                <div>
+                    <h3 class="certificate__title_txt">Сертификаты</h3>
+                </div>
+            </div>
+            <div class="certificate__row">
+                <label>
+                    <img id="certificateimg1" src="img/certificates/1.png" alt="Нажмите для выбора файла.">
+                    <input type="file" hidden>
+                    <label for="certificateimg1">Сертификат соответствия</label>
+                </label>
+                <label>
+                    <img id="certificateimg2" src="img/certificates/1.png" alt="Нажмите для выбора файла.">
+                    <input type="file" hidden>
+                    <label for="certificateimg2">Сертификат соответствия</label>
+                </label>
+                <label>
+                    <img id="certificateimg3" src="img/certificates/1.png" alt="Нажмите для выбора файла.">
+                    <input type="file" hidden>
+                    <label for="certificateimg3">Сертификат соответствия</label>
+                </label>
+            </div>
+            <div class="certificate__content">
+                <div class="certificate__content-row1">
+                    <div class="certificate_container-grid">
+                        <div class="certificate__content-txt">
+                            <h3 class="certificate__content-title">Мы заботимся о вашем уюте</h3>
+                            <p>Более 40 лет назад в 1980 году был создан государственный завод по производству
+                                дверных
+                                звонков. Спустя 12 лет он перешел в частные руки. Его новый владелец активно
+                                внедрял
+                                разные
+                                направления деятельности, пока не
+                                остановится на производстве HDF ламината и фальшпола с 2005 года. Эти
+                                направления
+                                остались
+                                приоритетны и после отхода от дел первого владельца. Теперь
+                                их производством занимаются наследники — сын выпускает HDF ламинат, а дочь —
+                                фальшпол.
+                                Они
+                                имеют свои предприятия
+                                и отдельные реквизиты.</p>
+                            <p>В 2019 году компания сына владельца расширила деятельность
+                                и стала выпускать инновационные напольные покрытия SPC, LVT FLOOR, а компания
+                                дочери
+                                владельца стала выпускать акции для привлечения капитала. По состоянию на
+                                сегодняшний
+                                день
+                                бывший завод по производству дверных замков стал мощной производственной
+                                компанией,
+                                выпускающей до 50 млн.кв.м. напольных покрытий в год, из них 100 тыс.кв.м. SPC,
+                                LVT
+                                FLOOR.
+                                Производственные цеха оснащены высокотехнологичным немецким оборудованием.
+                                Продукция
+                                имеет
+                                сертификаты КМ2, SGS, CE, ISO9001. Ее потребителями выступает США, Канада, Южная
+                                Корея,
+                                страны Европы и Китай.</p>
+                        </div>
+                        <div class="certificate__content-img">
+                            <img src="img/svg/certificates/Rectangle549.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate__content-row2">
+                    <div class="certificate__content-row2img1">
+                        <img src="img/svg/certificates/Rectangle551.svg">
+                    </div>
+                    <div class="certificate__content-row2img2">
+                        <img src="img/svg/certificates/Rectangle550.svg">
+                    </div>
+                </div>
+                <div class="certificate__content-row3">
+                    <div> <img src="img/collections/video.jpg" alt="картинка"></div>
+                </div>
+            </div>
+        </div>
+        <form action="" class="form">
+            <div class="container _anim-items">
+                <h2 class="form__title">С радостью ответим <br> на любые вопросы</h2>
+                <p class="form__subtitle">Заполните нашу форму обратного вызова и наши специалисты свяжутся с
+                    вами в
+                    течение 5
+                    минут</p>
+                <div class="form__inner">
+                    <div class="form__left">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="tel" placeholder="Номер телефона">
+                        <button class="form__btn" type="submit">
+                            <span>Отправить</span>
+                        </button>
+                        <p class="agreement">Нажимая на кнопку, вы даете <a href="#">согласие на обработку своих
+                                персональных
+                                данных</a> и получение сообщений </p>
+                    </div>
+                    <div class="form__img-wrapper">
+                        <img src="img/form/board1.png" class="form__img" alt="картинка">
+                        <img src="img/form/board.png" class="form__img_tablet" alt="картинка">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="container _anim-items">
+            <div class="footer__item">
+                <a href="#" class="footer__logo">
+                    <svg>
+                        <use xlink:href="img/sprite/sprite.svg#footer--footer-logo"></use>
+                    </svg>
+                </a>
+                <div class="contacts">
+                    <a href="tel:+78008008080" class="footer__phone">+7 (800) 800–80–80</a>
+                    <a href="mailto:info@clusterfloor.ru" class="footer__mail">info@clusterfloor.ru</a>
+                </div>
+            </div>
+            <div class="footer__item">
+                <h6>Каталог продукции</h6>
+                <ul class="catalog">
+                    <li class="catalog__item">
+                        <a href="#" class="catalog__link">Клевая LVT плитка</a>
+                    </li>
+                    <li class="catalog__item">
+                        <a href="#" class="catalog__link">Замковая LVT плитка</a>
+                    </li>
+                    <li class="catalog__item">
+                        <a href="#" class="catalog__link">Замковый SPC ламинат</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h6>Покупателю</h6>
+                <ul class="buyer">
+                    <li class="buyer__item">
+                        <a href="#" class="buyer__link">Акции</a>
+                    </li>
+                    <li class="buyer__item">
+                        <a href="#" class="buyer__link">Где купить</a>
+                    </li>
+                    <li class="buyer__item">
+                        <a href="#" class="buyer__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h6>ClasterFloor</h6>
+                <ul class="about">
+                    <li class="about__item">
+                        <a href="#" class="about__link">О компании</a>
+                    </li>
+                    <li class="about__item">
+                        <a href="#" class="about__link">Сотрудничество</a>
+                    </li>
+                    <li class="about__item">
+                        <a href="#" class="about__link dashed">Написать нам</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <div class="footer__icons">
+                    <div class="footer__icons-row">
+                        <a href="#"><svg>
+                                <use xlink:href="img/sprite/sprite.svg#footer--pinterest"></use>
+                            </svg></a>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="img/sprite/sprite.svg#footer--youtube"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer__icons-row">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="img/sprite/sprite.svg#footer--vk"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="img/sprite/sprite.svg#footer--ok"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer__icons-row">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="img/sprite/sprite.svg#footer--zen"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="img/sprite/sprite.svg#footer--twitter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer__icons-row">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="img/sprite/sprite.svg#footer--whatsapp"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="img/sprite/sprite.svg#footer--telegram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><span>Copyright 2021 - ClasterFloor.ru</span><span>Все права защищены</span></p>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
