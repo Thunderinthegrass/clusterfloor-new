@@ -141,6 +141,14 @@ const standSlider = new Swiper(".stand__slider", {
   },
 });
 
+let projectsSlider = new Swiper(".projects-slider", {
+  navigation: {
+    nextEl: ".projects__arrow-next",
+    prevEl: ".projects__arrow-prev",
+  },
+  loop: "infinite",
+});
+
 function mobileMenu() {
   let menuBtn = document.querySelector(".nav-mobile__btn");
   let mobileMenuInner = document.querySelector(".nav-mobile");
