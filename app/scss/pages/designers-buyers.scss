@@ -1,0 +1,123 @@
+.designers,
+.buyer{
+  padding-top: 102px;
+  &__banner {
+    width: 100%;
+    height: 604px;
+    position: relative;
+    @media (max-width: 1086px) {
+      height: 336px;
+    }
+    .banner-desktop {
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+    .banner-mobile {
+      display: none;
+      @media (max-width: 500px) {
+        display: block;
+      }
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__title {
+    position: absolute;
+    top: 61px;
+    left: 58px;
+    font-weight: 400;
+    font-size: 82px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+    @media (max-width: 1086px) {
+      font-size: 46px;
+      top: 30px;
+      left: 32px;
+    }
+    @media (max-width: 714px) {
+      top: 38px;
+      left: 17px;
+    }
+    @media (max-width: 700px) {
+      font-size: 26px;
+    }
+  }
+}
+.designers {
+  @media (max-width: 800px) {
+    padding-top: 44px;
+  }
+  .business__info {
+    width: 495px;
+    .info:nth-child(2) {
+      display: none;
+    }
+    @media (max-width: 744px) {
+      max-width: 390px;
+      width: 100%;
+    }
+  }
+  .service {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .equipment__link-wrapper {
+    top: 197px !important;
+  }
+  .cooperation__wrapper {
+    position: relative;
+    @media (max-width: 563px) {
+      padding-bottom: 59px !important;
+    }
+    .ellipse {
+      position: absolute;
+      right: -144px;
+      top: -86px;
+      @media (max-width: 1480px){
+        right: -30px;
+        top: -130px;
+      }
+      @media (max-width: 744px){
+        top: auto;
+        bottom: -30px;
+      }
+      @media (max-width: 580px){
+        width: 241px;
+        height: 151px;
+      }
+      @media (max-width: 564px){
+        bottom: auto;
+        top: -50px;
+        right: -70px;
+      }
+    }
+  }
+  .cooperation__item:nth-child(3)::before {
+    background-image: url(../img/designers-buyers/coins.svg);
+    background-size: contain;
+  }
+}
+.buyer{
+  @media (max-width: 1250px){
+    padding-left: 40px;
+    padding-right: 40px;
+    form,
+    .container{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media (max-width: 800px){
+    padding-top: 44px;
+  }
+  @media (max-width: 500px){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
