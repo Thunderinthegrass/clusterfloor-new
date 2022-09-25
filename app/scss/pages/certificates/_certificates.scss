@@ -4,10 +4,6 @@
     gap:43px;
 
   }
-  
-  .certificate__content-row2{
-    display:flex;
-  }
   .certificate__title_txt{
     font-family: 'RebelTypeDog';
   font-style: normal;
@@ -47,10 +43,14 @@
     grid-gap:26px;
   }
   .certificate__content-txt{
-    grid-area: 2 / 1 / 3/ 2;
+    grid-area: 1 / 1 / 3/ 2;
   }
   .certificate__content-img{
-    grid-area: 2 / 2 / 3 / 4;
+    grid-area: 1 / 2 / 3 / 5;
+    object-fit: fill;
+    width: 100%;
+    height:100%;
+    display:block
   }
   .certificate__content-row2{
     display:flex;
@@ -74,6 +74,5 @@ padding-bottom:23px;
 .certificate__content-row3{
     padding-top:20px;
   }
-  
 
 }
