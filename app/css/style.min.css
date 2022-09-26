@@ -11740,6 +11740,302 @@ h2 {
     padding-right: 20px;
   }
 }
+
+.buy {
+  padding-top: 64px;
+}
+.buy__title {
+  font-weight: 400;
+  font-size: 76.0031px;
+  line-height: 131.5%;
+  letter-spacing: 0.05em;
+  margin-bottom: 64px;
+}
+.buy__map {
+  margin-bottom: 75px;
+  max-width: 1180px;
+  width: 100%;
+  height: 511px;
+}
+.buy__map iframe {
+  width: 100%;
+  height: 100%;
+}
+.buy__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 125px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 50px;
+}
+.buy__item:last-child {
+  margin-bottom: 0;
+}
+.buy .buy-descr {
+  max-width: 590px;
+  width: 100%;
+}
+.buy .buy-descr__title {
+  font-family: "RebelTypeDog";
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 131.5%;
+  margin-bottom: 15px;
+}
+.buy .buy-descr__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+.buy .buy-descr .star {
+  width: 30px;
+  height: 30px;
+}
+.buy .buy-descr__address {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 6px;
+}
+.buy .buy-descr__link-site {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 29px;
+  margin-bottom: 23px;
+  color: #fbfbfb;
+}
+.buy .buy-descr__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 30px;
+  max-width: 590px;
+  width: 100%;
+}
+.buy .buy-descr .buy-benefits__item {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 17px;
+  padding-left: 54px;
+  position: relative;
+}
+.buy .buy-descr .buy-benefits__item::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 44px;
+  height: 1px;
+  background-image: url(../img/svg/product/line-icon.svg);
+}
+.buy .buy-descr__link-wrapper {
+  position: relative;
+}
+.buy .buy-descr__link-wrapper::before {
+  position: absolute;
+  content: "Перейти на сайт";
+  left: 70px;
+  top: 50%;
+  -webkit-transform: translateY(-70%);
+      -ms-transform: translateY(-70%);
+          transform: translateY(-70%);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  white-space: nowrap;
+}
+.buy .buy-descr__link-wrapper:hover .buy-descr__link {
+  -webkit-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+.buy .buy-descr__link {
+  display: inline-block;
+  width: 323px;
+  height: 138px;
+  z-index: 2;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.buy-item__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  max-width: 542px;
+  width: 100%;
+}
+.buy-item__photos-top .buy-item__photo {
+  max-width: 542px;
+  width: 100%;
+  height: 463px;
+}
+.buy-item__photos-top .buy-item__photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.buy-item__photos-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.buy-item__photos-bottom .buy-item__photo {
+  max-width: 169px;
+  width: 100%;
+  height: 226px;
+}
+.buy-item__photos-bottom .buy-item__photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.buy.media form {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width: 1350px) {
+  .buy.media {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 942px) {
+  .buy.media {
+    padding-top: 44px;
+  }
+  .buy.media .buy__item {
+    gap: 25px;
+    margin-bottom: 96px;
+  }
+  .buy.media .buy__item:last-child {
+    margin-bottom: 0;
+  }
+  .buy.media .buy__title {
+    font-size: 43px;
+    line-height: 58px;
+    margin-bottom: 35px;
+  }
+  .buy.media .buy__map {
+    height: 287px;
+    margin-bottom: 47px;
+  }
+  .buy.media .buy-descr__title {
+    font-size: 26px;
+    margin-bottom: 4px;
+  }
+  .buy.media .buy-descr__stars {
+    margin-bottom: 4px;
+  }
+  .buy.media .buy-descr .star {
+    width: 17px;
+    height: 17px;
+  }
+  .buy.media .buy-descr__address {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 6px;
+  }
+  .buy.media .buy-descr__link-site {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 25px;
+  }
+  .buy.media .buy-descr__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+  .buy.media .buy-descr .buy-benefits__item {
+    padding-left: 30px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 9px;
+  }
+  .buy.media .buy-descr .buy-benefits__item::before {
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .buy.media .buy-descr__link-wrapper {
+    width: 182px;
+    height: 70px;
+  }
+  .buy.media .buy-descr__link-wrapper::before {
+    font-weight: 400;
+    font-size: 13.4029px;
+    line-height: 18px;
+    left: 42px;
+    top: 55%;
+  }
+  .buy.media .buy-descr__link-wrapper img {
+    width: 182px;
+    height: 70px;
+  }
+  .buy.media .buy-descr .buy-descr__link {
+    width: 182px;
+    height: 70px;
+  }
+  .buy.media .buy-item__photos {
+    gap: 11px;
+  }
+  .buy.media .buy-item__photos-top .buy-item__photo {
+    height: 349px;
+  }
+  .buy.media .buy-item__photos-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 11px;
+  }
+  .buy.media .buy-item__photos-bottom .buy-item__photo {
+    height: 126px;
+  }
+}
+@media (max-width: 642px) {
+  .buy.media {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 542px) {
+  .buy.media .buy__title {
+    font-size: 26px;
+    margin-bottom: 29px;
+    line-height: 100%;
+  }
+  .buy.media .buy__map {
+    height: 217px;
+  }
+  .buy.media .buy__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
 @supports (-webkit-appearance:none){
 .header .nav-btn{background-image:url(../img/svg/header/nav/Icon.svg)}
 .header .banner1{background-image:url(../img/header-slider/slide1.webp), -o-linear-gradient(235.55deg, #2a3a62 1.39%, #18223b 79.65%)}
@@ -11832,6 +12128,7 @@ h2 {
 .project .business .validity::before,.project .business .square::before{background-image:url(../img/svg/product/line-icon.svg)}
 .project-form__btn:active span::after{background-image:url(../img/svg/recommend/arrow-active.svg)}
 .project-form__btn span::after{background-image:url(../img/svg/recommend/arrow.svg)}
+.buy .buy-descr .buy-benefits__item::before{background-image:url(../img/svg/product/line-icon.svg)}
 }
 
  @media (max-width: 744px){
@@ -12868,6 +13165,22 @@ h2 {
 }
 
  @media (max-width: 780px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 642px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 542px){
 
 @supports (-webkit-appearance:none){
 

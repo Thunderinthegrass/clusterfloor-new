@@ -1,0 +1,276 @@
+.buy {
+  padding-top: 64px;
+  &__title {
+    font-weight: 400;
+    font-size: 76.0031px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+    margin-bottom: 64px;
+  }
+  &__map {
+    margin-bottom: 75px;
+    max-width: 1180px;
+    width: 100%;
+    height: 511px;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 125px;
+    justify-content: space-between;
+    gap: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .buy-descr {
+    max-width: 590px;
+    width: 100%;
+    &__title {
+      font-family: "RebelTypeDog";
+      font-weight: 400;
+      font-size: 47px;
+      line-height: 131.5%;
+      margin-bottom: 15px;
+    }
+    &__stars {
+      display: flex;
+      margin-bottom: 15px;
+    }
+    .star {
+      width: 30px;
+      height: 30px;
+    }
+    &__address {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 27px;
+      margin-bottom: 6px;
+    }
+    &__link-site {
+      display: inline-block;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 29px;
+      margin-bottom: 23px;
+      color: #fbfbfb;
+    }
+    &__text {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 27px;
+      margin-bottom: 30px;
+      max-width: 590px;
+      width: 100%;
+    }
+    .buy-benefits {
+      &__item {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 17px;
+        padding-left: 54px;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 44px;
+          height: 1px;
+          background-image: url(../img/svg/product/line-icon.svg);
+        }
+      }
+    }
+    &__link-wrapper {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "Перейти на сайт";
+        left: 70px;
+        top: 50%;
+        transform: translateY(-70%);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        white-space: nowrap;
+      }
+      &:hover {
+        .buy-descr__link {
+          transform: rotate(10deg);
+        }
+      }
+    }
+    &__link {
+      display: inline-block;
+      width: 323px;
+      height: 138px;
+      z-index: 2;
+      transition: 0.3s;
+    }
+  }
+  &-item__photos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 542px;
+    width: 100%;
+    &-top {
+      .buy-item__photo {
+        max-width: 542px;
+        width: 100%;
+        height: 463px;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    &-bottom {
+      display: flex;
+      gap: 20px;
+      .buy-item__photo {
+        max-width: 169px;
+        width: 100%;
+        height: 226px;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+.buy.media {
+  form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media (max-width: 1350px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (max-width: 942px) {
+    padding-top: 44px;
+    .buy {
+      &__item{
+        gap: 25px;
+        margin-bottom: 96px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+      &__title {
+        font-size: 43px;
+        line-height: 58px;
+        margin-bottom: 35px;
+      }
+      &__map {
+        height: 287px;
+        margin-bottom: 47px;
+      }
+      &-descr {
+        &__title {
+          font-size: 26px;
+          margin-bottom: 4px;
+        }
+        &__stars {
+          margin-bottom: 4px;
+        }
+        .star {
+          width: 17px;
+          height: 17px;
+        }
+        &__address {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          margin-bottom: 6px;
+        }
+        &__link-site {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 19px;
+          margin-bottom: 25px;
+        }
+        &__text {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 19px;
+          margin-bottom: 20px;
+        }
+        .buy-benefits {
+          &__item {
+            padding-left: 30px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 9px;
+            &::before {
+              transform: translateY(-50%);
+            }
+          }
+        }
+        &__link-wrapper {
+          width: 182px;
+          height: 70px;
+          &::before {
+            font-weight: 400;
+            font-size: 13.4029px;
+            line-height: 18px;
+            left: 42px;
+            top: 55%;
+          }
+          img {
+            width: 182px;
+            height: 70px;
+          }
+        }
+        .buy-descr__link {
+          width: 182px;
+          height: 70px;
+        }
+      }
+      &-item__photos {
+        gap: 11px;
+        &-top {
+          .buy-item__photo {
+            height: 349px;
+          }
+        }
+        &-bottom {
+          display: flex;
+          gap: 11px;
+          .buy-item__photo {
+            height: 126px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 642px){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (max-width: 542px){
+    .buy{
+      &__title{
+        font-size: 26px;
+        margin-bottom: 29px;
+        line-height: 100%;
+      }
+      &__map{
+        height: 217px;
+      }
+    }
+    .buy__item{
+      flex-direction: column-reverse;
+    }
+  }
+}
