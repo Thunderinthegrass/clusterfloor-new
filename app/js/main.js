@@ -149,6 +149,14 @@ let projectsSlider = new Swiper(".projects-slider", {
   loop: "infinite",
 });
 
+let projectSlider = new Swiper(".project-slider", {
+  navigation: {
+    nextEl: ".project__arrow-next",
+    prevEl: ".project__arrow-prev",
+  },
+  loop: "infinite",
+});
+
 function mobileMenu() {
   let menuBtn = document.querySelector(".nav-mobile__btn");
   let mobileMenuInner = document.querySelector(".nav-mobile");

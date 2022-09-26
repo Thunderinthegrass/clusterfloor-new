@@ -160,7 +160,127 @@
     }
   }
 }
-.projects.media {
+.project.media{
+  @media (max-width: 1300px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (max-width: 950px) {
+    .project__title {
+      padding-top: 29px;
+      margin-bottom: 35px;
+      font-weight: 400;
+      font-size: 43px;
+      line-height: 58px;
+      letter-spacing: 0.05em;
+    }
+  }
+  @media (max-width: 800px) {
+    padding-top: 0;
+    .swiper-slide {
+      height: 287px;
+    }
+    .project__arrow {
+      width: 32px;
+      height: 32px;
+      &-prev {
+        right: 9px;
+      }
+      &-next {
+        right: 9px;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (max-width: 500px) {
+    .project {
+      &__title {
+        padding-top: 44px;
+        font-size: 26px;
+        margin-bottom: 29px;
+        line-height: 100%;
+      }
+      &__arrow {
+        background: transparent;
+        &-prev {
+          left: auto;
+          top: auto;
+          right: 64px;
+          bottom: 8px;
+        }
+        &-next {
+          top: auto;
+          right: 9px;
+          bottom: 8px;
+        }
+      }
+    }
+    .swiper-slide {
+      height: 370px;
+    }
+  }
+  .business {
+    @media (max-width: 1100px) {
+      .btn-wrapper {
+        height: 96px;
+        &::after {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          white-space: nowrap;
+          top: 63%;
+        }
+      }
+      &__btn {
+        width: 250px;
+        height: 96px;
+      }
+    }
+    @media (max-width: 942px) {
+      padding-top: 84px;
+      &__title {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 131.5%;
+        margin-bottom: 17px;
+      }
+      &__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+        margin-right: 17px;
+      }
+    }
+    @media (max-width: 618px) {
+      padding-bottom: 150px;
+      position: relative;
+      .btn-wrapper {
+        position: absolute;
+        margin: 0;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    @media (max-width: 500px) {
+      padding-top: 74px;
+      &__title {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 131.5%;
+        margin-bottom: 15px;
+      }
+      &__inner {
+        margin-bottom: 23px;
+      }
+    }
+  }
+}
+.projects.media,
+.project.media {
   @media (max-width: 1000px) {
     .project-form {
       padding: 21px 39px 46px;
