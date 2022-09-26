@@ -207,7 +207,7 @@
     </div>
   </div>
   <main class="main">
-    <div class="projects">
+    <div class="projects media">
       <div class="container _anim-items">
         <div class="projects__ball"></div>
         <h2 class="projects__title">Наши проекты</h2>
@@ -280,60 +280,70 @@
         </div>
         <form class="project-form">
           <h3 class="project-form__title">Реализуем ваш проект</h3>
-          <div class="project-form__benefits form__benefits">
-            <p class="form__benefits-item">
-              сделаем дизайн проект бесплатно
-            </p>
-            <p class="form__benefits-item">
-              преедоставим образцы на согласование
-            </p>
-            <p class="form__benefits-item">
-              уложим пробный шоу рум, при объеме от 300 м.кв.
-            </p>
-            <p class="form__benefits-item">
-              дадим повышенную гарантию на монтажные работы
-            </p>
+          <div class="project-form__benefits form-benefits">
+            <div class="form-benefits__item">
+              <svg class="project-form__icon">
+                <use xlink:href="img/sprite/sprite.svg#project-form--cube"></use>
+              </svg>
+              <p>сделаем дизайн проект бесплатно</p>
+            </div>
+            <div class="form-benefits__item">
+              <svg class="project-form__icon">
+                <use xlink:href="img/sprite/sprite.svg#project-form--swatches"></use>
+              </svg>
+              <p>предоставим образцы на согласование</p>
+            </div>
+            <div class="form-benefits__item">
+              <svg class="project-form__icon">
+                <use xlink:href="img/sprite/sprite.svg#project-form--stack"></use>
+              </svg>
+              <p>уложим пробный шоу рум, при объеме от 300 м.кв.</p>
+            </div>
+            <div class="form-benefits__item">
+              <svg class="project-form__icon">
+                <use xlink:href="img/sprite/sprite.svg#project-form--circle"></use>
+              </svg>
+              <p>дадим повышенную гарантию на монтажные работы</p>
+            </div>
           </div>
           <div class="project-form__inner">
             <div class="project-form__inputs">
-              <input type="text" class="project-form__input">
-              <input type="tel" class="project-form__input">
+              <input type="text" placeholder="Ваше имя" class="project-form__input project-form__input-name">
+              <input type="tel" placeholder="Номер телефона" class="project-form__input project-form__input-tel">
             </div>
-            <textarea class="projects-form__textarea">
-
-            </textarea>
+            <textarea placeholder="Опишите проект" class="project-form__textarea"></textarea>
           </div>
           <div class="project-form__bottom">
-            <p class="agreement">Нажимая на кнопку, вы даете <a href="#">согласие на обработку своих персональных данных</a> и получение сообщений </p>
-          </div>
-          <button class="projects-form__textarea">
-            <span>Отправить</span>
-          </button>
-        </form>
-      </div>
-    </div>
-    <form action="" class="form">
-      <div class="container _anim-items">
-        <h2 class="form__title">С радостью ответим <br> на любые вопросы</h2>
-        <p class="form__subtitle">Заполните нашу форму обратного вызова и наши специалисты свяжутся с вами в течение 5
-          минут</p>
-        <div class="form__inner">
-          <div class="form__left">
-            <input type="text" placeholder="Ваше имя">
-            <input type="tel" placeholder="Номер телефона">
-            <button class="form__btn" type="submit">
+            <button type="submit" class="project-form__btn">
               <span>Отправить</span>
             </button>
-            <p class="agreement">Нажимая на кнопку, вы даете <a href="#">согласие на обработку своих персональных
-                данных</a> и получение сообщений </p>
+            <p class="agreement">Нажимая на кнопку, вы даете <a class="agreement-link" href="#">согласие на обработку своих персональных данных</a> и получение сообщений </p>
           </div>
-          <div class="form__img-wrapper">
-            <img src="img/form/board1.png" class="form__img" alt="картинка">
-            <img src="img/form/board.png" class="form__img_tablet" alt="картинка">
+        </form>
+      </div>
+      <form action="" class="form">
+        <div class="container _anim-items">
+          <h2 class="form__title">С радостью ответим <br> на любые вопросы</h2>
+          <p class="form__subtitle">Заполните нашу форму обратного вызова и наши специалисты свяжутся с вами в течение 5
+            минут</p>
+          <div class="form__inner">
+            <div class="form__left">
+              <input type="text" placeholder="Ваше имя">
+              <input type="tel" placeholder="Номер телефона">
+              <button class="form__btn" type="submit">
+                <span>Отправить</span>
+              </button>
+              <p class="agreement">Нажимая на кнопку, вы даете <a href="#">согласие на обработку своих персональных
+                  данных</a> и получение сообщений </p>
+            </div>
+            <div class="form__img-wrapper">
+              <img src="img/form/board1.png" class="form__img" alt="картинка">
+              <img src="img/form/board.png" class="form__img_tablet" alt="картинка">
+            </div>
           </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </main>
   <footer class="footer">
     <div class="container _anim-items">
