@@ -1,0 +1,88 @@
+.storage {
+  padding-top: 64px;
+  &__title {
+    font-weight: 400;
+    font-size: 76.0031px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+    margin-bottom: 64px;
+  }
+  &__map {
+    max-width: 1180px;
+    width: 100%;
+    height: 511px;
+    margin-bottom: 45px;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+  .opening {
+    font-family: "RebelTypeDog";
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+  }
+  &__warning {
+    position: relative;
+    width: 503px;
+    padding: 20px 27px 20px 62px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    border: 1px solid #fbfbfb;
+    margin-bottom: 150px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 32px;
+      left: 20px;
+      top: 20px;
+      background-image: url(../img/storage/warning.svg);
+    }
+  }
+  .carefully {
+    &__title {
+      font-weight: 400;
+      font-size: 47px;
+      line-height: 56px;
+      letter-spacing: 0.01em;
+      margin-bottom: 62px;
+    }
+    &__photos{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &-row{
+        display: flex;
+        gap: 20px;
+        .carefully__photo{
+          &:nth-child(1){
+            max-width: 511px;
+            width: 100%;
+          }
+          &:nth-child(2){
+            max-width: 649px;
+            width: 100%;
+          }
+        }
+      }
+    }
+    &__photo{
+      height: 499px;
+      max-width: 100%;
+      width: 100%;
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
