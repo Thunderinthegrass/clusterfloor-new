@@ -1,20 +1,28 @@
 .sales__content{
   display:flex;
-  gap:20px
+  gap:3%;
 }
 .sales__content img{
+width:100%;
   position:relative;
+  max-width:380px;
   
 }
 .sales__item-name{
-  position:absolute;
-  z-index:2;
-  top:500px;
   font-family: 'Nunito Sans';
 font-style: normal;
 font-weight: 600;
 font-size: 20px;
 line-height: 27px;
+color: #f7f5f2;
+}
+.sales__info{
+  position: absolute;
+  top:63px;
+  margin-left:26px;
+    margin-right:20px;
+  width: 100%;
+  max-width:334px;
 }
 .sales__title{
   font-family: 'RebelTypeDog';
@@ -23,4 +31,6 @@ font-weight: 400;
 font-size: 76.0031px;
 line-height: 131.5%;
   letter-spacing: 0.05em;
+   padding-bottom:90px;
+  padding-top:64px
 }
