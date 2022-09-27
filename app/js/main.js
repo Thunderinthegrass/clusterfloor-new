@@ -157,6 +157,18 @@ let projectSlider = new Swiper(".project-slider", {
   loop: "infinite",
 });
 
+const storageSlider = new Swiper(".storage__slider", {
+  loop: "infinite",
+  // effect: "fade",
+  centeredSlides: true,
+  spaceBetween: 40,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+});
+
 function mobileMenu() {
   let menuBtn = document.querySelector(".nav-mobile__btn");
   let mobileMenuInner = document.querySelector(".nav-mobile");
