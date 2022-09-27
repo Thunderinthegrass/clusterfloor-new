@@ -1,0 +1,113 @@
+.sales.media {
+  @media (max-width: 1200px) {
+    .sales.container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .breadcrumbs {
+      padding: 0;
+    }
+  }
+  @media (max-width:1140px){
+    .sales__info {
+      max-width: 270px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .sales__item-name {
+      font-size: 17px;
+      line-height: 26px;
+    }
+  }
+  @media (max-width: 1000px) {
+    .sales__item-name {
+      font-size: 15px;
+      line-height: 24px;
+    }
+    .sales__info {
+      max-width: 240px;
+    }
+  }
+  @media (max-width: 862px) {
+    .sales__item-name {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .sales__info {
+      top: 40px;
+      max-width: 200px;
+    }
+  }
+  @media (max-width: 786px) {
+    .sales__title {
+      font-size: 43px;
+      line-height: 58px;
+      padding-top: 29px;
+      padding-bottom: 40px;
+    }
+    .sales__item-name {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    .sales__content img {
+      max-width: 210px;
+      max-height: 293px;
+    }
+    .sales__content {
+      gap: 14px;
+      justify-content: center;
+    }
+    .sales__info {
+      max-width: 185px;
+    }
+  }
+  @media (max-width: 745px) {
+    .sales{
+      .container{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+    .sales__info {
+      max-width: 160px;
+    }
+  }
+  @media (max-width: 669px) {
+    .sales__item-name {
+      font-size: 11px;
+      line-height: 12px;
+    }
+    .sales__info {
+      max-width: 80%;
+      left: 26px;
+      margin: 0;
+    }
+    .sales__content {
+      gap: 11px;
+    }
+  }
+  @media (max-width: 580px) {
+    .sales__content {
+      flex-direction: column;
+      align-items: center;
+      gap: 33px;
+    }
+    .sales__content img {
+      max-width: 320px;
+      max-height: 445.47px;
+    }
+    .sales__title {
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 131.5%;
+      padding-top: 44px;
+      padding-bottom: 44px;
+    }
+    .sales__item-name {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      width: 251.79px;
+    }
+  }
+}

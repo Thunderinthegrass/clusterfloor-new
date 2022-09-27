@@ -169,6 +169,19 @@ const storageSlider = new Swiper(".storage__slider", {
   },
 });
 
+const swiperContact = new Swiper(".contacts__swiper", {
+  navigation: {
+    nextEl: ".swiper-button-forth",
+    prevEl: ".swiper-button-back",
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,},
+  effect: "fade",
+  loop: "infinite",
+});
+
 function mobileMenu() {
   let menuBtn = document.querySelector(".nav-mobile__btn");
   let mobileMenuInner = document.querySelector(".nav-mobile");

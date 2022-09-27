@@ -19,10 +19,17 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    &-1pic{
+      object-fit: cover;
+      width: 100%;
+    }
   }
   .gallery img {
     display: block;
     max-width: 100%;
+    object-fit: cover;
+      width: 100%;
+      height: 100%;
   }
   .gallery {
     padding-top: 128px;
@@ -114,5 +121,51 @@
   }
   .form{
     padding-top: 150px;
+  }
+  .contacts__swiper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: none;
+    .swiper-slide{
+      max-width: 650px;
+      width: 100%;
+    }
+    .swiper-pagination{
+      height: 12px;
+      position: absolute;
+      bottom: 23px;
+      text-align: center;
+      left: 0;
+      right: 0;
+    }
+    .swiper-pagination-bullet{
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #fbfbfb4a;
+      border-radius: 100%;
+      margin-right: 8px;
+      &-active{
+        background: #fbfbfb;
+      }
+    }
+  }
+  .swiper-button-back {
+    position: absolute;
+    left: 65px;
+    top: 392px;
+  }
+  .swiper-button-forth {
+    position: absolute;
+    right: 65px;
+    top: 393px;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .map__img2{
+    display: none;
   }
 }

@@ -301,4 +301,74 @@
       }
     }
   }
+  .business {
+    @media (max-width: 1100px) {
+      .btn-wrapper {
+        height: 96px;
+        &::after {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          white-space: nowrap;
+          top: 63%;
+        }
+      }
+      &__btn {
+        width: 250px;
+        height: 96px;
+      }
+      .info {
+        padding: 16px 17px 15px 48px;
+        &__text {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+        }
+        img {
+          width: 25px;
+          height: 25px;
+          left: 17px;
+          top: 17px;
+        }
+      }
+    }
+    @media (max-width: 942px) {
+      padding-top: 96px;
+      &__title {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 131.5%;
+        margin-bottom: 17px;
+      }
+      &__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+        margin-right: 17px;
+      }
+    }
+    @media (max-width: 618px) {
+      padding-bottom: 150px;
+      position: relative;
+      .btn-wrapper {
+        position: absolute;
+        margin: 0;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    @media (max-width: 500px) {
+      padding-top: 53px;
+      &__title {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 131.5%;
+        margin-bottom: 15px;
+      }
+      &__inner {
+        margin-bottom: 23px;
+      }
+    }
+  }
 }
