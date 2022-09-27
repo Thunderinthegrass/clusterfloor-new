@@ -12523,6 +12523,151 @@ h2 {
     height: 261px;
   }
 }
+
+.documents {
+  padding-top: 64px;
+}
+.documents__title {
+  font-weight: 400;
+  font-size: 76.0031px;
+  line-height: 131.5%;
+  letter-spacing: 0.05em;
+  margin-bottom: 111px;
+}
+.documents__docs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.documents__docs-item {
+  max-width: 365px;
+  width: 100%;
+}
+.documents__docs-item p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+.documents__doc {
+  display: inline-block;
+  margin-bottom: 16px;
+  max-width: 100%;
+  height: 396px;
+}
+.documents__doc img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1350px) {
+  .documents.media {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .documents.media .form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 744px) {
+  .documents.media {
+    padding-top: 29px;
+  }
+  .documents.media .documents__title {
+    font-size: 43px;
+    line-height: 58px;
+    margin-bottom: 43px;
+  }
+  .documents.media .documents__docs {
+    gap: 12px;
+    max-width: 438px;
+    width: 100%;
+  }
+  .documents.media .documents__docs-item p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .documents.media .documents__doc {
+    height: 231px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .documents.media {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .documents.media .form {
+    padding-top: 135px;
+  }
+  .documents.media .documents__title {
+    font-size: 26px;
+    line-height: 131.5%;
+    padding-top: 44px;
+    margin-bottom: 44px;
+  }
+  .documents.media .documents__docs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+  }
+  .documents.media .documents__docs-item {
+    max-width: 100%;
+  }
+  .documents.media .documents__doc {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.sales__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3%;
+}
+.sales__content-card {
+  position: relative;
+}
+
+.sales__content img {
+  width: 100%;
+  position: relative;
+  max-width: 380px;
+}
+
+.sales__item-name {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #f7f5f2;
+}
+
+.sales__info {
+  position: absolute;
+  top: 63px;
+  margin-left: 26px;
+  margin-right: 20px;
+  width: 100%;
+  max-width: 334px;
+}
+
+.sales__title {
+  font-family: "RebelTypeDog";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 76.0031px;
+  line-height: 131.5%;
+  letter-spacing: 0.05em;
+  padding-bottom: 90px;
+  padding-top: 64px;
+}
 @supports (-webkit-appearance:none){
 .header .nav-btn{background-image:url(../img/svg/header/nav/Icon.svg)}
 .header .banner1{background-image:url(../img/header-slider/slide1.webp), -o-linear-gradient(235.55deg, #2a3a62 1.39%, #18223b 79.65%)}
