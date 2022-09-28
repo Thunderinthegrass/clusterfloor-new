@@ -16,12 +16,10 @@ swiper.on('slideChange', function(sld) {
 const productUseSlider = new Swiper(".product-use__slider", {
   loop: "infinite",
   spaceBetween: 12,
-  // centeredSlides: true,
 });
 
 const cardPhotoSlider = new Swiper(".card__slider", {
   loop: "infinite",
-  // centeredSlides: true,
   spaceBetween: 20,
   pagination: {
     el: '.swiper-pagination',
@@ -32,7 +30,6 @@ const cardPhotoSlider = new Swiper(".card__slider", {
 
 let popupSlider = new Swiper(".modal-slider__block", {
   loop: "infinite",
-  // centeredSlides: true,
   spaceBetween: 20,
 });
 
@@ -386,5 +383,63 @@ function productUsePhotosViewMore() {
   }
 }
 productUsePhotosViewMore();
+
+
+function isMobileUser() {
+  let isMobile = {
+    Android: function () {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function () {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function () {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function () {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function () {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function () {
+        return (
+                isMobile.Android()
+                || isMobile.BlackBerry()
+                || isMobile.iOS()
+                || isMobile.Opera()
+                || isMobile.Windows()
+                );
+    }
+  };
+
+  let body = document.querySelector('body');
+  if (isMobile.any()){
+    body.classList.add('touch');
+  }
+  else{
+    body.classList.add('mouse');
+  }
+
+  let navMobileArrow = document.querySelectorAll('.nav-mobile__arrow');
+  let subNavMobileArrow = document.querySelectorAll('.sub-nav-mobile__arrow');
+  let subNavListMobile = document.querySelectorAll('.sub-nav__list-mobile')
+  let subSubNavListMobile = document.querySelectorAll('.sub-sub-nav__list-mobile')
+
+    navMobileArrow.forEach((elem, id) => {
+      elem.addEventListener('click', () => {
+        elem.classList.toggle('rotate');
+        subNavListMobile[id].classList.toggle('list-active');
+      })
+    })
+    subNavMobileArrow.forEach((elem, id) => {
+      elem.addEventListener('click', () => {
+        elem.classList.toggle('rotate');
+        subSubNavListMobile[id].classList.toggle('list-active');
+      })
+    })
+}
+isMobileUser();
+
 
 
