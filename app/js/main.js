@@ -421,23 +421,32 @@ function isMobileUser() {
     body.classList.add('mouse');
   }
 
-  let navMobileArrow = document.querySelectorAll('.nav-mobile__arrow');
-  let subNavMobileArrow = document.querySelectorAll('.sub-nav-mobile__arrow');
-  let subNavListMobile = document.querySelectorAll('.sub-nav__list-mobile')
-  let subSubNavListMobile = document.querySelectorAll('.sub-sub-nav__list-mobile')
+  let mainNavMobileItem = document.querySelectorAll('.main-nav-mobile__item');
+  let subNavMobileItem = document.querySelectorAll('.sub-nav-mobile__item');
 
-    navMobileArrow.forEach((elem, id) => {
-      elem.addEventListener('click', () => {
-        elem.classList.toggle('rotate');
-        subNavListMobile[id].classList.toggle('list-active');
+  for (let i = 0; i < mainNavMobileItem.length; i++) {
+    let subNavListMobile = mainNavMobileItem[i].querySelectorAll('.sub-nav__list-mobile');
+    let navMobileArrow = mainNavMobileItem[i].querySelectorAll('.nav-mobile__arrow');
+
+    for (let k = 0; k < navMobileArrow.length; k++) {
+      navMobileArrow[k].addEventListener('click', () => {
+        navMobileArrow[k].classList.toggle('rotate');
+        subNavListMobile[k].classList.toggle('list-active');
       })
-    })
-    subNavMobileArrow.forEach((elem, id) => {
-      elem.addEventListener('click', () => {
-        elem.classList.toggle('rotate');
-        subSubNavListMobile[id].classList.toggle('list-active');
+    }
+  }
+
+  for (let i = 0; i < subNavMobileItem.length; i++) {
+    let subSubNavListMobile = subNavMobileItem[i].querySelectorAll('.sub-sub-nav__list-mobile');
+    let subNavMobileArrow = subNavMobileItem[i].querySelectorAll('.sub-nav-mobile__arrow');
+
+    for (let k = 0; k < subNavMobileArrow.length; k++) {
+      subNavMobileArrow[k].addEventListener('click', () => {
+        subNavMobileArrow[k].classList.toggle('rotate');
+        subSubNavListMobile[k].classList.toggle('list-active');
       })
-    })
+    }
+  }
 }
 isMobileUser();
 
