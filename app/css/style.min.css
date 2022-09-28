@@ -13197,6 +13197,133 @@ h2 {
   padding-top: 64px;
 }
 
+.sale {
+  padding-top: 64px;
+}
+.sale__title {
+  font-weight: 400;
+  font-size: 76.0031px;
+  line-height: 131.5%;
+  letter-spacing: 0.05em;
+  margin-bottom: 64px;
+}
+.sale__banner {
+  width: 100%;
+  height: 281px;
+  margin-bottom: 55px;
+  position: relative;
+}
+.sale__banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.sale__banner-text {
+  position: absolute;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  max-width: 470px;
+  width: 100%;
+  top: 79px;
+  left: 26px;
+}
+.sale__text {
+  max-width: 638px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+}
+.sale__mobile-img {
+  display: none;
+}
+@media (max-width: 1350px) {
+  .sale.media {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 744px) {
+  .sale.media {
+    padding-top: 30px;
+  }
+  .sale.media .sale__title {
+    font-size: 43px;
+    line-height: 58px;
+    margin-bottom: 43px;
+  }
+  .sale.media .sale__banner {
+    height: 158px;
+    margin-bottom: 88px;
+    margin-bottom: 41px;
+  }
+  .sale.media .sale__banner-text {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 264px;
+    top: 46px;
+    left: 14px;
+  }
+  .sale.media .sale__text {
+    font-size: 14px;
+    line-height: 19px;
+    max-width: 490px;
+  }
+}
+@media (max-width: 500px) {
+  .sale.media {
+    padding-top: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sale.media .sale__title {
+    font-size: 26px;
+    line-height: 131.5%;
+    margin-bottom: 44px;
+  }
+  .sale.media .sale__banner {
+    height: 445px;
+    margin-bottom: 38px;
+  }
+  .sale.media .sale__banner img {
+    display: none;
+  }
+  .sale.media .sale__banner .sale__mobile-img {
+    display: block;
+  }
+  .sale.media .sale__banner-text {
+    font-weight: 400;
+    top: 67px;
+    left: 21px;
+  }
+  .sale.media .sale__text {
+    font-size: 14px;
+    line-height: 19px;
+    max-width: 490px;
+  }
+}
+@media (max-width: 344px) {
+  .sale.media .sale__banner-text {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 778px) {
+  .main-sale .form {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 112px;
+  }
+}
+@media (max-width: 500px) {
+  .main-sale .form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .contacts .contacts__title_txt,
 .contacts .visit__title_txt {
   font-family: "RebelTypeDog";
@@ -14602,6 +14729,14 @@ h2 {
 }
 
  @media (max-width: 560px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 344px){
 
 @supports (-webkit-appearance:none){
 

@@ -1,0 +1,126 @@
+.sale {
+  padding-top: 64px;
+  &__title {
+    font-weight: 400;
+    font-size: 76.0031px;
+    line-height: 131.5%;
+    letter-spacing: 0.05em;
+    margin-bottom: 64px;
+  }
+  &__banner {
+    width: 100%;
+    height: 281px;
+    margin-bottom: 55px;
+    position: relative;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    &-text {
+      position: absolute;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 41px;
+      max-width: 470px;
+      width: 100%;
+      top: 79px;
+      left: 26px;
+    }
+  }
+  &__text {
+    max-width: 638px;
+    width: 100%;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  &__mobile-img{
+    display: none;
+  }
+  &.media {
+    @media (max-width: 1350px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    @media (max-width: 744px) {
+      padding-top: 30px;
+      .sale {
+        &__title {
+          font-size: 43px;
+          line-height: 58px;
+          margin-bottom: 43px;
+        }
+        &__banner {
+          height: 158px;
+          margin-bottom: 88px;
+          margin-bottom: 41px;
+          &-text {
+            font-size: 16px;
+            line-height: 22px;
+            max-width: 264px;
+            top: 46px;
+            left: 14px;
+          }
+        }
+        &__text {
+          font-size: 14px;
+          line-height: 19px;
+          max-width: 490px;
+        }
+      }
+    }
+    @media (max-width: 500px) {
+      padding-top: 44px;
+      padding-left: 20px;
+      padding-right: 20px;
+      .sale {
+        &__title {
+          font-size: 26px;
+          line-height: 131.5%;
+          margin-bottom: 44px;
+        }
+        &__banner {
+          height: 445px;
+          margin-bottom: 38px;
+          img{
+            display: none;
+          }
+          .sale__mobile-img{
+            display: block;
+          }
+          &-text {
+            font-weight: 400;
+            top: 67px;
+            left: 21px;
+          }
+        }
+        &__text {
+          font-size: 14px;
+          line-height: 19px;
+          max-width: 490px;
+        }
+      }
+    }
+    @media (max-width: 344px){
+      .sale__banner-text {
+        max-width: 260px;
+      }
+    }
+  }
+}
+.main-sale {
+  @media (max-width: 778px) {
+    .form {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 112px;
+    }
+  }
+  @media (max-width: 500px) {
+    .form {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
