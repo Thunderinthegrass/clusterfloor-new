@@ -1,0 +1,33 @@
+.not-found.media {
+  @media (max-width: 1350px) {
+    .container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  @media (max-width: 744px) {
+    .not-found__link {
+      width: 368px;
+      height: 142px;
+      &::after {
+        font-size: 20px;
+        line-height: 27px;
+      }
+    }
+  }
+  @media (max-width: 744px) {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .not-found__link {
+      width: 300px;
+      height: 142px;
+      &::after {
+        font-size: 16px;
+        line-height: 22px;
+        top: 35%;
+      }
+    }
+  }
+}
