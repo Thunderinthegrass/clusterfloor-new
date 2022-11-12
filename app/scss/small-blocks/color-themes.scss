@@ -1,0 +1,64 @@
+:root,
+[data-theme="default"] {//тёмная
+  --nav-bg: #1f2023;
+  --color: #fbfbfb;
+  --opacity-dark: 1;
+  --opacity-light: 0;
+  --stroke: #fbfbfb;
+  --body-bg: linear-gradient(198.86deg, #18223b 14.21%, #27282c 73.28%);
+  --header-slider-bg: url(../img/header-slider/slide1.webp), linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
+  --item-light: none;
+  --item-dark: block;
+}
+
+@supports (--css: variables) {//светлая
+  [data-theme="dark"] {
+    --nav-bg: #e2e8f8;
+    --color: #231f20;
+    --opacity-dark: 0;
+    --opacity-light: 1;
+    --stroke: #231F20;
+    --body-bg: linear-gradient(180deg, #EBEEF7 0%, #CCD6F0 100%);
+    --header-slider-bg: url(../img/header-slider/slide1-light.webp), linear-gradient(214.45deg, #EBEEF6 1.39%, #C0C9E0 79.65%);
+    --item-light: block;
+    --item-dark: none;
+  }
+}
+.switch {
+  position: absolute;
+  top: 144px;
+  right: 0;
+}
+.switch svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+.switch span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color);
+}
+.switch .buttons-wrapper{
+  position: relative;
+}
+.switch .buttons-wrapper button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  background: var(--nav-bg);
+  width: 117px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+#theme-switch-dark{
+  opacity: var(--opacity-dark);
+  padding-left: 14px;
+}
+#theme-switch-light{
+  opacity: var(--opacity-light);
+  padding-left: 9px;
+}

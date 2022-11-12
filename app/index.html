@@ -162,9 +162,28 @@
     </nav>
     <div class="header__top search-hide">
       <div class="container search-hide">
+        <div class="switch media">
+          <div class="buttons-wrapper">
+            <button id="theme-switch-dark">
+              <svg>
+                <use xlink:href="img/sprite/sprite.svg#switch--dark"></use>
+              </svg>
+              <span>Тёмный</span>
+            </button>
+            <button id="theme-switch-light">
+              <svg>
+                <use xlink:href="img/sprite/sprite.svg#switch--light"></use>
+              </svg>
+              <span>Светлый</span>
+            </button>
+          </div>
+        </div>
         <a href="index.html" class="header__logo search-hide">
           <svg>
             <use xlink:href="img/sprite/sprite.svg#header--top--logo"></use>
+          </svg>
+          <svg class="logo-light">
+            <use xlink:href="img/sprite/sprite.svg#header--top--logo-light"></use>
           </svg>
         </a>
         <div class="header__search search search-hide">
@@ -477,9 +496,11 @@
       </div>
       <div class="swiper-button-prev">
         <img src="img/svg/header/banner/slider-arrow.svg" alt="назад">
+        <img class="arrow-light" src="img/svg/header/banner/slider-arrow-light.svg" alt="назад">
       </div>
       <div class="swiper-button-next">
         <img src="img/svg/header/banner/slider-arrow.svg" alt="вперед">
+        <img class="arrow-light" src="img/svg/header/banner/slider-arrow-light.svg" alt="назад">
       </div>
     </div>
   </header>

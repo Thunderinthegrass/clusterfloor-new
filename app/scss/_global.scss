@@ -6,8 +6,11 @@ body {
   font-family: "Nunito Sans";
   font-weight: 400;
   color: #fbfbfb;
+  color: var(--color);
   background: linear-gradient(198.86deg, #18223b 14.21%, #27282c 73.28%);
+  background: var(--body-bg);
   // overflow: hidden;
+  transition: .3s;
 }
 h2 {
   font-family: "RebelTypeDog";

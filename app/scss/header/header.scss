@@ -1,9 +1,11 @@
 .header {
   &__top {
     background: #1f2023;
+    background: var(--nav-bg);
     height: 72px;
     position: relative;
     z-index: 3;
+    transition: .3s;
   }
   .container {
     max-width: 1210px;
@@ -19,6 +21,10 @@
     svg {
       width: 219px;
       height: 55px;
+      display: var(--item-dark);
+    }
+    .logo-light{
+      display: var(--item-light);
     }
   }
   &__search {
@@ -33,11 +39,13 @@
     width: 345px;
     font-size: 20px;
     line-height: 27px;
-    border-bottom: 1px solid #fbfbfb;
+    border-bottom: 1px solid var(--color);
     margin-top: 24px;
     padding-right: 25px;
     color: #fbfbfb;
+    color: var(--color);
     outline: none;
+    transition: .3s;
   }
   .search__btn {
     position: absolute;
@@ -47,6 +55,7 @@
     svg {
       width: 32px;
       height: 32px;
+      stroke: var(--stroke);
     }
   }
   .search__btn_off {
@@ -125,6 +134,7 @@
     margin-top: 26px;
     margin-right: 46px;
     color: #fbfbfb;
+    color: var(--color);
   }
   &__social {
     display: flex;
@@ -152,6 +162,9 @@
   }
   .nav {
     background: #1f2023;
+    background: var(--nav-bg);
+    transition: .3s;
+    border: none;
     &__list {
       display: flex;
       align-items: center;
@@ -162,6 +175,7 @@
         font-size: 16px;
         line-height: 22px;
         color: #fbfbfb;
+        color: var(--color)
       }
     }
     &__list>li:hover{
