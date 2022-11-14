@@ -67,6 +67,7 @@
     svg {
       width: 32px;
       height: 32px;
+      stroke: var(--color)
     }
     &.d-block {
       display: block;
@@ -82,6 +83,7 @@
     svg {
       width: 32px;
       height: 32px;
+      stroke: var(--color);
     }
     &.d-none {
       display: none;
@@ -201,7 +203,7 @@
       position: absolute;
       z-index: 1;
       width: auto;
-      background: #1f2023;
+      background: var(--nav-bg);
       padding-left: 15px;
       padding-top: 15px;
       .nav__item{
@@ -236,7 +238,7 @@
     right: 0;
     top: 77px;
     width: 430px;
-    background: #1f2023;
+    background: var(--nav-bg);
     transform: translateY(-100%);
     transition: 0.5s;
     transition-delay: 0.5s;
@@ -269,7 +271,7 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 27px;
-        color: #fbfbfb;
+        color: var(--color);
       }
     }
     .sub-nav__list-mobile{
@@ -299,7 +301,7 @@
       display: inline-block;
       width: 0;
       height: 0;
-      border-top: 10px solid #fbfbfb;
+      border-top: 10px solid var(--color);
       border-left: 10px solid transparent;
       border-right: 10px solid transparent;
       top: 7px;
@@ -315,7 +317,7 @@
       display: inline-block;
       width: 0;
       height: 0;
-      border-top: 10px solid #fbfbfb;
+      border-top: 10px solid var(--color);
       border-left: 10px solid transparent;
       border-right: 10px solid transparent;
       top: 7px;
@@ -338,7 +340,7 @@
     line-height: 33px;
     margin-bottom: 26px;
     padding-left: 138px;
-    color: #fbfbfb;
+    color: var(--color);
   }
   .social__mobile {
     margin-bottom: 138px;
@@ -378,7 +380,7 @@
       left: 0;
       width: 100%;
       height: 1px;
-      background: #fbfbfb;
+      background: var(--color);
       transition: 0.5s;
     }
     span:first-child {

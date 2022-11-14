@@ -78,9 +78,10 @@
   @media (max-width: 744px) {
     &__banner {
       &.banner1 {
-        background-image: url(../img/header-slider/slide1-tablet.png),
-          linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
+        // background-image: url(../img/header-slider/slide1-tablet.png),
+        //   linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
         background-position: 40% 90%;
+        background-image: var(--header-slider1-bg-tablet);
       }
       &.banner2 {
         background-image: url(../img/header-slider/slide2-tablet.png);
@@ -322,9 +323,10 @@
         padding-left: 20px;
       }
       &.banner1 {
-        background-image: url(../img/header-slider/slide1-mobile.png),
-          linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
-        background-position: 40% -600%;
+        // background-image: url(../img/header-slider/slide1-mobile.png),
+        //   linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
+        // background-position: 40% -600%;
+        background-image: var(--header-slider1-bg-mobile);
       }
       &.banner2 {
         background-image: url(../img/header-slider/slide2-mobile.png);
