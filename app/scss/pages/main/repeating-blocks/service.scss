@@ -47,44 +47,44 @@
   }
   &__text1 {
     &::before {
-      background-image: url(../img/svg/service/service1.svg);
+      background-image: var(--service-1);
     }
   }
   &__text2 {
     &::before {
       width: 69px;
       height: 62px;
-      background-image: url(../img/svg/service/service2.svg);
+      background-image: var(--service-2);
     }
   }
   &__text3 {
     &::before {
-      background-image: url(../img/svg/service/service3.svg);
+      background-image: var(--service-3);
     }
   }
   &__text4 {
     &::before {
-      background-image: url(../img/svg/service/service4.svg);
+      background-image: var(--service-4);
     }
   }
   &__text5 {
     &::before {
-      background-image: url(../img/svg/service/service5.svg);
+      background-image: var(--service-5);
     }
   }
   &__text6 {
     &::before {
-      background-image: url(../img/svg/service/service6.svg);
+      background-image: var(--service-6);
     }
   }
   &__text7 {
     &::before {
-      background-image: url(../img/svg/service/service7.svg);
+      background-image: var(--service-7);
     }
   }
   &__text8 {
     &::before {
-      background-image: url(../img/svg/service/service8.svg);
+      background-image: var(--service-8);
     }
   }
   &__text9{
@@ -96,7 +96,7 @@
     font-weight: 600;
     font-size: 30px;
     line-height: 41px;
-    color: #f5f7fa;
+    color: var(--color);
     padding-right: 64px;
     position: relative;
     &::after{
@@ -105,7 +105,7 @@
       top: 0;
       width: 50px;
       height: 40px;
-      background-image: url(../img/svg/recommend/arrow.svg);
+      background-image: var(--arrow);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;

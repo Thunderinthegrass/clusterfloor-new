@@ -8,7 +8,7 @@
     line-height: 183px;
     letter-spacing: 0.05em;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-stroke: 1px var(--color);
     width: auto;
     display: flex;
     animation: ticker 20s linear infinite;
@@ -39,7 +39,7 @@
   .bubble {
     width: 234px;
     height: 234px;
-    background-image: url(../img/svg/peculiar/bubble.svg);
+    background-image: var(--bubble);
     position: absolute;
     text-align: center;
     padding-top: 90px;
@@ -74,7 +74,7 @@
       &::before{
         top: -47px;
         left: -8px;
-        background-image: url(../img/svg/peculiar/bubble1.svg);
+        background-image: var(--bubble1);
       }
     }
   }
@@ -86,7 +86,7 @@
       &::before{
         top: -47px;
         left: -3px;
-        background-image: url(../img/svg/peculiar/bubble2.svg);
+        background-image: var(--bubble2);
       }
     }
   }
@@ -97,7 +97,7 @@
       &::before{
         top: -47px;
         left: -3px;
-        background-image: url(../img/svg/peculiar/bubble3.svg);
+        background-image: var(--bubble3);
       }
     }
   }
@@ -108,7 +108,7 @@
       &::before{
         top: -47px;
         left: -3px;
-        background-image: url(../img/svg/peculiar/bubble4.svg);
+        background-image: var(--bubble4);
       }
     }
   }
@@ -119,7 +119,7 @@
       &::before{
         top: -47px;
         left: -3px;
-        background-image: url(../img/svg/peculiar/bubble5.svg);
+        background-image: var(--bubble5);
       }
     }
   }
@@ -131,7 +131,7 @@
       &::before{
         top: -47px;
         left: -3px;
-        background-image: url(../img/svg/peculiar/bubble6.svg);
+        background-image: var(--bubble6);
       }
     }
   }

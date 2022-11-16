@@ -98,6 +98,10 @@
       margin-left: 0;
     }
   }
+  @media (max-width: 600px){
+    padding-left: 0;
+    padding-right: 0;
+  }
   @media (max-width: 500px) {
     &__top {
       .types__item:nth-child(1) {

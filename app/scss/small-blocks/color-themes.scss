@@ -1,16 +1,21 @@
 :root,
 [data-theme="default"] {
   //тёмная
+  //общие
+  --nav-bg: #1f2023;
+  --color: #fbfbfb;
+  --body-bg: linear-gradient(198.86deg, #18223b 14.21%, #27282c 73.28%);
+  //кнопки смены цветов
   --color-theme-icon-light-fill: none;
   --color-theme-icon-light-stroke: #fbfbfb;
   --color-theme-icon-dark-fill: #fbfbfb;
   --color-theme-icon-dark-stroke: #fbfbfb;
-  --nav-bg: #1f2023;
-  --color: #fbfbfb;
   --opacity-dark: 1;
   --opacity-light: 0;
   --stroke: #fbfbfb;
-  --body-bg: linear-gradient(198.86deg, #18223b 14.21%, #27282c 73.28%);
+  --text-decoration-light: none;
+  --text-decoration-dark: underline;
+  //header-slider
   --header-slider1-bg: url(../img/header-slider/slide1.png),
     linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
   --header-slider1-bg-tablet: url(../img/header-slider/slide1-tablet.png),
@@ -19,31 +24,115 @@
   --header-slider1-bg-mobile: url(../img/header-slider/slide1-mobile.png),
     linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
   background-position: 40% 90%;
+  --header-slider2-bg: url(../img/header-slider/slide2.png),
+    linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
+  --header-slider-gradient: linear-gradient(
+    214.45deg,
+    #2a3a62 1.39%,
+    #18223b 79.65%
+  );
   --item-light: none;
   --item-dark: block;
+  //types
+  --types-after-hover: #293b67;
+  //unique
+  --title-before: url(../img/svg/unique/info1.svg);
+  --title2-before: url(../img/svg/unique/info2.svg);
+  --title3-before: url(../img/svg/unique/info3.svg);
+  --img-before: url(../img/svg/unique/img1.svg);
+  --img-after: url(../img/svg/unique/img2.svg);
+  //samples
+  --arrow: url(../img/svg/recommend/arrow.svg);
+  //peculiar
+  --bubble: url(../img/svg/peculiar/bubble.svg);
+  --bubble1: url(../img/svg/peculiar/bubble1.svg);
+  --bubble2: url(../img/svg/peculiar/bubble2.svg);
+  --bubble3: url(../img/svg/peculiar/bubble3.svg);
+  --bubble4: url(../img/svg/peculiar/bubble4.svg);
+  --bubble5: url(../img/svg/peculiar/bubble5.svg);
+  --bubble6: url(../img/svg/peculiar/bubble6.svg);
+  //service
+  --service-1: url(../img/svg/service/service1.svg);
+  --service-2: url(../img/svg/service/service2.svg);
+  --service-3: url(../img/svg/service/service3.svg);
+  --service-4: url(../img/svg/service/service4.svg);
+  --service-5: url(../img/svg/service/service5.svg);
+  --service-6: url(../img/svg/service/service6.svg);
+  --service-7: url(../img/svg/service/service7.svg);
+  --service-8: url(../img/svg/service/service8.svg);
+  --form-button-bg: #393e4d;
+  --form-button-hover: #474f68;
+  //footer
+  --footer-logo: block;
+  --footer-logo-light: none;
 }
 
 @supports (--css: variables) {
   //светлая
   [data-theme="dark"] {
-    --color-theme-icon-light-fill: #1F2023;
-    --color-theme-icon-light-stroke: #1F2023;
-    --color-theme-icon-dark-fill: none;
-    --color-theme-icon-dark-stroke: #1F2023;
+    //общие
     --nav-bg: #e2e8f8;
     --color: #231f20;
+    --body-bg: linear-gradient(180deg, #ebeef7 0%, #ccd6f0 100%);
+    //кнопки смены цветов
+    --color-theme-icon-light-fill: #1f2023;
+    --color-theme-icon-light-stroke: #1f2023;
+    --color-theme-icon-dark-fill: none;
+    --color-theme-icon-dark-stroke: #1f2023;
     --opacity-dark: 0;
     --opacity-light: 1;
     --stroke: #231f20;
-    --body-bg: linear-gradient(180deg, #ebeef7 0%, #ccd6f0 100%);
+    --text-decoration-light: underline;
+    --text-decoration-dark: none;
+    //header-slider
     --header-slider1-bg: url(../img/header-slider/slide1-light.png),
       linear-gradient(214.45deg, #ebeef6 1.39%, #c0c9e0 79.65%);
-      --header-slider1-bg-tablet: url(../img/header-slider/slide1-tablet-light.png),
-      linear-gradient(214.45deg, #EBEEF6 1.39%, #C0C9E0 79.65%);
-      --header-slider1-bg-mobile: url(../img/header-slider/slide1-mobile-light.png),
-      linear-gradient(214.45deg, #EBEEF6 1.39%, #C0C9E0 79.65%);
+    --header-slider1-bg-tablet: url(../img/header-slider/slide1-tablet-light.png),
+      linear-gradient(214.45deg, #ebeef6 1.39%, #c0c9e0 79.65%);
+    --header-slider1-bg-mobile: url(../img/header-slider/slide1-mobile-light.png),
+      linear-gradient(214.45deg, #ebeef6 1.39%, #c0c9e0 79.65%);
+    --header-slider2-bg: url(../img/header-slider/slide2.png),
+      linear-gradient(214.45deg, #ebeef6 1.39%, #c0c9e0 79.65%);
+    --header-slider-gradient: linear-gradient(
+      214.45deg,
+      #ebeef6 1.39%,
+      #c0c9e0 79.65%
+    );
     --item-light: block;
     --item-dark: none;
+    //types
+    --types-after-hover: #f5f9ff;
+    //unique
+    --title-before: url(../img/svg/unique/info1-light.svg);
+    --title2-before: url(../img/svg/unique/info2-light.svg);
+    --title3-before: url(../img/svg/unique/info3-light.svg);
+    --img-before: url(../img/svg/unique/img1-light.svg);
+    --img-after: url(../img/svg/unique/img2-light.svg);
+    //samples
+    --arrow: url(../img/svg/recommend/arrow-light.svg);
+    //peculiar
+    --bubble: url(../img/svg/peculiar/bubble-light.svg);
+    --bubble1: url(../img/svg/peculiar/bubble1-light.svg);
+    --bubble2: url(../img/svg/peculiar/bubble2-light.svg);
+    --bubble3: url(../img/svg/peculiar/bubble3-light.svg);
+    --bubble4: url(../img/svg/peculiar/bubble4-light.svg);
+    --bubble5: url(../img/svg/peculiar/bubble5-light.svg);
+    --bubble6: url(../img/svg/peculiar/bubble6-light.svg);
+    //service
+    --service-1: url(../img/svg/service/service1-light.svg);
+    --service-2: url(../img/svg/service/service2-light.svg);
+    --service-3: url(../img/svg/service/service3-light.svg);
+    --service-4: url(../img/svg/service/service4-light.svg);
+    --service-5: url(../img/svg/service/service5-light.svg);
+    --service-6: url(../img/svg/service/service6-light.svg);
+    --service-7: url(../img/svg/service/service7-light.svg);
+    --service-8: url(../img/svg/service/service8-light.svg);
+    //form
+    --form-button-bg: #EBEEF6;
+    --form-button-hover: #DFE6F9;
+    //footer
+    --footer-logo: none;
+    --footer-logo-light: block;
   }
 }
 .switch {
@@ -53,9 +142,23 @@
   @media (max-width: 1068px) {
     top: 76px;
   }
-  @media(max-width: 760px) {
+  @media (max-width: 760px) {
     top: 0px;
     right: 246px;
+    right: 35%;
+  }
+  @media (max-width: 640px) {
+    right: 30%;
+  }
+  @media (max-width: 550px) {
+    right: 37%;
+  }
+  @media (max-width: 500px) {
+    right: 32%;
+  }
+  @media (max-width: 430px) {
+    width: auto;
+    right: 30%;
   }
 }
 .switch svg {
@@ -71,6 +174,9 @@
 }
 .switch .buttons-wrapper {
   position: relative;
+  @media (max-width: 430px) {
+    width: 56px;
+  }
 }
 .switch .buttons-wrapper button {
   position: absolute;
@@ -82,34 +188,66 @@
   padding-top: 7px;
   padding-bottom: 10px;
   cursor: pointer;
-  @media(max-width: 760px){
+  @media (max-width: 760px) {
     padding-top: 0;
     padding-bottom: 0;
+  }
+  @media (max-width: 550px) {
+    width: 28px;
+  }
+  @media (max-width: 430px) {
   }
 }
 #theme-switch-dark {
   opacity: var(--opacity-dark);
   padding-left: 14px;
-  transition: .3s;
-  svg{
-    fill: var(--color-theme-icon-dark-fill);
-    stroke: var(--color-theme-icon-dark-stroke);
-  }
-  @media(max-width: 760px) {
+  transition: 0.3s;
+  @media (max-width: 760px) {
     top: 9px;
-    opacity: 1!important;
+    opacity: 1 !important;
+    padding-left: 0;
+  }
+  @media (max-width: 430px) {
+    top: 11px;
+    left: 0;
+  }
+}
+#theme-switch-dark svg {
+  fill: var(--color-theme-icon-dark-fill);
+  stroke: var(--color-theme-icon-dark-stroke);
+}
+#theme-switch-dark span {
+  @media (max-width: 760px) {
+    text-decoration: var(--text-decoration-dark);
+  }
+  @media (max-width: 550px) {
+    display: none;
   }
 }
 #theme-switch-light {
   opacity: var(--opacity-light);
   padding-left: 9px;
-  transition: .3s;
-  svg{
-    fill: var(--color-theme-icon-light-fill);
-    stroke: var(--color-theme-icon-light-stroke);
-  }
-  @media(max-width: 760px) {
+  transition: 0.3s;
+  @media (max-width: 760px) {
     top: 45px;
-    opacity: 1!important;
+    opacity: 1 !important;
+    padding-left: 0;
+  }
+  @media (max-width: 430px) {
+    top: 11px;
+    left: auto;
+    right: 0;
+  }
+}
+#theme-switch-light svg {
+  fill: var(--color-theme-icon-light-fill);
+  stroke: var(--color-theme-icon-light-stroke);
+}
+#theme-switch-light span {
+  @media (max-width: 760px) {
+    text-decoration: var(--text-decoration-light);
+  }
+  @media (max-width: 550px) {
+    display: none;
   }
 }

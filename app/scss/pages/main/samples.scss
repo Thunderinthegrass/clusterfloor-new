@@ -26,7 +26,7 @@
       font-weight: 600;
       font-size: 30px;
       line-height: 41px;
-      color: #f5f7fa;
+      color: var(--color);
       padding-right: 64px;
       &::after {
         @extend %ba;
@@ -34,7 +34,7 @@
         top: 0;
         width: 50px;
         height: 40px;
-        background-image: url(../img/svg/recommend/arrow.svg);
+        background-image: var(--arrow);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 0 0;
