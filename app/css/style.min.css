@@ -9690,6 +9690,11 @@ h2 {
   --form-button-hover: #474f68;
   --footer-logo: block;
   --footer-logo-light: none;
+  --types-bg: #202a43;
+  --tabs-btn-bg: #293B67;
+  --to-collection-btn: block;
+  --to-collection-btn-light: none;
+  --catalog-banner-bg: linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
 }
 
 @supports (--css: variables) {
@@ -9747,6 +9752,11 @@ h2 {
     --form-button-hover: #DFE6F9;
     --footer-logo: none;
     --footer-logo-light: block;
+    --types-bg: transparent;
+    --tabs-btn-bg: #3669D8;
+    --to-collection-btn: none;
+    --to-collection-btn-light: block;
+    --catalog-banner-bg: linear-gradient(214.45deg, #EBEEF6 1.39%, #CEDBFF 79.65%);
   }
 }
 .switch {
@@ -9930,20 +9940,20 @@ h2 {
   position: relative;
   max-width: 394px;
   width: 100%;
-  background: #202a43;
+  background: var(--types-bg);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
   font-weight: 400;
   font-size: 30px;
   line-height: 41px;
-  color: #f5f7fa;
+  color: var(--color);
 }
 .catalog__types-item:hover {
-  background: #293b67;
+  background: var(--types-after-hover);
 }
 .catalog__types-item._current {
-  background: #293b67;
+  background: var(--types-after-hover);
 }
 .catalog__types-name {
   position: absolute;
@@ -9969,8 +9979,8 @@ h2 {
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
-  color: #fbfbfb;
-  border: 1px solid #293b67;
+  color: var(--color);
+  border: 1px solid var(--tabs-btn-bg);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -10057,6 +10067,10 @@ h2 {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  display: var(--to-collection-btn);
+}
+.catalog__collection .tabs__to-collection .btn-wrapper .tabs__to-collection-btn .tabs__to-collection-btn-light {
+  display: var(--to-collection-btn-light);
 }
 .catalog__collection .tabs__to-collection .btn-wrapper .tabs__to-collection-btn::after {
   position: absolute;
@@ -10069,7 +10083,7 @@ h2 {
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
-  color: #fbfbfb;
+  color: var(--color);
   white-space: nowrap;
 }
 .catalog__collection .tabs__to-collection .btn-wrapper .tabs__to-collection-btn:hover img {
@@ -10083,7 +10097,8 @@ h2 {
 }
 
 .tabs-navigation__item--active {
-  background: #293B67;
+  background: var(--tabs-btn-bg);
+  color: #fbfbfb !important;
 }
 
 .tab--active {
@@ -10091,8 +10106,7 @@ h2 {
 }
 
 .catalog__banner {
-  background: -o-linear-gradient(235.55deg, #2a3a62 1.39%, #18223b 79.65%);
-  background: linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
+  background: var(--catalog-banner-bg);
   padding-top: 65px;
   overflow: hidden;
   margin-top: 175px;

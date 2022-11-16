@@ -14,17 +14,17 @@
     position: relative;
     max-width: 394px;
     width: 100%;
-    background: #202a43;
+    background: var(--types-bg);
     transition: 0.3s;
     font-weight: 400;
     font-size: 30px;
     line-height: 41px;
-    color: #f5f7fa;
+    color: var(--color);
     &:hover {
-      background: #293b67;
+      background: var(--types-after-hover);
     }
     &._current{
-      background: #293b67;
+      background: var(--types-after-hover);
     }
   }
   &-name{

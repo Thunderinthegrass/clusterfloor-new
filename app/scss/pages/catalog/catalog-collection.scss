@@ -14,8 +14,8 @@
       font-weight: 600;
       font-size: 20px;
       line-height: 27px;
-      color: #fbfbfb;
-      border: 1px solid #293b67;
+      color: var(--color);
+      border: 1px solid var(--tabs-btn-bg);
       transition: 0.3s;
       cursor: pointer;
     }
@@ -92,6 +92,10 @@
           position: relative;
           img{
             transition: .3s;
+            display: var(--to-collection-btn);
+          }
+          .tabs__to-collection-btn-light{
+            display: var(--to-collection-btn-light);
           }
           &::after {
             position: absolute;
@@ -102,7 +106,7 @@
             font-weight: 400;
             font-size: 24px;
             line-height: 33px;
-            color: #fbfbfb;
+            color: var(--color);
             white-space: nowrap;
           }
           &:hover{
@@ -119,7 +123,8 @@
   padding-top: 10px;
 }
 .tabs-navigation__item--active{
-  background: #293B67;
+  background: var(--tabs-btn-bg);
+  color: #fbfbfb!important;
 }
 .tab--active{
   display: block!important;
