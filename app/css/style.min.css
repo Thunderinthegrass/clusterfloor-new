@@ -497,7 +497,7 @@ h2 {
   top: 5px;
   width: 3px;
   height: 10px;
-  background-image: url(../img/svg/header/nav/Icon.svg);
+  background-image: var(--header-nav-icon);
   cursor: pointer;
 }
 .header .nav .sub-nav__list {
@@ -9322,7 +9322,7 @@ h2 {
   position: relative;
   width: 784px;
   height: 804px;
-  background: #202a43;
+  background: var(--form-bg);
   padding: 80px;
 }
 .header-popup__title {
@@ -9341,52 +9341,53 @@ h2 {
 }
 .header-popup__input {
   width: 100%;
-  border: 1px solid #fbfbfb;
+  border: 1px solid var(--input);
   padding: 25px 0px 25px 15px;
   margin-bottom: 25px;
   font-size: 20px;
   line-height: 27px;
-  color: #fbfbfb;
+  color: var(--color);
+  outline: none;
 }
 .header-popup__input::-webkit-input-placeholder {
   font-weight: 300;
   font-size: 18px;
   line-height: 29px;
-  color: #fbfbfb;
+  color: var(--input);
 }
 .header-popup__input::-moz-placeholder {
   font-weight: 300;
   font-size: 18px;
   line-height: 29px;
-  color: #fbfbfb;
+  color: var(--input);
 }
 .header-popup__input:-ms-input-placeholder {
   font-weight: 300;
   font-size: 18px;
   line-height: 29px;
-  color: #fbfbfb;
+  color: var(--input);
 }
 .header-popup__input::-ms-input-placeholder {
   font-weight: 300;
   font-size: 18px;
   line-height: 29px;
-  color: #fbfbfb;
+  color: var(--input);
 }
 .header-popup__input::placeholder {
   font-weight: 300;
   font-size: 18px;
   line-height: 29px;
-  color: #fbfbfb;
+  color: var(--input);
 }
 .header-popup__input:last-child {
   margin-bottom: 49px;
 }
 .header-popup__btn {
-  background: #393e4d;
+  background: var(--form-button-bg);
   font-weight: 400;
   font-size: 30px;
   line-height: 41px;
-  color: #fbfbfb;
+  color: var(--color);
   width: 100%;
   height: 81px;
   margin-bottom: 37px;
@@ -9403,7 +9404,7 @@ h2 {
 }
 .header-popup__btn:hover {
   border-width: 3px;
-  background: #474f68;
+  background: var(--form-button-hover);
 }
 .header-popup__btn:active {
   color: #b4b9c9;
@@ -9422,7 +9423,7 @@ h2 {
   top: 0;
   width: 50px;
   height: 40px;
-  background-image: url(../img/svg/recommend/arrow.svg);
+  background-image: var(--arrow);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -9437,7 +9438,7 @@ h2 {
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  color: #fbfbfb;
+  color: var(--color);
   text-decoration: underline;
 }
 .header-popup .modal__close-btn {
@@ -9489,7 +9490,7 @@ h2 {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: #1E2534;
+  background: var(--modal-overlay);
 }
 
 .modal--visible {
@@ -9647,6 +9648,10 @@ h2 {
   --stroke: #fbfbfb;
   --text-decoration-light: none;
   --text-decoration-dark: underline;
+  --modal-overlay: #1e2534;
+  --form-bg: #202a43;
+  --input-border: #fbfbfb;
+  --header-nav-icon: url(../img/svg/header/nav/Icon.svg);
   --header-slider1-bg: url(../img/header-slider/slide1.png),
     linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
   --header-slider1-bg-tablet: url(../img/header-slider/slide1-tablet.png),
@@ -9691,10 +9696,19 @@ h2 {
   --footer-logo: block;
   --footer-logo-light: none;
   --types-bg: #202a43;
-  --tabs-btn-bg: #293B67;
+  --tabs-btn-bg: #293b67;
   --to-collection-btn: block;
   --to-collection-btn-light: none;
-  --catalog-banner-bg: linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
+  --catalog-banner-bg: linear-gradient(
+    214.45deg,
+    #2a3a62 1.39%,
+    #18223b 79.65%
+  );
+  --parameter-1: url(../img/svg/header/banner/param1.svg);
+  --parameter-2: url(../img/svg/header/banner/param2.svg);
+  --parameter-3: url(../img/svg/header/banner/param3.svg);
+  --parameter-4: url(../img/svg/header/banner/param4.svg);
+  --parameter-3-2: url(../img/svg/header/banner/param3-2.svg);
 }
 
 @supports (--css: variables) {
@@ -9711,6 +9725,10 @@ h2 {
     --stroke: #231f20;
     --text-decoration-light: underline;
     --text-decoration-dark: none;
+    --modal-overlay: #c7cbd9;
+    --form-bg: #ebf0fa;
+    --input: #1f2023;
+    --header-nav-icon: url(../img/svg/header/nav/Icon-light.svg);
     --header-slider1-bg: url(../img/header-slider/slide1-light.png),
       linear-gradient(214.45deg, #ebeef6 1.39%, #c0c9e0 79.65%);
     --header-slider1-bg-tablet: url(../img/header-slider/slide1-tablet-light.png),
@@ -9748,15 +9766,24 @@ h2 {
     --service-6: url(../img/svg/service/service6-light.svg);
     --service-7: url(../img/svg/service/service7-light.svg);
     --service-8: url(../img/svg/service/service8-light.svg);
-    --form-button-bg: #EBEEF6;
-    --form-button-hover: #DFE6F9;
+    --form-button-bg: #ebeef6;
+    --form-button-hover: #dfe6f9;
     --footer-logo: none;
     --footer-logo-light: block;
     --types-bg: transparent;
-    --tabs-btn-bg: #3669D8;
+    --tabs-btn-bg: #3669d8;
     --to-collection-btn: none;
     --to-collection-btn-light: block;
-    --catalog-banner-bg: linear-gradient(214.45deg, #EBEEF6 1.39%, #CEDBFF 79.65%);
+    --catalog-banner-bg: linear-gradient(
+      214.45deg,
+      #ebeef6 1.39%,
+      #cedbff 79.65%
+    );
+    --parameter-1: url(../img/svg/header/banner/param1-light.svg);
+    --parameter-2: url(../img/svg/header/banner/param2-light.svg);
+    --parameter-3: url(../img/svg/header/banner/param3-light.svg);
+    --parameter-4: url(../img/svg/header/banner/param4-light.svg);
+    --parameter-3-2: url(../img/svg/header/banner/param3-2-light.svg);
   }
 }
 .switch {
@@ -10171,27 +10198,27 @@ h2 {
 .catalog__banner .parameters .parameter_1::before {
   width: 37px;
   height: 37px;
-  background-image: url(../img/svg/header/banner/param2.svg);
+  background-image: var(--parameter-1);
 }
 .catalog__banner .parameters .parameter_2::before {
   width: 37px;
   height: 37px;
-  background-image: url(../img/svg/header/banner/param2.svg);
+  background-image: var(--parameter-2);
 }
 .catalog__banner .parameters .parameter_3::before {
   width: 37px;
   height: 37px;
-  background-image: url(../img/svg/header/banner/param3.svg);
+  background-image: var(--parameter-3);
 }
 .catalog__banner .parameters .parameter_4::before {
   width: 37px;
   height: 37px;
-  background-image: url(../img/svg/header/banner/param4.svg);
+  background-image: var(--parameter-4);
 }
 .catalog__banner .parameters .parameter_5::before {
   width: 37px;
   height: 37px;
-  background-image: url(../../../img/svg/header/banner/param3-2.svg);
+  background-image: var(--parameter-3-2);
 }
 
 .catalog__banner_1 {
@@ -14136,7 +14163,6 @@ h2 {
   margin-bottom: 130px;
 }
 @supports (-webkit-appearance:none){
-.header .nav-btn{background-image:url(../img/svg/header/nav/Icon.svg)}
 .header .banner2{background-image:url(../img/header-slider/slide2.webp)}
 .header .banner2 .parameters .parameter_1::before{background-image:url(../img/svg/header/banner/param1.svg)}
 .header .banner2 .parameters .parameter_2::before{background-image:url(../img/svg/header/banner/param2.svg)}
@@ -14173,13 +14199,7 @@ h2 {
 .card__video{background-image:url(../img/product/card/video-img.webp)}
 .modal-overlay .form-sent__link::after{background-image:url(../img/svg/recommend/arrow.svg)}
 .header-popup__btn:active span::after{background-image:url(../img/svg/recommend/arrow-active.svg)}
-.header-popup__btn span::after{background-image:url(../img/svg/recommend/arrow.svg)}
 .header-popup .modal__close-btn{background-image:url(../../img/svg/header/top/search-off.svg)}
-.catalog__banner .parameters .parameter_1::before{background-image:url(../img/svg/header/banner/param2.svg)}
-.catalog__banner .parameters .parameter_2::before{background-image:url(../img/svg/header/banner/param2.svg)}
-.catalog__banner .parameters .parameter_3::before{background-image:url(../img/svg/header/banner/param3.svg)}
-.catalog__banner .parameters .parameter_4::before{background-image:url(../img/svg/header/banner/param4.svg)}
-.catalog__banner .parameters .parameter_5::before{background-image:url(../../../img/svg/header/banner/param3-2.svg)}
 .catalog__banner_1 .parameter_2::before{background-image:url(../img/svg/header/banner/param3-2.svg) !important}
 .catalog__banner_1 .parameter_5::before{background-image:url(../img/svg/header/banner/param3-5.svg) !important}
 .banner_2 .parameter_2::before{background-image:url(../img/svg/header/banner/param3-2.svg) !important}

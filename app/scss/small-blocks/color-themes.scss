@@ -15,9 +15,14 @@
   --stroke: #fbfbfb;
   --text-decoration-light: none;
   --text-decoration-dark: underline;
+  //form-modal
+  --modal-overlay: #1e2534;
+  --form-bg: #202a43;
+  --input-border: #fbfbfb;
 
   //главная
   //header-slider
+  --header-nav-icon: url(../img/svg/header/nav/Icon.svg);
   --header-slider1-bg: url(../img/header-slider/slide1.png),
     linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
   --header-slider1-bg-tablet: url(../img/header-slider/slide1-tablet.png),
@@ -72,11 +77,21 @@
   //types
   --types-bg: #202a43;
   //collection
-  --tabs-btn-bg: #293B67;
+  --tabs-btn-bg: #293b67;
   --to-collection-btn: block;
   --to-collection-btn-light: none;
   //banner
-  --catalog-banner-bg: linear-gradient(214.45deg, #2a3a62 1.39%, #18223b 79.65%);
+  --catalog-banner-bg: linear-gradient(
+    214.45deg,
+    #2a3a62 1.39%,
+    #18223b 79.65%
+  );
+  //banner-main
+  --parameter-1: url(../img/svg/header/banner/param1.svg);
+  --parameter-2: url(../img/svg/header/banner/param2.svg);
+  --parameter-3: url(../img/svg/header/banner/param3.svg);
+  --parameter-4: url(../img/svg/header/banner/param4.svg);
+  --parameter-3-2: url(../img/svg/header/banner/param3-2.svg);
 }
 
 @supports (--css: variables) {
@@ -96,9 +111,14 @@
     --stroke: #231f20;
     --text-decoration-light: underline;
     --text-decoration-dark: none;
+    //form-modal
+    --modal-overlay: #c7cbd9;
+    --form-bg: #ebf0fa;
+    --input: #1f2023;
 
     //главная
     //header-slider
+    --header-nav-icon: url(../img/svg/header/nav/Icon-light.svg);
     --header-slider1-bg: url(../img/header-slider/slide1-light.png),
       linear-gradient(214.45deg, #ebeef6 1.39%, #c0c9e0 79.65%);
     --header-slider1-bg-tablet: url(../img/header-slider/slide1-tablet-light.png),
@@ -142,8 +162,8 @@
     --service-7: url(../img/svg/service/service7-light.svg);
     --service-8: url(../img/svg/service/service8-light.svg);
     //form
-    --form-button-bg: #EBEEF6;
-    --form-button-hover: #DFE6F9;
+    --form-button-bg: #ebeef6;
+    --form-button-hover: #dfe6f9;
     //footer
     --footer-logo: none;
     --footer-logo-light: block;
@@ -152,12 +172,21 @@
     //types
     --types-bg: transparent;
     //collection
-    --tabs-btn-bg: #3669D8;
+    --tabs-btn-bg: #3669d8;
     --to-collection-btn: none;
     --to-collection-btn-light: block;
     //banner
-    --catalog-banner-bg: linear-gradient(214.45deg, #EBEEF6 1.39%, #CEDBFF 79.65%);
-
+    --catalog-banner-bg: linear-gradient(
+      214.45deg,
+      #ebeef6 1.39%,
+      #cedbff 79.65%
+    );
+    //banner-main
+    --parameter-1: url(../img/svg/header/banner/param1-light.svg);
+    --parameter-2: url(../img/svg/header/banner/param2-light.svg);
+    --parameter-3: url(../img/svg/header/banner/param3-light.svg);
+    --parameter-4: url(../img/svg/header/banner/param4-light.svg);
+    --parameter-3-2: url(../img/svg/header/banner/param3-2-light.svg);
   }
 }
 .switch {

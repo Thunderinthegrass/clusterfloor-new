@@ -52,35 +52,35 @@
       &::before {
         width: 37px;
         height: 37px;
-        background-image: url(../img/svg/header/banner/param2.svg);
+        background-image: var(--parameter-1);
       }
     }
     .parameter_2 {
       &::before {
         width: 37px;
         height: 37px;
-        background-image: url(../img/svg/header/banner/param2.svg);
+        background-image: var(--parameter-2);
       }
     }
     .parameter_3 {
       &::before {
         width: 37px;
         height: 37px;
-        background-image: url(../img/svg/header/banner/param3.svg);
+        background-image: var(--parameter-3);
       }
     }
     .parameter_4 {
       &::before {
         width: 37px;
         height: 37px;
-        background-image: url(../img/svg/header/banner/param4.svg);
+        background-image: var(--parameter-4);
       }
     }
     .parameter_5 {
       &::before {
         width: 37px;
         height: 37px;
-        background-image: url(../../../img/svg/header/banner/param3-2.svg);
+        background-image: var(--parameter-3-2);
       }
     }
   }
