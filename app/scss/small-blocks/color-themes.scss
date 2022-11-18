@@ -5,6 +5,8 @@
   --nav-bg: #1f2023;
   --color: #fbfbfb;
   --body-bg: linear-gradient(198.86deg, #18223b 14.21%, #27282c 73.28%);
+  --d-block-light: none;
+  --d-block-dark: block;
   //кнопки смены цветов
   --color-theme-icon-light-fill: none;
   --color-theme-icon-light-stroke: #fbfbfb;
@@ -92,6 +94,13 @@
   --parameter-3: url(../img/svg/header/banner/param3.svg);
   --parameter-4: url(../img/svg/header/banner/param4.svg);
   --parameter-3-2: url(../img/svg/header/banner/param3-2.svg);
+  //collection-wood
+  --collection-wood-bg: linear-gradient(
+    180deg,
+    #71b9a0 -17.05%,
+    #192545 59.13%,
+    #1f2023 100%
+  );
 }
 
 @supports (--css: variables) {
@@ -101,6 +110,8 @@
     --nav-bg: #e2e8f8;
     --color: #231f20;
     --body-bg: linear-gradient(180deg, #ebeef7 0%, #ccd6f0 100%);
+    --d-block-light: block;
+    --d-block-dark: none;
     //кнопки смены цветов
     --color-theme-icon-light-fill: #1f2023;
     --color-theme-icon-light-stroke: #1f2023;
@@ -187,6 +198,14 @@
     --parameter-3: url(../img/svg/header/banner/param3-light.svg);
     --parameter-4: url(../img/svg/header/banner/param4-light.svg);
     --parameter-3-2: url(../img/svg/header/banner/param3-2-light.svg);
+
+    //collection-wood
+    --collection-wood-bg: linear-gradient(
+      180deg,
+      #4baa93 -17.05%,
+      #ebeef6 33.55%,
+      #ebeef6 100%
+    );
   }
 }
 .switch {

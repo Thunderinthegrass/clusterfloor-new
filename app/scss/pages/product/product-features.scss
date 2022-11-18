@@ -12,7 +12,7 @@
     font-size: 18px;
     line-height: 29px;
     padding: 30px 60px;
-    border: 1px solid #fbfbfb;
+    border: 1px solid var(--color);
     margin-bottom: 56px;
   }
 }
@@ -47,13 +47,19 @@
       }
     }
   }
+  .board{
+    display: var(--d-block-dark);
+    &-light{
+      display: var(--d-block-light);
+    }
+  }
   &-bubbles {
     position: relative;
     flex: 1;
     .bubble1 {
       width: 258px;
       height: 258px;
-      background-image: url(../../img/svg/product/bubble.svg);
+      background-image: var(--bubble);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 0 0;
@@ -77,7 +83,7 @@
           height: 47px;
           top: -47px;
           left: -8px;
-          background-image: url(../../img/svg/peculiar/bubble1.svg);
+          background-image: var(--bubble1);
         }
       }
       &__text {
@@ -89,7 +95,7 @@
     .bubble2 {
       width: 258px;
       height: 258px;
-      background-image: url(../../img/svg/product/bubble.svg);
+      background-image: var(--bubble);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 0 0;
@@ -113,7 +119,7 @@
           height: 52px;
           top: -50px;
           left: -6px;
-          background-image: url(../../img/svg/header/banner/param4.svg);
+          background-image: var(--parameter-4);
           background-size: cover;
           background-repeat: no-repeat;
         }
@@ -201,6 +207,12 @@
       left: 0;
       top: 0;
     }
+    &-dark{
+      display: var(--d-block-dark);
+    }
+    &-light{
+      display: var(--d-block-light);
+    }
   }
 }
 .product__docs {
@@ -215,7 +227,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 27px;
-    color: #fbfbfb;
+    color: var(--color);
     margin-bottom: 45px;
     padding-left: 42px;
     position: relative;
@@ -228,5 +240,11 @@
       width: 32px;
       height: 32px;
     }
+  }
+  .doc{
+    display: var(--d-block-dark);
+  }
+  .doc-light{
+    display: var(--d-block-light);
   }
 }
