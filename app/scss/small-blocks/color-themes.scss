@@ -7,6 +7,7 @@
   --body-bg: linear-gradient(198.86deg, #18223b 14.21%, #27282c 73.28%);
   --d-block-light: none;
   --d-block-dark: block;
+  --breadcrumbs-color: #f7f5f2; 
   //кнопки смены цветов
   --color-theme-icon-light-fill: none;
   --color-theme-icon-light-stroke: #fbfbfb;
@@ -101,6 +102,15 @@
     #192545 59.13%,
     #1f2023 100%
   );
+  --collection-stone-bg: linear-gradient(
+    180deg,
+    #424959 3.49%,
+    #18223c 54.48%,
+    #1f2023 97.17%
+  ) !important;
+  //card
+  --card-bg: #202a43;
+  --card-popup-bg: #1e2534;
 }
 
 @supports (--css: variables) {
@@ -112,6 +122,7 @@
     --body-bg: linear-gradient(180deg, #ebeef7 0%, #ccd6f0 100%);
     --d-block-light: block;
     --d-block-dark: none;
+    --breadcrumbs-color: #27282c;
     //кнопки смены цветов
     --color-theme-icon-light-fill: #1f2023;
     --color-theme-icon-light-stroke: #1f2023;
@@ -206,6 +217,14 @@
       #ebeef6 33.55%,
       #ebeef6 100%
     );
+    --collection-stone-bg: linear-gradient(
+      180deg,
+      #b6bdd0 3.49%,
+      #ebeef6 40.08%,
+      #ebeef6 97.17%
+    ) !important;
+    --card-bg: #D0D8EE;
+    --card-popup-bg: linear-gradient(180deg, #EBEEF7 0%, #CCD6F0 100%);
   }
 }
 .switch {

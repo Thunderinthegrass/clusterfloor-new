@@ -43,7 +43,7 @@
   .card-descr {
     max-width: 542px;
     width: 100%;
-    background: #202a43;
+    background: var(--card-bg);
     padding: 10px 20px;
     height: 632px;
     position: sticky;
@@ -154,7 +154,7 @@
       cursor: pointer;
       &:hover {
         border-width: 3px;
-        background: #474f68;
+        background: var(--form-button-hover);
       }
       &:active {
         color: #b4b9c9;
@@ -173,17 +173,17 @@
     margin-bottom: 43px;
   }
   &__more-btn {
-    border: 1px solid #fbfbfb;
+    border: 1px solid var(--color);
     height: 67px;
     width: 638px;
     font-weight: 600;
     font-size: 20px;
     line-height: 27px;
-    color: #fbfbfb;
+    color: var(--color);
     cursor: pointer;
     &:hover {
       border-width: 3px;
-      background: #474f68;
+      background: var(--form-button-hover);
     }
     &:active {
       color: #b4b9c9;

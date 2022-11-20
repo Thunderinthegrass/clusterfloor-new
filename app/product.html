@@ -157,9 +157,28 @@
     </nav>
     <div class="header__top search-hide">
       <div class="container search-hide">
+        <div class="switch media">
+          <div class="buttons-wrapper">
+            <button id="theme-switch-dark">
+              <svg>
+                <use xlink:href="img/sprite/sprite.svg#switch--dark"></use>
+              </svg>
+              <span>Тёмный</span>
+            </button>
+            <button id="theme-switch-light">
+              <svg>
+                <use xlink:href="img/sprite/sprite.svg#switch--light"></use>
+              </svg>
+              <span>Светлый</span>
+            </button>
+          </div>
+        </div>
         <a href="index.html" class="header__logo search-hide">
           <svg>
             <use xlink:href="img/sprite/sprite.svg#header--top--logo"></use>
+          </svg>
+          <svg class="logo-light">
+            <use xlink:href="img/sprite/sprite.svg#header--top--logo-light"></use>
           </svg>
         </a>
         <div class="header__search search search-hide">
@@ -466,6 +485,7 @@
         <div class="product__options-top">
           <div class="product__options-board">
             <img class="board" src="img/svg/product/board.svg" alt="схема">
+            <img class="board-light" src="img/svg/product/board-light.svg" alt="схема">
             <span class="board-size board-length">Длина 610 мм</span>
             <span class="board-size board-thickness">Толщина 4 мм</span>
             <span class="board-size board-width">Ширина 305 мм</span>
@@ -532,55 +552,73 @@
         <div class="parameter">
           <p class="parameter__title">Толщина</p>
           <p class="parameter__text">3,5 мм</p>
-          <svg>
+          <svg class="parameter-dark">
             <use
-              xlink:href="img/sprite/sprite.svg#product--product-parameter-1"
-            ></use>
+              xlink:href="img/sprite/sprite.svg#product--product-parameter-1"></use>
+          </svg>
+          <svg class="parameter-light">
+            <use
+              xlink:href="img/sprite/sprite.svg#product--product-parameter-1-light"></use>
           </svg>
         </div>
         <div class="parameter">
           <p class="parameter__title">Длина</p>
           <p class="parameter__text">1365 мм</p>
-          <svg>
+          <svg class="parameter-dark">
             <use
-              xlink:href="img/sprite/sprite.svg#product--product-parameter-2"
-            ></use>
+              xlink:href="img/sprite/sprite.svg#product--product-parameter-2"></use>
+          </svg>
+          <svg class="parameter-light">
+            <use
+              xlink:href="img/sprite/sprite.svg#product--product-parameter-2-light"></use>
           </svg>
         </div>
         <div class="parameter">
           <p class="parameter__title">Ширина</p>
           <p class="parameter__text">195 мм</p>
-          <svg>
+          <svg class="parameter-dark">
             <use
-              xlink:href="img/sprite/sprite.svg#product--product-parameter-3"
-            ></use>
+              xlink:href="img/sprite/sprite.svg#product--product-parameter-3"></use>
+          </svg>
+          <svg class="parameter-light">
+            <use
+              xlink:href="img/sprite/sprite.svg#product--product-parameter-3-light"></use>
           </svg>
         </div>
         <div class="parameter">
           <p class="parameter__title">Защитный слой</p>
           <p class="parameter__text">0,5 мм</p>
-          <svg>
+          <svg class="parameter-dark">
             <use
-              xlink:href="img/sprite/sprite.svg#product--product-parameter-4"
-            ></use>
+              xlink:href="img/sprite/sprite.svg#product--product-parameter-4"></use>
+          </svg>
+          <svg class="parameter-light">
+            <use
+              xlink:href="img/sprite/sprite.svg#product--product-parameter-4-light"></use>
           </svg>
         </div>
         <div class="parameter">
           <p class="parameter__title">Текстура поверхности</p>
           <p class="parameter__text">Микрофаска</p>
-          <svg>
+          <svg class="parameter-dark">
             <use
-              xlink:href="img/sprite/sprite.svg#product--product-parameter-5"
-            ></use>
+              xlink:href="img/sprite/sprite.svg#product--product-parameter-5"></use>
+          </svg>
+          <svg class="parameter-light">
+            <use
+              xlink:href="img/sprite/sprite.svg#product--product-parameter-5-light"></use>
           </svg>
         </div>
         <div class="parameter">
           <p class="parameter__title">Повышенная защита</p>
           <p class="parameter__text">от ультрафиолета</p>
-          <svg>
+          <svg class="parameter-dark">
             <use
-              xlink:href="img/sprite/sprite.svg#product--product-parameter-6"
-            ></use>
+              xlink:href="img/sprite/sprite.svg#product--product-parameter-6"></use>
+          </svg>
+          <svg class="parameter-light">
+            <use
+              xlink:href="img/sprite/sprite.svg#product--product-parameter-6-light"></use>
           </svg>
         </div>
       </div>
@@ -593,24 +631,33 @@
           <a href="#" class="product__docs-link">
             <svg class="doc">
               <use
-                xlink:href="img/sprite/sprite.svg#product--product-docs"
-              ></use>
+                xlink:href="img/sprite/sprite.svg#product--product-docs"></use>
+            </svg>
+            <svg class="doc-light">
+              <use
+                xlink:href="img/sprite/sprite.svg#product--product-docs-light"></use>
             </svg>
             <p>ISO — сертификат международный</p>
           </a>
           <a href="#" class="product__docs-link">
             <svg class="doc">
               <use
-                xlink:href="img/sprite/sprite.svg#product--product-docs"
-              ></use>
+                xlink:href="img/sprite/sprite.svg#product--product-docs"></use>
+            </svg>
+            <svg class="doc-light">
+              <use
+                xlink:href="img/sprite/sprite.svg#product--product-docs-light"></use>
             </svg>
             <p>SGS — пожарный международный сертификат</p>
           </a>
           <a href="#" class="product__docs-link">
             <svg class="doc">
               <use
-                xlink:href="img/sprite/sprite.svg#product--product-docs"
-              ></use>
+                xlink:href="img/sprite/sprite.svg#product--product-docs"></use>
+            </svg>
+            <svg class="doc-light">
+              <use
+                xlink:href="img/sprite/sprite.svg#product--product-docs-light"></use>
             </svg>
             <p>Сертификат соответствия</p>
           </a>
@@ -619,24 +666,33 @@
           <a href="#" class="product__docs-link">
             <svg class="doc">
               <use
-                xlink:href="img/sprite/sprite.svg#product--product-docs"
-              ></use>
+                xlink:href="img/sprite/sprite.svg#product--product-docs"></use>
+            </svg>
+            <svg class="doc-light">
+              <use
+                xlink:href="img/sprite/sprite.svg#product--product-docs-light"></use>
             </svg>
             <p>Инструкция по транспортировке и хранению</p>
           </a>
           <a href="#" class="product__docs-link">
             <svg class="doc">
               <use
-                xlink:href="img/sprite/sprite.svg#product--product-docs"
-              ></use>
+                xlink:href="img/sprite/sprite.svg#product--product-docs"></use>
+            </svg>
+            <svg class="doc-light">
+              <use
+                xlink:href="img/sprite/sprite.svg#product--product-docs-light"></use>
             </svg>
             <p>Инструкция по эксплуатации и уходу</p>
           </a>
           <a href="#" class="product__docs-link">
             <svg class="doc">
               <use
-                xlink:href="img/sprite/sprite.svg#product--product-docs"
-              ></use>
+                xlink:href="img/sprite/sprite.svg#product--product-docs"></use>
+            </svg>
+            <svg class="doc-light">
+              <use
+                xlink:href="img/sprite/sprite.svg#product--product-docs-light"></use>
             </svg>
             <p>Инструкция по укладке</p>
           </a>
@@ -901,8 +957,11 @@
     <div class="container _anim-items">
       <div class="footer__item">
         <a href="index.html" class="footer__logo">
-          <svg>
+          <svg class="footer__logo-dark">
             <use xlink:href="img/sprite/sprite.svg#footer--footer-logo"></use>
+          </svg>
+          <svg class="footer__logo-light">
+            <use xlink:href="img/sprite/sprite.svg#footer--footer-logo-light"></use>
           </svg>
         </a>
         <div class="contacts">

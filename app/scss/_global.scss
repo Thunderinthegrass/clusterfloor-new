@@ -21,7 +21,7 @@ h2 {
   color: var(--color);
 }
 .stone-collection{
-  background: linear-gradient(180deg, #424959 3.49%, #18223C 54.48%, #1F2023 97.17%)!important;
+  background: var(--collection-stone-bg);
 }
 .wood-collection{
   background: var(--collection-wood-bg);
