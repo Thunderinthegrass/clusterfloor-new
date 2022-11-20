@@ -162,9 +162,28 @@
     </nav>
     <div class="header__top search-hide">
       <div class="container search-hide">
+        <div class="switch media">
+          <div class="buttons-wrapper">
+            <button id="theme-switch-dark">
+              <svg>
+                <use xlink:href="img/sprite/sprite.svg#switch--dark"></use>
+              </svg>
+              <span>Тёмный</span>
+            </button>
+            <button id="theme-switch-light">
+              <svg>
+                <use xlink:href="img/sprite/sprite.svg#switch--light"></use>
+              </svg>
+              <span>Светлый</span>
+            </button>
+          </div>
+        </div>
         <a href="index.html" class="header__logo search-hide">
           <svg>
             <use xlink:href="img/sprite/sprite.svg#header--top--logo"></use>
+          </svg>
+          <svg class="logo-light">
+            <use xlink:href="img/sprite/sprite.svg#header--top--logo-light"></use>
           </svg>
         </a>
         <div class="header__search search search-hide">
@@ -403,6 +422,8 @@
         </ul>
         <img class="partners__img partners__img-top" src="img/svg/dilers/1.svg" alt="изображение">
         <img class="partners__img partners__img-bottom" src="img/svg/dilers/1.svg" alt="изображение">
+        <img class="partners__img partners__img-top partners__img-top-light" src="img/svg/dilers/1-light.svg" alt="изображение">
+        <img class="partners__img partners__img-bottom partners__img-bottom-light" src="img/svg/dilers/1-light.svg" alt="изображение">
         <p class="partners__substring">
           Наши партнеры зарабатывают вместе с нами, не затрачивая свое время на маркетинг и продвижение продукции VINILAM.
         </p>
@@ -529,8 +550,11 @@
     <div class="container _anim-items">
       <div class="footer__item">
         <a href="index.html" class="footer__logo">
-          <svg>
+          <svg class="footer__logo-dark">
             <use xlink:href="img/sprite/sprite.svg#footer--footer-logo"></use>
+          </svg>
+          <svg class="footer__logo-light">
+            <use xlink:href="img/sprite/sprite.svg#footer--footer-logo-light"></use>
           </svg>
         </a>
         <div class="contacts">

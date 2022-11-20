@@ -116,6 +116,13 @@
   --bayer-banner-desktop-light: none;
   --bayer-banner-mobile: block;
   --bayer-banner-mobile-light: none;
+  //dilers
+  --cooperation-wrapper: #202a43;
+  --cooperation-1: url(../img/cooperation/swatches.svg);
+  --cooperation-2: url(../img/cooperation/truck.svg);
+  --cooperation-3: url(../img/cooperation/user.svg);
+  --cooperation-4: url(../img/cooperation/book.svg);
+  --cooperation-5: url(../img/cooperation/monitor.svg);
 }
 
 @supports (--css: variables) {
@@ -236,6 +243,13 @@
     --bayer-banner-desktop-light: block;
     --bayer-banner-mobile: none;
     --bayer-banner-mobile-light: block;
+    //dilers
+    --cooperation-wrapper: #EBF0FA;
+    --cooperation-1: url(../img/cooperation/swatches-light.svg);
+    --cooperation-2: url(../img/cooperation/truck-light.svg);
+    --cooperation-3: url(../img/cooperation/user-light.svg);
+    --cooperation-4: url(../img/cooperation/book-light.svg);
+    --cooperation-5: url(../img/cooperation/monitor-light.svg);
   }
 }
 .switch {

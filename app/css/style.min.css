@@ -9745,6 +9745,12 @@ h2 {
   --bayer-banner-desktop-light: none;
   --bayer-banner-mobile: block;
   --bayer-banner-mobile-light: none;
+  --cooperation-wrapper: #202a43;
+  --cooperation-1: url(../img/cooperation/swatches.svg);
+  --cooperation-2: url(../img/cooperation/truck.svg);
+  --cooperation-3: url(../img/cooperation/user.svg);
+  --cooperation-4: url(../img/cooperation/book.svg);
+  --cooperation-5: url(../img/cooperation/monitor.svg);
 }
 
 @supports (--css: variables) {
@@ -9841,6 +9847,12 @@ h2 {
     --bayer-banner-desktop-light: block;
     --bayer-banner-mobile: none;
     --bayer-banner-mobile-light: block;
+    --cooperation-wrapper: #EBF0FA;
+    --cooperation-1: url(../img/cooperation/swatches-light.svg);
+    --cooperation-2: url(../img/cooperation/truck-light.svg);
+    --cooperation-3: url(../img/cooperation/user-light.svg);
+    --cooperation-4: url(../img/cooperation/book-light.svg);
+    --cooperation-5: url(../img/cooperation/monitor-light.svg);
   }
 }
 .switch {
@@ -11220,6 +11232,11 @@ h2 {
 .equipment-store .partners .partners__img-top {
   right: 22%;
   top: 320px;
+  display: var(--d-block-dark);
+}
+.dilers .partners .partners__img-top-light,
+.equipment-store .partners .partners__img-top-light {
+  display: var(--d-block-light);
 }
 .dilers .partners .partners__img-bottom,
 .equipment-store .partners .partners__img-bottom {
@@ -11228,6 +11245,11 @@ h2 {
   -webkit-transform: rotate(229deg);
       -ms-transform: rotate(229deg);
           transform: rotate(229deg);
+  display: var(--d-block-dark);
+}
+.dilers .partners .partners__img-bottom-light,
+.equipment-store .partners .partners__img-bottom-light {
+  display: var(--d-block-light);
 }
 
 .dilers .equipment {
@@ -11319,7 +11341,7 @@ h2 {
 .dilers .cooperation__wrapper {
   position: relative;
   padding: 123px 75px 114px;
-  background: #202a43;
+  background: var(--cooperation-wrapper);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11347,7 +11369,7 @@ h2 {
   margin-right: 99px;
 }
 .dilers .cooperation__item:nth-child(1)::before {
-  background-image: url(../img/cooperation/swatches.svg);
+  background-image: var(--cooperation-1);
 }
 .dilers .cooperation__item:nth-child(2) {
   max-width: 295px;
@@ -11355,14 +11377,14 @@ h2 {
   margin-right: 99px;
 }
 .dilers .cooperation__item:nth-child(2)::before {
-  background-image: url(../img/cooperation/truck.svg);
+  background-image: var(--cooperation-2);
 }
 .dilers .cooperation__item:nth-child(3) {
   max-width: 297px;
   width: 100%;
 }
 .dilers .cooperation__item:nth-child(3)::before {
-  background-image: url(../img/cooperation/user.svg);
+  background-image: var(--cooperation-3);
 }
 .dilers .cooperation__item:nth-child(4) {
   max-width: 289px;
@@ -11371,7 +11393,7 @@ h2 {
   margin-top: 97px;
 }
 .dilers .cooperation__item:nth-child(4)::before {
-  background-image: url(../img/cooperation/book.svg);
+  background-image: var(--cooperation-4);
 }
 .dilers .cooperation__item:nth-child(5) {
   max-width: 150px;
@@ -11379,7 +11401,7 @@ h2 {
   margin-top: 97px;
 }
 .dilers .cooperation__item:nth-child(5)::before {
-  background-image: url(../img/cooperation/monitor.svg);
+  background-image: var(--cooperation-5);
 }
 .dilers .cooperation .btn-wrapper {
   position: absolute;
@@ -11408,7 +11430,7 @@ h2 {
   font-size: 24px;
   line-height: 33px;
   text-align: center;
-  color: #fbfbfb;
+  color: var(--color);
 }
 .dilers .cooperation__btn:hover img {
   -webkit-transition: 0.3s;
@@ -14284,11 +14306,6 @@ h2 {
 .brand .care__video{background-image:url(../img/brand/video.webp)}
 .brand .brand__cooperation .cooperation-item::before{background-image:url(../img/svg/product/line-icon.svg)}
 .dilers .partners__list-item::before,.equipment-store .partners__list-item::before{background-image:url(../../img/svg/product/line-icon.svg)}
-.dilers .cooperation__item:nth-child(1)::before{background-image:url(../img/cooperation/swatches.svg)}
-.dilers .cooperation__item:nth-child(2)::before{background-image:url(../img/cooperation/truck.svg)}
-.dilers .cooperation__item:nth-child(3)::before{background-image:url(../img/cooperation/user.svg)}
-.dilers .cooperation__item:nth-child(4)::before{background-image:url(../img/cooperation/book.svg)}
-.dilers .cooperation__item:nth-child(5)::before{background-image:url(../img/cooperation/monitor.svg)}
 .designers .cooperation__item:nth-child(3)::before{background-image:url(../img/designers-buyers/coins.svg)}
 .equipment-store .download-btn:active span::after{background-image:url(../img/equipment-store/swatsh/download.svg)}
 .equipment-store .download-btn span::after{background-image:url(../img/equipment-store/swatsh/download.svg)}
