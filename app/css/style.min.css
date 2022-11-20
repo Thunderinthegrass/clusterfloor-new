@@ -9741,6 +9741,10 @@ h2 {
   ) !important;
   --card-bg: #202a43;
   --card-popup-bg: #1e2534;
+  --bayer-banner-desktop: block;
+  --bayer-banner-desktop-light: none;
+  --bayer-banner-mobile: block;
+  --bayer-banner-mobile-light: none;
 }
 
 @supports (--css: variables) {
@@ -9831,8 +9835,12 @@ h2 {
       #ebeef6 40.08%,
       #ebeef6 97.17%
     ) !important;
-    --card-bg: #D0D8EE;
-    --card-popup-bg: linear-gradient(180deg, #EBEEF7 0%, #CCD6F0 100%);
+    --card-bg: #d0d8ee;
+    --card-popup-bg: linear-gradient(180deg, #ebeef7 0%, #ccd6f0 100%);
+    --bayer-banner-desktop: none;
+    --bayer-banner-desktop-light: block;
+    --bayer-banner-mobile: none;
+    --bayer-banner-mobile-light: block;
   }
 }
 .switch {
@@ -11245,7 +11253,7 @@ h2 {
   font-size: 30px;
   line-height: 41px;
   display: inline-block;
-  color: #fbfbfb;
+  color: var(--color);
   padding-right: 63px;
 }
 .dilers .equipment__link::after {
@@ -11258,7 +11266,7 @@ h2 {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url(../../img/svg/recommend/arrow.svg);
+  background-image: var(--arrow);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -11456,7 +11464,7 @@ h2 {
   font-size: 24px;
   line-height: 33px;
   text-align: center;
-  color: #fbfbfb;
+  color: var(--color);
 }
 .dilers .business__btn {
   position: relative;
@@ -11546,9 +11554,23 @@ h2 {
     height: 336px;
   }
 }
+.designers__banner .banner-desktop,
+.buyer__banner .banner-desktop {
+  display: var(--bayer-banner-desktop);
+}
 @media (max-width: 500px) {
   .designers__banner .banner-desktop,
 .buyer__banner .banner-desktop {
+    display: none;
+  }
+}
+.designers__banner .banner-desktop-light,
+.buyer__banner .banner-desktop-light {
+  display: var(--bayer-banner-desktop-light);
+}
+@media (max-width: 500px) {
+  .designers__banner .banner-desktop-light,
+.buyer__banner .banner-desktop-light {
     display: none;
   }
 }
@@ -11559,7 +11581,17 @@ h2 {
 @media (max-width: 500px) {
   .designers__banner .banner-mobile,
 .buyer__banner .banner-mobile {
-    display: block;
+    display: var(--bayer-banner-mobile);
+  }
+}
+.designers__banner .banner-mobile-light,
+.buyer__banner .banner-mobile-light {
+  display: none;
+}
+@media (max-width: 500px) {
+  .designers__banner .banner-mobile-light,
+.buyer__banner .banner-mobile-light {
+    display: var(--bayer-banner-mobile-light);
   }
 }
 .designers__banner img,
@@ -11669,7 +11701,7 @@ h2 {
   font-size: 24px;
   line-height: 33px;
   text-align: center;
-  color: #fbfbfb;
+  color: var(--color);
 }
 .designers .business__btn,
 .equipment-store .business__btn {
@@ -14252,7 +14284,6 @@ h2 {
 .brand .care__video{background-image:url(../img/brand/video.webp)}
 .brand .brand__cooperation .cooperation-item::before{background-image:url(../img/svg/product/line-icon.svg)}
 .dilers .partners__list-item::before,.equipment-store .partners__list-item::before{background-image:url(../../img/svg/product/line-icon.svg)}
-.dilers .equipment__link::after{background-image:url(../../img/svg/recommend/arrow.svg)}
 .dilers .cooperation__item:nth-child(1)::before{background-image:url(../img/cooperation/swatches.svg)}
 .dilers .cooperation__item:nth-child(2)::before{background-image:url(../img/cooperation/truck.svg)}
 .dilers .cooperation__item:nth-child(3)::before{background-image:url(../img/cooperation/user.svg)}

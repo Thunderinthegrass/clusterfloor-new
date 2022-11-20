@@ -7,7 +7,7 @@
   --body-bg: linear-gradient(198.86deg, #18223b 14.21%, #27282c 73.28%);
   --d-block-light: none;
   --d-block-dark: block;
-  --breadcrumbs-color: #f7f5f2; 
+  --breadcrumbs-color: #f7f5f2;
   //кнопки смены цветов
   --color-theme-icon-light-fill: none;
   --color-theme-icon-light-stroke: #fbfbfb;
@@ -111,6 +111,11 @@
   //card
   --card-bg: #202a43;
   --card-popup-bg: #1e2534;
+  //buyer
+  --bayer-banner-desktop: block;
+  --bayer-banner-desktop-light: none;
+  --bayer-banner-mobile: block;
+  --bayer-banner-mobile-light: none;
 }
 
 @supports (--css: variables) {
@@ -223,8 +228,14 @@
       #ebeef6 40.08%,
       #ebeef6 97.17%
     ) !important;
-    --card-bg: #D0D8EE;
-    --card-popup-bg: linear-gradient(180deg, #EBEEF7 0%, #CCD6F0 100%);
+    //card
+    --card-bg: #d0d8ee;
+    --card-popup-bg: linear-gradient(180deg, #ebeef7 0%, #ccd6f0 100%);
+    //buyer
+    --bayer-banner-desktop: none;
+    --bayer-banner-desktop-light: block;
+    --bayer-banner-mobile: none;
+    --bayer-banner-mobile-light: block;
   }
 }
 .switch {

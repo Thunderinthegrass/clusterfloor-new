@@ -10,6 +10,13 @@
       height: 336px;
     }
     .banner-desktop {
+      display: var(--bayer-banner-desktop);
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+    .banner-desktop-light {
+      display: var(--bayer-banner-desktop-light);
       @media (max-width: 500px) {
         display: none;
       }
@@ -17,7 +24,13 @@
     .banner-mobile {
       display: none;
       @media (max-width: 500px) {
-        display: block;
+        display: var(--bayer-banner-mobile);
+      }
+    }
+    .banner-mobile-light {
+      display: none;
+      @media (max-width: 500px) {
+        display: var(--bayer-banner-mobile-light);
       }
     }
     img {
@@ -98,7 +111,7 @@
         font-size: 24px;
         line-height: 33px;
         text-align: center;
-        color: #fbfbfb;
+        color: var(--color);
       }
     }
     &__btn {

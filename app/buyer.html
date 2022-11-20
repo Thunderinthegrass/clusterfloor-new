@@ -162,9 +162,28 @@
     </nav>
     <div class="header__top search-hide">
       <div class="container search-hide">
+        <div class="switch media">
+          <div class="buttons-wrapper">
+            <button id="theme-switch-dark">
+              <svg>
+                <use xlink:href="img/sprite/sprite.svg#switch--dark"></use>
+              </svg>
+              <span>Тёмный</span>
+            </button>
+            <button id="theme-switch-light">
+              <svg>
+                <use xlink:href="img/sprite/sprite.svg#switch--light"></use>
+              </svg>
+              <span>Светлый</span>
+            </button>
+          </div>
+        </div>
         <a href="index.html" class="header__logo search-hide">
           <svg>
             <use xlink:href="img/sprite/sprite.svg#header--top--logo"></use>
+          </svg>
+          <svg class="logo-light">
+            <use xlink:href="img/sprite/sprite.svg#header--top--logo-light"></use>
           </svg>
         </a>
         <div class="header__search search search-hide">
@@ -367,7 +386,9 @@
     <div class="container _anim-items">
       <div class="buyer__banner">
         <img class="banner-desktop" src="img/designers-buyers/buyer-banner-desktop.jpg" alt="баннер">
+        <img class="banner-desktop-light" src="img/designers-buyers/buyer-banner-desktop-light.jpg" alt="баннер">
         <img class="banner-mobile" src="img/designers-buyers/buyer-banner-mobile.jpg" alt="баннер">
+        <img class="banner-mobile-light" src="img/designers-buyers/buyer-banner-mobile-light.jpg" alt="баннер">
         <h2 class="buyer__title">
           Для <br> покупателей
         </h2>
@@ -520,8 +541,11 @@
     <div class="container _anim-items">
       <div class="footer__item">
         <a href="index.html" class="footer__logo">
-          <svg>
+          <svg class="footer__logo-dark">
             <use xlink:href="img/sprite/sprite.svg#footer--footer-logo"></use>
+          </svg>
+          <svg class="footer__logo-light">
+            <use xlink:href="img/sprite/sprite.svg#footer--footer-logo-light"></use>
           </svg>
         </a>
         <div class="contacts">
